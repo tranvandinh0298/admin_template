@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sticky Actions · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/basic-inputs.css">
+        <link rel="stylesheet" href="assets/css/form-layouts.css">
+        <script src="assets/js/form-layouts.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="form-layout-page fl-sticky-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a></nav>
+                <nav aria-label="Form Elements">
+                    <p class="menu-caption">FORM ELEMENTS</p>
+                    <a class="menu-link" href="basic-inputs.html">Basic Inputs</a>
+                    <a class="menu-link" href="input-groups.html">Input Groups</a>
+                    <a class="menu-link" href="custom-options.html">Custom Options</a>
+                    <a class="menu-link" href="editors.html">Editors</a>
+                    <a class="menu-link" href="file-upload.html">File Upload</a>
+                    <a class="menu-link" href="pickers.html">Pickers</a>
+                    <a class="menu-link" href="selects.html">Selects</a>
+                    <a class="menu-link" href="sliders.html">Sliders</a>
+                    <a class="menu-link" href="switches.html">Switches</a>
+                    <a class="menu-link" href="form-extras.html">Form Extras</a>
+                </nav>
+                <nav aria-label="Form Layouts">
+                    <p class="menu-caption">FORM LAYOUTS</p>
+                    <a class="menu-link" href="form-layouts-vertical.html">Vertical Form</a>
+                    <a class="menu-link" href="form-layouts-horizontal.html">Horizontal Form</a>
+                    <a class="menu-link" href="form-layouts-sticky.html" aria-current="page">Sticky Actions</a>
+                </nav>
+                <nav aria-label="Form Wizard">
+                    <p class="menu-caption">FORM WIZARD</p>
+                    <a class="menu-link" href="form-wizard-numbered.html">Numbered</a>
+                    <a class="menu-link" href="form-wizard-icons.html">Icons</a>
+                </nav>
+                <nav aria-label="Form validation navigation">
+                    <a class="menu-link" href="form-validation.html">Form Validation</a>
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >Form Layouts / Sticky Actions</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1"><div class="content-inner"><h1>Sticky Actions</h1>
+<form autocomplete="off"><div class="fl-sticky"><h2>Sticky Action Bar</h2><div class="fl-actions"><a class="fl-outline" href="form-layouts-vertical.html">Back</a><button class="fl-primary" type="submit">Place Order</button></div></div><p class="fl-status" role="status"></p><section class="fl-card"><h2>1. Delivery Address</h2>
+<div class="fl-fields"><div class="fl-field"><label for="fl-field-1">Full Name</label><div class="fl-input"><input class="bi-control" id="fl-field-1" type="text" placeholder="Jane Doe"></div></div>
+<div class="fl-field"><label for="fl-field-2">Email</label><div class="fl-input"><input class="bi-control" id="fl-field-2" type="email" placeholder="jane@example.com"></div></div>
+<div class="fl-field"><label for="fl-field-3">Contact Number</label><div class="fl-input"><input class="bi-control" id="fl-field-3" type="tel" placeholder=""></div></div>
+<div class="fl-field"><label for="fl-field-4">Alternate Number</label><div class="fl-input"><input class="bi-control" id="fl-field-4" type="tel" placeholder=""></div></div>
+<div class="fl-field"><label for="fl-field-5">Address</label><div class="fl-input"><textarea class="bi-control" id="fl-field-5" rows="3" placeholder=""></textarea></div></div>
+<div class="fl-field"><label for="fl-field-6">Pincode</label><div class="fl-input"><input class="bi-control" id="fl-field-6" type="text" placeholder=""></div></div>
+<div class="fl-field"><label for="fl-field-7">Landmark</label><div class="fl-input"><input class="bi-control" id="fl-field-7" type="text" placeholder=""></div></div>
+<div class="fl-field"><label for="fl-field-8">City</label><div class="fl-input"><input class="bi-control" id="fl-field-8" type="text" placeholder=""></div></div>
+<div class="fl-field"><label for="fl-field-9">State</label><div class="fl-input"><input class="bi-control" id="fl-field-9" type="text" placeholder=""></div></div></div><label class="fl-choice"><input type="checkbox"> Use as default delivery address</label><fieldset class="fl-choices"><legend>Address Type</legend><label class="fl-choice"><input type="radio" name="address-type" value="Home" checked> Home</label><label class="fl-choice"><input type="radio" name="address-type" value="Office"> Office</label></fieldset>
+</section><section class="fl-card"><h2>2. Delivery Type</h2>
+<fieldset class="fl-choices"><legend>Delivery speed</legend><label class="fl-choice"><input type="radio" name="delivery" value="Standard" checked> Standard</label><label class="fl-choice"><input type="radio" name="delivery" value="Express"> Express</label><label class="fl-choice"><input type="radio" name="delivery" value="Overnight"> Overnight</label></fieldset>
+</section><section class="fl-card"><h2>3. Apply Promo Code</h2>
+<div class="fl-promo"><label for="fl-promo">Promo</label><input class="bi-control" id="fl-promo" placeholder="DEMO10"><button type="button" class="fl-primary" data-promo>Apply</button></div><p role="status" id="fl-promo-status"></p>
+</section><section class="fl-card"><h2>4. Payment Method</h2>
+<fieldset class="fl-choices"><legend>Payment option</legend><label class="fl-choice"><input type="radio" name="payment" value="Card" checked> Card</label><label class="fl-choice"><input type="radio" name="payment" value="Cash on Delivery"> Cash on Delivery</label></fieldset><div data-card-fields><div class="fl-fields"><div class="fl-field"><label for="fl-field-10">Card Number</label><div class="fl-input"><input class="bi-control" id="fl-field-10" type="text" placeholder="0000 0000 0000 0000"></div></div>
+<div class="fl-field"><label for="fl-field-11">Name on Card</label><div class="fl-input"><input class="bi-control" id="fl-field-11" type="text" placeholder=""></div></div>
+<div class="fl-field"><label for="fl-field-12">Expiry Date</label><div class="fl-input"><input class="bi-control" id="fl-field-12" type="month" placeholder=""></div></div>
+<div class="fl-field"><label for="fl-field-13">CVV</label><div class="fl-input"><input class="bi-control" id="fl-field-13" type="text" placeholder="123"></div></div></div></div>
+</section></form></div></main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Form Layout examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+.bi-grid, .bi-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+.bi-card {
+    min-width: 0;
+    padding: 24px;
+    background: var(--surface);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+.bi-wide { grid-column: 1 / -1; }
+@media (min-width: 768px) {
+    .bi-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    .bi-grid > .bi-card:not(.bi-wide) { grid-column: span 3; }
+    .bi-grid > .bi-card:nth-child(-n + 3) { grid-column: span 2; }
+}
+.bi-card h2 { margin: 0 0 24px; font-size: 18px; font-weight: 500; }
+.bi-field { position: relative; display: flex; flex-direction: column; gap: 6px; }
+.bi-field + .bi-field { margin-top: 18px; }
+.bi-field label { order: -1; font-size: 14px; }
+.bi-field small { color: #6d6777; }
+.bi-control {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 42px;
+    padding: 9px 12px;
+    border: 1px solid #aaa3b4;
+    border-radius: 6px;
+    font: inherit;
+    color: inherit;
+    background: var(--surface);
+}
+.bi-control:focus-visible, .bi-choice input:focus-visible {
+    outline: 2px solid #7540de;
+    outline-offset: 2px;
+}
+.bi-control::placeholder { color: #766e82; opacity: 1; }
+.bi-control:disabled, .bi-control[readonly]:not(.bi-plaintext input) { background: #f3f0f6; }
+.bi-field textarea { resize: vertical; }
+.bi-floating .bi-control { min-height: 48px; }
+.bi-floating label {
+    position: absolute;
+    inset: 13px auto auto 9px;
+    padding-inline: 4px;
+    pointer-events: none;
+    transition: transform .15s;
+}
+.bi-floating .bi-control::placeholder { color: transparent; }
+.bi-floating .bi-control:focus::placeholder { color: #766e82; }
+.bi-floating .bi-control:is(:focus, :not(:placeholder-shown)) + label {
+    transform: translateY(-22px);
+    font-size: 12px;
+    background: var(--surface);
+}
+.bi-floating .bi-control:focus + label { color: #7540de; }
+.bi-filled .bi-control {
+    min-height: 52px;
+    padding-top: 21px;
+    background: #f3eff6;
+    border: 0;
+    border-bottom: 1px solid #aaa3b4;
+    border-radius: 6px 6px 0 0;
+}
+.bi-filled .bi-control:is(:focus, :not(:placeholder-shown)) + label {
+    transform: translateY(-9px);
+    background: transparent;
+}
+.bi-plaintext .bi-control { border-color: transparent; padding-inline: 0; }
+.bi-size-0 .bi-control { min-height: 50px; font-size: 17px; }
+.bi-size-2 .bi-control { min-height: 34px; padding-block: 5px; font-size: 13px; }
+.bi-rounded .bi-control { border-radius: 99px; }
+.bi-card fieldset { min-width: 0; border: 0; margin: 0; padding: 0; }
+.bi-card legend { padding: 0; margin-bottom: 8px; font-weight: 600; }
+.bi-choice { display: flex; align-items: center; gap: 9px; min-height: 32px; }
+.bi-choice input { flex: none; width: 18px; height: 18px; margin: 0; accent-color: var(--bi-tone, #7540de); }
+.bi-choice input:disabled + span { color: #766e82; }
+.bi-inline .bi-choice { display: inline-flex; margin-inline-end: 12px; }
+.bi-secondary { --bi-tone: #6d6777; }
+.bi-success { --bi-tone: #428600; }
+.bi-danger { --bi-tone: #cf3440; }
+.bi-warning { --bi-tone: #a66a00; }
+.bi-info { --bi-tone: #087fa9; }
+.bi-dark { --bi-tone: #413c49; }
+.bi-switch input {
+    appearance: none;
+    position: relative;
+    width: 36px;
+    height: 20px;
+    border: 1px solid #aaa3b4;
+    border-radius: 20px;
+    background: #dcd7e1;
+}
+.bi-switch input::before {
+    content: "";
+    position: absolute;
+    inset: 2px auto auto 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+    transition: transform .15s;
+}
+.bi-switch input:checked { background: #7540de; border-color: #7540de; }
+.bi-switch input:checked::before { transform: translateX(16px); }
+.bi-switch input:disabled { opacity: .5; }
+.bi-reverse { flex-direction: row-reverse; text-align: end; }
+.bi-reverse-card h2 { text-align: end; }
+.bi-control[type="range"] { min-height: 26px; padding: 0; border: 0; accent-color: #7540de; }
+.bi-control[type="color"] { padding: 5px; }
+.bi-control::file-selector-button {
+    padding: .4em .65em;
+    margin-inline-end: .65em;
+    border: 0;
+    border-radius: 4px;
+    background: #eee7fc;
+    color: #533194;
+    font: inherit;
+}
+@media (max-width: 767px) {
+    .bi-grid { grid-template-columns: minmax(0, 1fr); }
+    .bi-card { padding: 20px; }
+}
+@media (max-width: 420px) {
+    .bi-pair { grid-template-columns: minmax(0, 1fr); }
+}
+@media (forced-colors: active) {
+    .bi-switch input { appearance: auto; }
+    .bi-switch input::before { content: none; }
+}

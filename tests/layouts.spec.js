@@ -10,7 +10,7 @@ const files=['default','horizontal','boxed','compact','single_column','blank'].m
 (async()=>{
  const server=http.createServer((req,res)=>{
   const p=decodeURIComponent(req.url.split('?')[0]);
-  if(!/^\/(layouts\/[a-z_]+\.html|assets\/(css\/layouts\.css|js\/layouts\.js))$/.test(p)){res.writeHead(404);return res.end();}
+  if(!/^\/(layouts\/[a-z_]+\.html|assets\/(css\/(layouts|admin-theme)\.css|js\/(layouts|admin-theme)\.js))$/.test(p)){res.writeHead(404);return res.end();}
   const f=path.join(root,p); res.setHeader('Content-Type',p.endsWith('.css')?'text/css':p.endsWith('.js')?'text/javascript':'text/html');
   fs.createReadStream(f).on('error',()=>{res.statusCode=404;res.end();}).pipe(res);
  });

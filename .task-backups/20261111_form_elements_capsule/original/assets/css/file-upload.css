@@ -1,0 +1,49 @@
+.fu-card {
+    padding: 24px;
+    margin-bottom: 24px;
+    min-width: 0;
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+.fu-card h2 { font-size: 18px; font-weight: 500; margin: 0 0 12px; }
+.fu-card p { color: #625a70; line-height: 1.5; }
+.fu-drop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 210px;
+    padding: 24px;
+    border: 2px dashed #b9afc8;
+    border-radius: 7px;
+    text-align: center;
+    background: #fcfaff;
+}
+.fu-drop > i { font-size: 30px; color: #7540de; }
+.fu-drop input { position: absolute; inset: 0; opacity: 0; width: 100%; height: 100%; cursor: pointer; }
+.fu-drop:focus-within { outline: 3px solid #7540de; outline-offset: 3px; }
+.fu-drop.fu-dragover { background: #eee5ff; border-color: #7540de; }
+.fu-files { display: flex; flex-wrap: wrap; gap: 16px; list-style: none; padding: 0; margin: 0; }
+.fu-file {
+    display: grid;
+    align-content: start;
+    gap: 8px;
+    width: 180px;
+    max-width: 100%;
+    border: 1px solid #ded6e8;
+    border-radius: 7px;
+    padding: 12px;
+    overflow-wrap: anywhere;
+}
+.fu-file img, .fu-file .fu-placeholder { width: 100%; height: 110px; object-fit: contain; background: #f5f1fa; border-radius: 5px; }
+.fu-placeholder { display: grid; place-items: center; font-size: 28px; color: #837290; }
+.fu-file small { color: #625a70; }
+.fu-file button { padding: 7px 10px; border: 1px solid #b9afc8; background: white; border-radius: 5px; color: #6735bd; }
+.fu-status:empty { display: none; }
+@media (max-width: 599px) {
+    .fu-card { padding: 18px; }
+    .fu-drop { padding: 18px; }
+}

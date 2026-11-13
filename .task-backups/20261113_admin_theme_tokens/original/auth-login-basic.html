@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Basic · Materio</title>
+    <link rel="stylesheet" href="assets/css/layouts.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/auth-login.css">
+    <script src="assets/js/form-elements.js" defer></script>
+    <script src="assets/js/auth-login.js" defer></script>
+</head>
+<body>
+    <main class="login-page login-basic">
+        
+        <section class="login-panel" aria-labelledby="login-title">
+            <a class="brand" href="layouts/default_layout.html"><span class="brand-mark" aria-hidden="true">M</span> <span class="brand-name">Materio</span></a>
+            <h1 id="login-title">Welcome to Materio!</h1>
+            <p>Try the sign-in form with sample credentials.</p>
+            <form>
+                <div class="bi-field bi-floating">
+                    <input id="login-identity" class="bi-control" autocomplete="username" placeholder="Email or username" required>
+                    <label for="login-identity">Email or username</label>
+                </div>
+                <div class="ig-row">
+                    <div class="bi-field bi-floating ig-control">
+                        <input id="login-password" class="bi-control" type="password" autocomplete="current-password" placeholder="Password" required>
+                        <label for="login-password">Password</label>
+                    </div>
+                    <button class="ig-button" type="button" data-password aria-label="Show password" aria-pressed="false"><i class="fa-solid fa-eye" aria-hidden="true"></i></button>
+                </div>
+                <div class="login-options">
+                    <label class="bi-choice"><input type="checkbox"> <span>Remember Me</span></label>
+                    <button class="login-link" type="button" data-login-info="Password recovery">Forgot password?</button>
+                </div>
+                <button class="login-submit" type="submit" disabled>Sign in</button>
+            </form>
+            <p>New here? <button class="login-link" type="button" data-login-info="Account creation">Create an account</button></p>
+            <div class="login-social" aria-label="Social sign-in demos">
+                <button type="button" data-login-info="Google sign-in">Google</button>
+                <button type="button" data-login-info="GitHub sign-in">GitHub</button>
+            </div>
+            <p class="login-status" role="status"></p>
+            <a class="login-link" href="auth-login-cover.html">View cover layout</a>
+        </section>
+    </main>
+</body>
+</html>

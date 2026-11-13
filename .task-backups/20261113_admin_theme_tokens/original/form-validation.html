@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Form Validation · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/form-elements.css">
+        <script src="assets/js/form-elements.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="form-validation-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a></nav>
+                <nav aria-label="Form Elements">
+                    <p class="menu-caption">FORM ELEMENTS</p>
+                    <a class="menu-link" href="basic-inputs.html">Basic Inputs</a>
+                    <a class="menu-link" href="input-groups.html">Input Groups</a>
+                    <a class="menu-link" href="custom-options.html">Custom Options</a>
+                    <a class="menu-link" href="editors.html">Editors</a>
+                    <a class="menu-link" href="file-upload.html">File Upload</a>
+                    <a class="menu-link" href="pickers.html">Pickers</a>
+                    <a class="menu-link" href="selects.html">Selects</a>
+                    <a class="menu-link" href="sliders.html">Sliders</a>
+                    <a class="menu-link" href="switches.html">Switches</a>
+                    <a class="menu-link" href="form-extras.html">Form Extras</a>
+                </nav>
+                <nav aria-label="Form Layouts">
+                    <p class="menu-caption">FORM LAYOUTS</p>
+                    <a class="menu-link" href="form-layouts-vertical.html">Vertical Form</a>
+                    <a class="menu-link" href="form-layouts-horizontal.html">Horizontal Form</a>
+                    <a class="menu-link" href="form-layouts-sticky.html">Sticky Actions</a>
+                </nav>
+                <nav aria-label="Form Wizard">
+                    <p class="menu-caption">FORM WIZARD</p>
+                    <a class="menu-link" href="form-wizard-numbered.html">Numbered</a>
+                    <a class="menu-link" href="form-wizard-icons.html">Icons</a>
+                </nav>
+                <nav aria-label="Form validation navigation">
+                    <a class="menu-link" href="form-validation.html" aria-current="page">Form Validation</a>
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >Form Validation</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1"><div class="content-inner"><h1>Form Validation</h1><p class="fv-intro">Use sample details and files to try the validation rules.</p><div class="fv-pair"><section class="fv-card"><h2>Browser Default</h2><form data-mode="browser" autocomplete="off"><div class="fv-grid"><div class="fv-field"><label for="fv-browser-name">Name</label><input id="fv-browser-name" class="bi-control" required type="text"></div>
+<div class="fv-field"><label for="fv-browser-email">Email</label><input id="fv-browser-email" class="bi-control" required placeholder="name@example.com" type="email"></div>
+<div class="fv-field"><label for="fv-browser-password">Password</label><input id="fv-browser-password" class="bi-control" required autocomplete="new-password" data-password type="password"></div>
+<div class="fv-field"><label for="fv-browser-country">Country</label><select id="fv-browser-country" class="bi-control" required><option value="">Choose…</option><option>Thailand</option><option>Vietnam</option><option>Singapore</option><option>Japan</option></select></div>
+<div class="fv-field"><label for="fv-browser-dob">Date of birth</label><input id="fv-browser-dob" class="bi-control" required type="date"></div>
+<div class="fv-field"><label for="fv-browser-file">Profile picture</label><input id="fv-browser-file" class="bi-control" required type="file"></div>
+<fieldset class="fv-field fv-choice "><legend>Gender</legend><div><label><input type="radio" name="fv-browser-gender" value="Male" required checked> Male</label><label><input type="radio" name="fv-browser-gender" value="Female" required> Female</label></div></fieldset>
+<div class="fv-field"><label for="fv-browser-bio">Bio</label><textarea id="fv-browser-bio" class="bi-control" required rows="3"></textarea></div></div><div class="fv-field fv-choice"><label class="bi-choice"><input type="checkbox" id="fv-browser-terms" required> <span>Agree to the terms and conditions</span></label></div><div class="fv-field fv-choice"><label class="bi-choice bi-switch"><input type="checkbox" id="fv-browser-email-switch" required role="switch"> <span>Send me related emails</span></label></div><div class="fv-actions"><button class="fv-primary" type="submit">Submit</button><button class="fv-reset" type="reset">Reset</button></div><p role="status" class="fv-status"></p></form></section><section class="fv-card"><h2>Bootstrap Validation</h2><form data-mode="bootstrap" autocomplete="off" novalidate><div class="fv-grid"><div class="fv-field"><label for="fv-bootstrap-name">Name</label><input id="fv-bootstrap-name" class="bi-control" required aria-describedby="fv-bootstrap-name-error" type="text"><p class="fv-error" id="fv-bootstrap-name-error" hidden></p></div>
+<div class="fv-field"><label for="fv-bootstrap-email">Email</label><input id="fv-bootstrap-email" class="bi-control" required aria-describedby="fv-bootstrap-email-error" placeholder="name@example.com" type="email"><p class="fv-error" id="fv-bootstrap-email-error" hidden></p></div>
+<div class="fv-field"><label for="fv-bootstrap-password">Password</label><input id="fv-bootstrap-password" class="bi-control" required aria-describedby="fv-bootstrap-password-error" autocomplete="new-password" data-password type="password"><p class="fv-error" id="fv-bootstrap-password-error" hidden></p></div>
+<div class="fv-field"><label for="fv-bootstrap-country">Country</label><select id="fv-bootstrap-country" class="bi-control" required aria-describedby="fv-bootstrap-country-error"><option value="">Choose…</option><option>Thailand</option><option>Vietnam</option><option>Singapore</option><option>Japan</option></select><p class="fv-error" id="fv-bootstrap-country-error" hidden></p></div>
+<div class="fv-field"><label for="fv-bootstrap-dob">Date of birth</label><input id="fv-bootstrap-dob" class="bi-control" required aria-describedby="fv-bootstrap-dob-error" type="date"><p class="fv-error" id="fv-bootstrap-dob-error" hidden></p></div>
+<div class="fv-field"><label for="fv-bootstrap-file">Profile picture</label><input id="fv-bootstrap-file" class="bi-control" required aria-describedby="fv-bootstrap-file-error" type="file"><p class="fv-error" id="fv-bootstrap-file-error" hidden></p></div>
+<fieldset class="fv-field fv-choice "><legend>Gender</legend><div><label><input type="radio" name="fv-bootstrap-gender" value="Male" required aria-describedby="fv-bootstrap-gender-error" checked> Male</label><label><input type="radio" name="fv-bootstrap-gender" value="Female" required aria-describedby="fv-bootstrap-gender-error"> Female</label></div><p class="fv-error" id="fv-bootstrap-gender-error" hidden></p></fieldset>
+<div class="fv-field"><label for="fv-bootstrap-bio">Bio</label><textarea id="fv-bootstrap-bio" class="bi-control" required aria-describedby="fv-bootstrap-bio-error" rows="3"></textarea><p class="fv-error" id="fv-bootstrap-bio-error" hidden></p></div></div><div class="fv-field fv-choice"><label class="bi-choice"><input type="checkbox" id="fv-bootstrap-terms" required aria-describedby="fv-bootstrap-terms-error"> <span>Agree to the terms and conditions</span></label><p class="fv-error" id="fv-bootstrap-terms-error" hidden></p></div><div class="fv-field fv-choice"><label class="bi-choice bi-switch"><input type="checkbox" id="fv-bootstrap-email-switch" required aria-describedby="fv-bootstrap-email-switch-error" role="switch"> <span>Send me related emails</span></label><p class="fv-error" id="fv-bootstrap-email-switch-error" hidden></p></div><div class="fv-actions"><button class="fv-primary" type="submit">Submit</button><button class="fv-reset" type="reset">Reset</button></div><p role="status" class="fv-status"></p></form></section></div><section class="fv-card"><h2>FormValidation</h2><form data-mode="advanced" autocomplete="off" novalidate><h3>1. Account Details</h3><div class="fv-grid"><div class="fv-field"><label for="fv-advanced-name">Full Name</label><input id="fv-advanced-name" class="bi-control" required aria-describedby="fv-advanced-name-error" minlength="6" maxlength="30" pattern="[A-Za-z0-9 ]+" data-full-name type="text"><p class="fv-error" id="fv-advanced-name-error" hidden></p></div>
+<div class="fv-field"><label for="fv-advanced-email">Email</label><input id="fv-advanced-email" class="bi-control" required aria-describedby="fv-advanced-email-error" placeholder="name@example.com" type="email"><p class="fv-error" id="fv-advanced-email-error" hidden></p></div>
+<div class="fv-field"><label for="fv-advanced-password">Password</label><input id="fv-advanced-password" class="bi-control" required aria-describedby="fv-advanced-password-error" autocomplete="new-password" data-password type="password"><p class="fv-error" id="fv-advanced-password-error" hidden></p></div>
+<div class="fv-field"><label for="fv-advanced-confirm">Confirm Password</label><input id="fv-advanced-confirm" class="bi-control" required aria-describedby="fv-advanced-confirm-error" autocomplete="new-password" data-confirm type="password"><p class="fv-error" id="fv-advanced-confirm-error" hidden></p></div></div><h3>2. Personal Info</h3><div class="fv-grid"><div class="fv-field"><label for="fv-advanced-file">Profile picture</label><input id="fv-advanced-file" class="bi-control" required aria-describedby="fv-advanced-file-error" type="file"><p class="fv-error" id="fv-advanced-file-error" hidden></p></div>
+<div class="fv-field"><label for="fv-advanced-dob">Date of birth</label><input id="fv-advanced-dob" class="bi-control" required aria-describedby="fv-advanced-dob-error" type="date"><p class="fv-error" id="fv-advanced-dob-error" hidden></p></div>
+<div class="fv-field"><label for="fv-advanced-country">Country</label><select id="fv-advanced-country" class="bi-control" required aria-describedby="fv-advanced-country-error"><option value="">Choose…</option><option>Thailand</option><option>Vietnam</option><option>Singapore</option><option>Japan</option></select><p class="fv-error" id="fv-advanced-country-error" hidden></p></div>
+<div class="fv-field"><label for="fv-advanced-languages">Languages</label><input id="fv-advanced-languages" class="bi-control" required aria-describedby="fv-advanced-languages-error" placeholder="English, Vietnamese" type="text"><p class="fv-error" id="fv-advanced-languages-error" hidden></p></div>
+<div class="fv-field"><label for="fv-advanced-tech">Tech</label><select id="fv-advanced-tech" class="bi-control" required aria-describedby="fv-advanced-tech-error" multiple><option>HTML</option><option>CSS</option><option>JavaScript</option></select><p class="fv-error" id="fv-advanced-tech-error" hidden></p></div>
+<div class="fv-field"><label for="fv-advanced-hobbies">Hobbies</label><select id="fv-advanced-hobbies" class="bi-control" required aria-describedby="fv-advanced-hobbies-error" multiple><option>Reading</option><option>Travel</option><option>Photography</option></select><p class="fv-error" id="fv-advanced-hobbies-error" hidden></p></div>
+<div class="fv-field"><label for="fv-advanced-bio">Bio</label><textarea id="fv-advanced-bio" class="bi-control" required aria-describedby="fv-advanced-bio-error" minlength="100" maxlength="500" data-bio rows="3"></textarea><p class="fv-error" id="fv-advanced-bio-error" hidden></p></div>
+<fieldset class="fv-field fv-choice "><legend>Gender</legend><div><label><input type="radio" name="fv-advanced-gender" value="Male" required aria-describedby="fv-advanced-gender-error" checked> Male</label><label><input type="radio" name="fv-advanced-gender" value="Female" required aria-describedby="fv-advanced-gender-error"> Female</label></div><p class="fv-error" id="fv-advanced-gender-error" hidden></p></fieldset></div><h3>3. Choose Your Plan</h3><fieldset class="fv-field fv-choice fv-plans"><legend>Plan</legend><div><label><input type="radio" name="fv-advanced-plan" value="Basic" required aria-describedby="fv-advanced-plan-error" checked> Basic</label><label><input type="radio" name="fv-advanced-plan" value="Standard" required aria-describedby="fv-advanced-plan-error"> Standard</label><label><input type="radio" name="fv-advanced-plan" value="Premium" required aria-describedby="fv-advanced-plan-error"> Premium</label></div><p class="fv-error" id="fv-advanced-plan-error" hidden></p></fieldset><div class="fv-field fv-choice"><label class="bi-choice"><input type="checkbox" id="fv-advanced-terms" required aria-describedby="fv-advanced-terms-error"> <span>Agree to the terms and conditions</span></label><p class="fv-error" id="fv-advanced-terms-error" hidden></p></div><div class="fv-field fv-choice"><label class="bi-choice bi-switch"><input type="checkbox" id="fv-advanced-email-switch" required aria-describedby="fv-advanced-email-switch-error" role="switch"> <span>Send me related emails</span></label><p class="fv-error" id="fv-advanced-email-switch-error" hidden></p></div><div class="fv-actions"><button class="fv-primary" type="submit">Submit</button><button class="fv-reset" type="reset">Reset</button></div><p role="status" class="fv-status"></p></form></section></div></main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Validation examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

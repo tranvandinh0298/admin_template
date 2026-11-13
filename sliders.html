@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sliders · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css">
+        <script src="assets/vendor/nouislider/nouislider.min.js" defer></script>
+        <link rel="stylesheet" href="assets/css/form-elements.css">
+        <script src="assets/js/form-elements.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+        <script src="assets/js/admin-theme.js"></script>
+    <link rel="stylesheet" href="assets/css/admin-theme.css">
+</head>
+    <body data-layout="default" class="sliders-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a></nav>
+                <nav aria-label="Form Elements">
+                    <p class="menu-caption">FORM ELEMENTS</p>
+                    <a class="menu-link" href="basic-inputs.html">Basic Inputs</a>
+                    <a class="menu-link" href="input-groups.html">Input Groups</a>
+                    <a class="menu-link" href="custom-options.html">Custom Options</a>
+                    <a class="menu-link" href="editors.html">Editors</a>
+                    <a class="menu-link" href="file-upload.html">File Upload</a>
+                    <a class="menu-link" href="pickers.html">Pickers</a>
+                    <a class="menu-link" href="selects.html">Selects</a>
+                    <a class="menu-link" href="sliders.html" aria-current="page">Sliders</a>
+                    <a class="menu-link" href="switches.html">Switches</a>
+                    <a class="menu-link" href="form-extras.html">Form Extras</a>
+                </nav>
+                <nav aria-label="Form Layouts">
+                    <p class="menu-caption">FORM LAYOUTS</p>
+                    <a class="menu-link" href="form-layouts-vertical.html">Vertical Form</a>
+                    <a class="menu-link" href="form-layouts-horizontal.html">Horizontal Form</a>
+                    <a class="menu-link" href="form-layouts-sticky.html">Sticky Actions</a>
+                </nav>
+                <nav aria-label="Form Wizard">
+                    <p class="menu-caption">FORM WIZARD</p>
+                    <a class="menu-link" href="form-wizard-numbered.html">Numbered</a>
+                    <a class="menu-link" href="form-wizard-icons.html">Icons</a>
+                </nav>
+                <nav aria-label="Form validation navigation">
+                    <a class="menu-link" href="form-validation.html">Form Validation</a>
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >Form Elements / Sliders</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1">
+  <div class="content-inner"><h1>Sliders</h1>
+    <div class="sl-grid"><section class="sl-card ">
+  <h2>Basic</h2>
+  <div class="sl-example ">
+    <span id="sl-basic-label">Single handle</span>
+    <div class="sl-track" id="sl-basic"></div>
+</div>
+  <div class="sl-example sl-pips">
+    <span id="sl-handles-label">Multiple handles</span>
+    <div class="sl-track" id="sl-handles"></div>
+</div>
+  <div class="sl-example ">
+    <span id="sl-steps-label">Steps</span>
+    <div class="sl-track" id="sl-steps"></div>
+</div>
+</section>
+<section class="sl-card ">
+  <h2>Behaviour</h2>
+  <div class="sl-example ">
+    <span id="sl-tap-label">Tap</span>
+    <div class="sl-track" id="sl-tap"></div>
+</div>
+  <div class="sl-example ">
+    <span id="sl-drag-label">Drag</span>
+    <div class="sl-track" id="sl-drag"></div>
+</div>
+  <div class="sl-example ">
+    <span id="sl-fixed-label">Fixed drag</span>
+    <div class="sl-track" id="sl-fixed"></div>
+</div>
+  <div class="sl-example ">
+    <span id="sl-combined-label">Drag and tap</span>
+    <div class="sl-track" id="sl-combined"></div>
+</div>
+  <div class="sl-example ">
+    <span id="sl-hover-label">Hover</span>
+    <div class="sl-track" id="sl-hover"></div>
+</div>
+  <p>Value under pointer: <output id="sl-hover-value">20</output></p>
+</section>
+<section class="sl-card ">
+  <h2>Scale &amp; Pips</h2>
+  <div class="sl-example sl-pips">
+    <span id="sl-scale-label">Stepped scale</span>
+    <div class="sl-track" id="sl-scale"></div>
+</div>
+</section>
+<section class="sl-card ">
+  <h2>Colors</h2>
+  <div class="sl-example sl-pips sl-primary">
+    <span id="sl-primary-label">Primary</span>
+    <div class="sl-track" id="sl-primary"></div>
+</div>
+  <div class="sl-example sl-pips sl-success">
+    <span id="sl-success-label">Success</span>
+    <div class="sl-track" id="sl-success"></div>
+</div>
+  <div class="sl-example sl-pips sl-danger">
+    <span id="sl-danger-label">Danger</span>
+    <div class="sl-track" id="sl-danger"></div>
+</div>
+  <div class="sl-example sl-pips sl-info">
+    <span id="sl-info-label">Info</span>
+    <div class="sl-track" id="sl-info"></div>
+</div>
+  <div class="sl-example sl-pips sl-warning">
+    <span id="sl-warning-label">Warning</span>
+    <div class="sl-track" id="sl-warning"></div>
+</div>
+</section>
+<section class="sl-card ">
+  <h2>Dynamic</h2>
+  <div class="sl-example ">
+    <span id="sl-dynamic-label">Linked range</span>
+    <div class="sl-track" id="sl-dynamic"></div>
+</div>
+  <div class="sl-fields"><label>Lower value<select class="bi-control" id="sl-low"></select></label><label>Upper value<input class="bi-control" id="sl-high" type="number" min="-20" max="40" step="1"></label></div>
+</section></div>
+    <div class="sl-vertical-grid"><section class="sl-card ">
+  <h2>Vertical Default</h2>
+  <div class="sl-example sl-upright">
+    <span id="sl-vertical-0-label">Default</span>
+    <div class="sl-track" id="sl-vertical-0"></div>
+</div>
+</section>
+<section class="sl-card ">
+  <h2>Vertical Upper Connect</h2>
+  <div class="sl-example sl-upright">
+    <span id="sl-vertical-1-label">Upper Connect</span>
+    <div class="sl-track" id="sl-vertical-1"></div>
+</div>
+</section>
+<section class="sl-card ">
+  <h2>Vertical Tooltip</h2>
+  <div class="sl-example sl-upright">
+    <span id="sl-vertical-2-label">Tooltip</span>
+    <div class="sl-track" id="sl-vertical-2"></div>
+</div>
+</section>
+<section class="sl-card ">
+  <h2>Vertical Limit</h2>
+  <div class="sl-example sl-upright">
+    <span id="sl-vertical-3-label">Limit</span>
+    <div class="sl-track" id="sl-vertical-3"></div>
+</div>
+</section></div>
+  </div>
+</main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Slider examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

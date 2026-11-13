@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Treeview · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/jstree/themes/default/style.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/treeview.css" />
+        <script src="assets/vendor/jquery/jquery.min.js" defer></script>
+        <script src="assets/vendor/jstree/jstree.min.js" defer></script>
+        <script src="assets/js/treeview.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="treeview-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a class="menu-link" href="collapse.html">Collapse</a>
+                    <a class="menu-link" href="alerts.html">Alerts</a
+                    ><a
+                        class="menu-link"
+                        href="treeview.html"
+                        aria-current="page"
+                        >Treeview</a
+                    >
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label">Extended UI / Treeview</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1">
+                    <div class="content-inner">
+                        <h1>Treeview</h1>
+                        <div class="tv-grid">
+                            <section class="tv-card" data-tree-demo="basic">
+                                <h2 id="tv-title-basic">Basic</h2>
+                                <div
+                                    class="tv-tree"
+                                    id="tv-basic"
+                                    aria-labelledby="tv-title-basic"
+                                ></div>
+                                <p
+                                    class="tv-status"
+                                    id="tv-status-basic"
+                                    role="status"
+                                ></p>
+                            </section>
+                            <section class="tv-card" data-tree-demo="icons">
+                                <h2 id="tv-title-icons">Custom Icons</h2>
+                                <div
+                                    class="tv-tree"
+                                    id="tv-icons"
+                                    aria-labelledby="tv-title-icons"
+                                ></div>
+                                <p
+                                    class="tv-status"
+                                    id="tv-status-icons"
+                                    role="status"
+                                ></p>
+                            </section>
+                            <section class="tv-card" data-tree-demo="context">
+                                <h2 id="tv-title-context">Context Menu</h2>
+                                <div
+                                    class="tv-tree"
+                                    id="tv-context"
+                                    aria-labelledby="tv-title-context"
+                                ></div>
+                                <p class="tv-help">
+                                    Right-click a node, use Shift+F10, or select
+                                    a node and use the actions below. Changes
+                                    affect this demo only.
+                                </p>
+                                <div class="tv-actions">
+                                    <button
+                                        type="button"
+                                        data-tv-action="create"
+                                    >
+                                        Create</button
+                                    ><button
+                                        type="button"
+                                        data-tv-action="rename"
+                                    >
+                                        Rename</button
+                                    ><button
+                                        type="button"
+                                        data-tv-action="delete"
+                                    >
+                                        Delete</button
+                                    ><button type="button" data-tv-action="cut">
+                                        Cut</button
+                                    ><button
+                                        type="button"
+                                        data-tv-action="copy"
+                                    >
+                                        Copy</button
+                                    ><button
+                                        type="button"
+                                        data-tv-action="paste"
+                                    >
+                                        Paste
+                                    </button>
+                                </div>
+                                <p
+                                    class="tv-status"
+                                    id="tv-status-context"
+                                    role="status"
+                                ></p>
+                            </section>
+                            <section class="tv-card" data-tree-demo="drag">
+                                <h2 id="tv-title-drag">Drag & Drop</h2>
+                                <div
+                                    class="tv-tree"
+                                    id="tv-drag"
+                                    aria-labelledby="tv-title-drag"
+                                ></div>
+                                <p class="tv-help">
+                                    Drag a node to rearrange it, or select a
+                                    node and use these controls.
+                                </p>
+                                <div class="tv-move">
+                                    <label
+                                        >Destination<select
+                                            id="tv-destination"
+                                        ></select></label
+                                    ><label
+                                        >Position<select id="tv-position">
+                                            <option value="last">
+                                                Inside (last)
+                                            </option>
+                                            <option value="before">
+                                                Before
+                                            </option>
+                                            <option value="after">After</option>
+                                        </select></label
+                                    ><button type="button" id="tv-move">
+                                        Move selected
+                                    </button>
+                                </div>
+                                <p
+                                    class="tv-status"
+                                    id="tv-status-drag"
+                                    role="status"
+                                ></p>
+                            </section>
+                            <section class="tv-card" data-tree-demo="checkbox">
+                                <h2 id="tv-title-checkbox">Checkboxes</h2>
+                                <div
+                                    class="tv-tree"
+                                    id="tv-checkbox"
+                                    aria-labelledby="tv-title-checkbox"
+                                ></div>
+                                <p
+                                    class="tv-status"
+                                    id="tv-status-checkbox"
+                                    role="status"
+                                ></p>
+                            </section>
+                            <section class="tv-card" data-tree-demo="ajax">
+                                <h2 id="tv-title-ajax">Ajax</h2>
+                                <div
+                                    class="tv-tree"
+                                    id="tv-ajax"
+                                    aria-labelledby="tv-title-ajax"
+                                ></div>
+                                <p class="tv-help">
+                                    Loaded from local JSON over HTTP. This tree
+                                    remembers expanded and selected nodes when
+                                    browser storage is available.
+                                </p>
+                                <button type="button" id="tv-retry" hidden>
+                                    Retry loading
+                                </button>
+                                <p
+                                    class="tv-status"
+                                    id="tv-status-ajax"
+                                    role="status"
+                                ></p>
+                            </section>
+                        </div>
+                        <noscript
+                            ><p>
+                                Enable JavaScript to use the treeview examples.
+                            </p></noscript
+                        >
+                    </div>
+                </main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Treeview examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

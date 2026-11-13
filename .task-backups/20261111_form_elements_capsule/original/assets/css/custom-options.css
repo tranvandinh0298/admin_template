@@ -1,0 +1,102 @@
+.co-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+.co-card {
+    min-inline-size: 0;
+    margin: 0;
+    padding: 24px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+.co-card legend {
+    float: inline-start;
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.co-choices {
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+.co-icon .co-choices, .co-illustration .co-choices, .co-image .co-choices {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.co-option {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 6px 8px;
+    align-content: start;
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #aaa3b4;
+    border-radius: 6px;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+.co-option:hover { background: #f8f4ff; }
+.co-option:has(input:checked) {
+    border-color: #7540de;
+    background: #f4efff;
+    box-shadow: inset 0 0 0 1px #7540de;
+}
+.co-option:has(input:focus-visible) { outline: 2px solid #5420af; outline-offset: 3px; }
+.co-option input {
+    width: 18px;
+    height: 18px;
+    margin: 2px 0 0;
+    accent-color: #7540de;
+    cursor: pointer;
+}
+.co-title { font-weight: 600; }
+.co-description, .co-meta { grid-column: 2; font-size: 13px; color: #625a70; }
+.co-label .co-meta {
+    justify-self: start;
+    padding: 2px 7px;
+    border-radius: 5px;
+    color: #5b2cb6;
+    background: #ece2ff;
+}
+.co-visual, .co-option img {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+.co-visual {
+    display: grid;
+    place-items: center;
+    min-height: 38px;
+    color: #7540de;
+    font-size: 23px;
+}
+.co-illustration .co-visual {
+    min-height: 74px;
+    border-radius: 6px;
+    background: #eee6fc;
+    font-size: 34px;
+}
+.co-option img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+@media (max-width: 1000px) {
+    .co-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 480px) {
+    .co-card { padding: 18px; }
+    .co-icon .co-choices, .co-illustration .co-choices, .co-image .co-choices {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (forced-colors: active) {
+    .co-option:has(input:checked) { border-color: Highlight; }
+}

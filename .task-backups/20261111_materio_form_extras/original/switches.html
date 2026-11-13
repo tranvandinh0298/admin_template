@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Switches · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/switches.css">
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="switches-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a></nav>
+                <nav aria-label="Form Elements">
+                    <p class="menu-caption">FORM ELEMENTS</p>
+                    <a class="menu-link" href="basic-inputs.html">Basic Inputs</a>
+                    <a class="menu-link" href="input-groups.html">Input Groups</a>
+                    <a class="menu-link" href="custom-options.html">Custom Options</a>
+                    <a class="menu-link" href="editors.html">Editors</a>
+                    <a class="menu-link" href="file-upload.html">File Upload</a>
+                    <a class="menu-link" href="pickers.html">Pickers</a>
+                    <a class="menu-link" href="selects.html">Selects</a>
+                    <a class="menu-link" href="sliders.html">Sliders</a>
+                    <a class="menu-link" href="switches.html" aria-current="page">Switches</a>
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >Form Elements / Switches</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1"><div class="content-inner"><h1>Switches</h1><div class="sw-grid">
+<section class="sw-card"><h2>Default switches</h2>
+<div class="sw-columns"><div><label class="sw-option ">
+  <span class="sw-control">
+    <input type="checkbox" role="switch">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Default</span>
+</label>
+<label class="sw-option ">
+  <span class="sw-control">
+    <input type="checkbox" role="switch">
+    <span class="sw-track" aria-hidden="true"><i class="fa-solid fa-check sw-on"></i><i class="fa-solid fa-xmark sw-off"></i></span>
+  </span>
+  <span>With icon</span>
+</label></div><div><label class="sw-option sw-square">
+  <span class="sw-control">
+    <input type="checkbox" role="switch">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Square</span>
+</label>
+<label class="sw-option sw-square">
+  <span class="sw-control">
+    <input type="checkbox" role="switch">
+    <span class="sw-track" aria-hidden="true"><i class="fa-solid fa-check sw-on"></i><i class="fa-solid fa-xmark sw-off"></i></span>
+  </span>
+  <span>With icon</span>
+</label></div></div></section>
+<section class="sw-card"><h2>Default Variations</h2>
+<div class="sw-colors"><label class="sw-option sw-primary">
+  <span class="sw-control">
+    <input type="checkbox" role="switch" checked>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Primary</span>
+</label>
+<label class="sw-option sw-secondary">
+  <span class="sw-control">
+    <input type="checkbox" role="switch" checked>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Secondary</span>
+</label>
+<label class="sw-option sw-success">
+  <span class="sw-control">
+    <input type="checkbox" role="switch" checked>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Success</span>
+</label>
+<label class="sw-option sw-danger">
+  <span class="sw-control">
+    <input type="checkbox" role="switch" checked>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Danger</span>
+</label>
+<label class="sw-option sw-warning">
+  <span class="sw-control">
+    <input type="checkbox" role="switch" checked>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Warning</span>
+</label>
+<label class="sw-option sw-info">
+  <span class="sw-control">
+    <input type="checkbox" role="switch" checked>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Info</span>
+</label>
+<label class="sw-option sw-dark">
+  <span class="sw-control">
+    <input type="checkbox" role="switch" checked>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Dark</span>
+</label></div></section>
+<section class="sw-card"><h2>Size</h2>
+<div class="sw-columns"><div><label class="sw-option sw-small">
+  <span class="sw-control">
+    <input type="checkbox" role="switch">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Small</span>
+</label>
+<label class="sw-option ">
+  <span class="sw-control">
+    <input type="checkbox" role="switch">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Default</span>
+</label>
+<label class="sw-option sw-large">
+  <span class="sw-control">
+    <input type="checkbox" role="switch">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Large</span>
+</label></div><div><label class="sw-option sw-small sw-square">
+  <span class="sw-control">
+    <input type="checkbox" role="switch">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Small</span>
+</label>
+<label class="sw-option  sw-square">
+  <span class="sw-control">
+    <input type="checkbox" role="switch">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Default</span>
+</label>
+<label class="sw-option sw-large sw-square">
+  <span class="sw-control">
+    <input type="checkbox" role="switch">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Large</span>
+</label></div></div></section>
+<section class="sw-card"><h2>States</h2>
+<div class="sw-columns"><div><label class="sw-option ">
+  <span class="sw-control">
+    <input type="checkbox" role="switch" disabled>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Default – OFF</span>
+</label>
+<label class="sw-option ">
+  <span class="sw-control">
+    <input type="checkbox" role="switch" checked disabled>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Default – ON</span>
+</label></div><div><label class="sw-option sw-success">
+  <span class="sw-control">
+    <input type="checkbox" role="switch" checked>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Valid</span>
+</label>
+<label class="sw-option sw-danger">
+  <span class="sw-control">
+    <input type="checkbox" role="switch" checked aria-invalid="true">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Invalid</span>
+</label></div></div></section>
+<section class="sw-card"><h2>Stacked Radio</h2>
+<div class="sw-columns"><fieldset><legend>Rounded</legend><label class="sw-option ">
+  <span class="sw-control">
+    <input type="radio" name="sw-rounded" checked>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Option 1</span>
+</label>
+<label class="sw-option ">
+  <span class="sw-control">
+    <input type="radio" name="sw-rounded">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Option 2</span>
+</label>
+<label class="sw-option ">
+  <span class="sw-control">
+    <input type="radio" name="sw-rounded">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Option 3</span>
+</label></fieldset><fieldset><legend>Square</legend><label class="sw-option sw-square">
+  <span class="sw-control">
+    <input type="radio" name="sw-square" checked>
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Option 1</span>
+</label>
+<label class="sw-option sw-square">
+  <span class="sw-control">
+    <input type="radio" name="sw-square">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Option 2</span>
+</label>
+<label class="sw-option sw-square">
+  <span class="sw-control">
+    <input type="radio" name="sw-square">
+    <span class="sw-track" aria-hidden="true"></span>
+  </span>
+  <span>Option 3</span>
+</label></fieldset></div></section></div></div></main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Switch examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

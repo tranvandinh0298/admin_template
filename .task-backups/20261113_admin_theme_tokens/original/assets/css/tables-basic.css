@@ -1,0 +1,46 @@
+.tb-card {
+    margin-bottom: 24px;
+    min-width: 0;
+    border-radius: 8px;
+    background: var(--surface, #fff);
+    box-shadow: var(--shadow);
+}
+.tb-card h2 { padding: 20px 24px; margin: 0; font-size: 18px; font-weight: 500; }
+.tb-scroll { overflow-x: auto; border-radius: 0 0 8px 8px; }
+.tb-scroll:focus-visible { outline: 2px solid #7540de; outline-offset: 2px; }
+.tb-table {
+    width: 100%;
+    min-width: 490px;
+    border-collapse: collapse;
+    text-align: start;
+    background: var(--tb-bg, #fff);
+    color: var(--tb-text, #433c50);
+}
+.tb-table :is(th, td) { padding: 12px 16px; text-align: start; border-bottom: 1px solid var(--tb-border, #e8e1ef); }
+.tb-table thead th, .tb-table tfoot th { font-size: 13px; font-weight: 600; }
+.tb-table tbody th { font-weight: 600; }
+.tb-table caption { caption-side: bottom; padding: 12px 16px; text-align: start; }
+.tb-dark > .tb-scroll > .tb-table { --tb-bg: #312b3b; --tb-text: #fff; --tb-border: #544b62; }
+.tb-head-dark thead { background: #312b3b; color: white; }
+.tb-head-light thead, .tb-footer tfoot { background: #f2edf7; }
+.tb-striped tbody tr:nth-child(odd) { background: #f6f2fa; }
+.tb-bordered :is(th, td) { border: 1px solid #e8e1ef; }
+.tb-borderless :is(th, td) { border: 0; }
+.tb-hover tbody tr:hover, .tb-hover tbody tr:focus-within { background: #f0e7ff; }
+.tb-small :is(th, td) { padding: 5px 12px; }
+.tb-plain { background: transparent; box-shadow: none; }
+.tb-plain h2 { padding-inline: 0; }
+.tb-responsive .tb-table { min-width: 900px; }
+.tb-inner { min-width: 0; --tb-bg: #f6f2fa; --tb-text: #433c50; --tb-border: #e8e1ef; }
+.tb-inner caption { caption-side: top; color: white; }
+.tb-status { display: inline-block; padding: 3px 8px; border-radius: 5px; font-size: 13px; white-space: nowrap; }
+.tb-active, .tb-tone-primary { background: #eee4ff; color: #5420af; }
+.tb-pending, .tb-tone-warning { background: #fff0cb; color: #764b00; }
+.tb-complete, .tb-tone-success { background: #e4f4d8; color: #2d650c; }
+.tb-hold, .tb-tone-secondary { background: #eae5ee; color: #50445e; }
+.tb-tone-danger { background: #fce2e5; color: #95212e; }
+.tb-tone-info { background: #def4fc; color: #075e78; }
+.tb-tone-light { background: #f7f5f9; }
+.tb-tone-dark { background: #312b3b; color: white; }
+.tb-action summary { cursor: pointer; color: #5420af; }
+.tb-action p { margin: 6px 0 0; }

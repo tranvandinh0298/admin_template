@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Pickers · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/basic-inputs.css">
+        <link rel="stylesheet" href="assets/vendor/flatpickr/flatpickr.min.css">
+        <link rel="stylesheet" href="assets/vendor/daterangepicker/daterangepicker.css">
+        <link rel="stylesheet" href="assets/vendor/timepicker/jquery.timepicker.min.css">
+        <link rel="stylesheet" href="assets/vendor/pickr/classic.min.css">
+        <link rel="stylesheet" href="assets/vendor/pickr/monolith.min.css">
+        <link rel="stylesheet" href="assets/vendor/pickr/nano.min.css">
+        <script src="assets/vendor/jquery/jquery.min.js" defer></script>
+        <script src="assets/vendor/flatpickr/flatpickr.min.js" defer></script>
+        <script src="assets/vendor/moment/moment.min.js" defer></script>
+        <script src="assets/vendor/daterangepicker/daterangepicker.js" defer></script>
+        <script src="assets/vendor/timepicker/jquery.timepicker.min.js" defer></script>
+        <script src="assets/vendor/pickr/pickr.min.js" defer></script>
+        <script src="assets/js/pickers.js" defer></script>
+        <link rel="stylesheet" href="assets/css/pickers.css">
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="pickers-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a></nav>
+                <nav aria-label="Form Elements">
+                    <p class="menu-caption">FORM ELEMENTS</p>
+                    <a class="menu-link" href="basic-inputs.html">Basic Inputs</a>
+                    <a class="menu-link" href="input-groups.html">Input Groups</a>
+                    <a class="menu-link" href="custom-options.html">Custom Options</a>
+                    <a class="menu-link" href="editors.html">Editors</a>
+                    <a class="menu-link" href="file-upload.html">File Upload</a>
+                    <a class="menu-link" href="pickers.html" aria-current="page">Pickers</a>
+                    <a class="menu-link" href="selects.html">Selects</a>
+                    <a class="menu-link" href="sliders.html">Sliders</a>
+                    <a class="menu-link" href="switches.html">Switches</a>
+                    <a class="menu-link" href="form-extras.html">Form Extras</a>
+                </nav>
+                <nav aria-label="Form Layouts">
+                    <p class="menu-caption">FORM LAYOUTS</p>
+                    <a class="menu-link" href="form-layouts-vertical.html">Vertical Form</a>
+                    <a class="menu-link" href="form-layouts-horizontal.html">Horizontal Form</a>
+                    <a class="menu-link" href="form-layouts-sticky.html">Sticky Actions</a>
+                </nav>
+                <nav aria-label="Form Wizard">
+                    <p class="menu-caption">FORM WIZARD</p>
+                    <a class="menu-link" href="form-wizard-numbered.html">Numbered</a>
+                    <a class="menu-link" href="form-wizard-icons.html">Icons</a>
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >Form Elements / Pickers</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1"><div class="content-inner"><h1>Pickers</h1>
+<section class="pk-card">
+  <h2>Flatpickr</h2>
+  <div class="pk-grid">
+    <div class="pk-field">
+      <label for="pk-flat-0">Date Picker</label>
+      <input class="bi-control" id="pk-flat-0" type="text" autocomplete="off" placeholder="Select date">
+    </div>
+    <div class="pk-field">
+      <label for="pk-flat-1">Time Picker</label>
+      <input class="bi-control" id="pk-flat-1" type="text" autocomplete="off" placeholder="Select date">
+    </div>
+    <div class="pk-field">
+      <label for="pk-flat-2">Datetime Picker</label>
+      <input class="bi-control" id="pk-flat-2" type="text" autocomplete="off" placeholder="Select date">
+    </div>
+    <div class="pk-field">
+      <label for="pk-flat-3">Multiple Dates Picker</label>
+      <input class="bi-control" id="pk-flat-3" type="text" autocomplete="off" placeholder="Select date">
+    </div>
+    <div class="pk-field">
+      <label for="pk-flat-4">Range Picker</label>
+      <input class="bi-control" id="pk-flat-4" type="text" autocomplete="off" placeholder="Select date">
+    </div>
+    <div class="pk-field">
+      <label for="pk-flat-5">Human Friendly Date Picker</label>
+      <input class="bi-control" id="pk-flat-5" type="text" autocomplete="off" placeholder="Select date">
+    </div>
+    <div class="pk-field">
+      <label for="pk-flat-6">Disabled Range</label>
+      <input class="bi-control" id="pk-flat-6" type="text" autocomplete="off" placeholder="Select date">
+    </div>
+    <div class="pk-field">
+      <label for="pk-flat-7">Inline Picker</label>
+      <input class="bi-control" id="pk-flat-7" type="text" autocomplete="off" placeholder="Select date">
+    </div>
+  </div>
+</section>
+<section class="pk-card">
+  <h2>Bootstrap Daterange Picker</h2>
+  <div class="pk-grid">
+    <div class="pk-field">
+      <label for="pk-range-0">Basic</label>
+      <input class="bi-control" id="pk-range-0" type="text" autocomplete="off" placeholder="Select date" readonly>
+    </div>
+    <div class="pk-field">
+      <label for="pk-range-1">Single Picker</label>
+      <input class="bi-control" id="pk-range-1" type="text" autocomplete="off" placeholder="Select date" readonly>
+    </div>
+    <div class="pk-field">
+      <label for="pk-range-2">With Time Picker</label>
+      <input class="bi-control" id="pk-range-2" type="text" autocomplete="off" placeholder="Select date" readonly>
+    </div>
+    <div class="pk-field">
+      <label for="pk-range-3">Ranges</label>
+      <input class="bi-control" id="pk-range-3" type="text" autocomplete="off" placeholder="Select date" readonly>
+    </div>
+    <div class="pk-field">
+      <label for="pk-range-4">Week Numbers</label>
+      <input class="bi-control" id="pk-range-4" type="text" autocomplete="off" placeholder="Select date" readonly>
+    </div>
+    <div class="pk-field">
+      <label for="pk-range-5">Month &amp; Year Dropdown</label>
+      <input class="bi-control" id="pk-range-5" type="text" autocomplete="off" placeholder="Select date" readonly>
+    </div>
+  </div>
+</section>
+<section class="pk-card">
+  <h2>jQuery Timepicker</h2>
+  <div class="pk-grid">
+    <div class="pk-field">
+      <label for="pk-time-0">Basic</label>
+      <input class="bi-control" id="pk-time-0" type="text" autocomplete="off" placeholder="Select time">
+    </div>
+    <div class="pk-field">
+      <label for="pk-time-1">Min-Max</label>
+      <input class="bi-control" id="pk-time-1" type="text" autocomplete="off" placeholder="Select time">
+    </div>
+    <div class="pk-field">
+      <label for="pk-time-2">Disabled Times</label>
+      <input class="bi-control" id="pk-time-2" type="text" autocomplete="off" placeholder="Select time">
+    </div>
+    <div class="pk-field">
+      <label for="pk-time-3">Format</label>
+      <input class="bi-control" id="pk-time-3" type="text" autocomplete="off" placeholder="Select time">
+    </div>
+    <div class="pk-field">
+      <label for="pk-time-4">Step</label>
+      <input class="bi-control" id="pk-time-4" type="text" autocomplete="off" placeholder="Select time">
+    </div>
+    <div class="pk-field">
+      <label for="pk-time-5">24 Hours Format</label>
+      <input class="bi-control" id="pk-time-5" type="text" autocomplete="off" placeholder="Select time">
+    </div>
+  </div>
+</section>
+<section class="pk-card">
+  <h2>Color Picker</h2>
+  <div class="pk-grid">
+    <div class="pk-field pk-color" data-theme="classic">
+      <span>Classic</span>
+      <div class="pk-swatch"></div>
+      <output aria-live="polite"></output>
+    </div>
+    <div class="pk-field pk-color" data-theme="monolith">
+      <span>Monolith</span>
+      <div class="pk-swatch"></div>
+      <output aria-live="polite"></output>
+    </div>
+    <div class="pk-field pk-color" data-theme="nano">
+      <span>Nano</span>
+      <div class="pk-swatch"></div>
+      <output aria-live="polite"></output>
+    </div>
+  </div>
+</section>
+</div></main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Picker examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

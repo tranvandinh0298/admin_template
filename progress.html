@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Progress bars · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+<link rel="stylesheet" href="assets/css/progress.css" />
+        <script src="assets/js/layouts.js" defer></script>
+        <script src="assets/js/admin-theme.js"></script>
+    <link rel="stylesheet" href="assets/css/admin-theme.css">
+</head>
+    <body data-layout="default" class="progress-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a><a class="menu-link" href="progress.html" aria-current="page">Progress bars</a></nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >User interface / Progress bars</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1"><div class="content-inner"><h1>Progress bars</h1><p class="pg-intro">Fixed demonstration values. Animated stripes do not represent a running operation.</p><section class="pg-card"><h2>Progress bars</h2><div class="pg-row"><h3>Default</h3><div class="pg-track"><div class="pg-fill pg-primary" role="progressbar" aria-label="Default 25 percent " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%"></div></div><div class="pg-track"><div class="pg-fill pg-primary" role="progressbar" aria-label="Default 75 percent " aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div></div></div><div class="pg-row"><h3>Height</h3><div class="pg-track" style="height:6px"><div class="pg-fill pg-primary" role="progressbar" aria-label="6 pixel height example " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%"></div></div><div class="pg-track" style="height:10px"><div class="pg-fill pg-primary" role="progressbar" aria-label="10 pixel height example " aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div></div></div><div class="pg-row"><h3>With Label</h3><div class="pg-track pg-labeled"><div class="pg-fill pg-primary" role="progressbar" aria-label="Labeled 25 percent " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">25%</div></div><div class="pg-track pg-labeled"><div class="pg-fill pg-primary" role="progressbar" aria-label="Labeled 75 percent " aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">75%</div></div></div></section><section class="pg-card"><h2>Backgrounds</h2><div class="pg-row"><div class="pg-track"><div class="pg-fill pg-primary" role="progressbar" aria-label="Backgrounds primary " aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%"></div></div><div class="pg-track"><div class="pg-fill pg-secondary" role="progressbar" aria-label="Backgrounds secondary " aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div></div><div class="pg-track"><div class="pg-fill pg-success" role="progressbar" aria-label="Backgrounds success " aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%"></div></div><div class="pg-track"><div class="pg-fill pg-danger" role="progressbar" aria-label="Backgrounds danger " aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div></div><div class="pg-track"><div class="pg-fill pg-warning" role="progressbar" aria-label="Backgrounds warning " aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"></div></div><div class="pg-track"><div class="pg-fill pg-info" role="progressbar" aria-label="Backgrounds info " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%"></div></div><div class="pg-track"><div class="pg-fill pg-dark" role="progressbar" aria-label="Backgrounds dark " aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div></div></div></section><section class="pg-card"><h2>Striped</h2><div class="pg-row"><div class="pg-track"><div class="pg-fill pg-primary pg-striped" role="progressbar" aria-label="Striped primary " aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%"></div></div><div class="pg-track"><div class="pg-fill pg-secondary pg-striped" role="progressbar" aria-label="Striped secondary " aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div></div><div class="pg-track"><div class="pg-fill pg-success pg-striped" role="progressbar" aria-label="Striped success " aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%"></div></div><div class="pg-track"><div class="pg-fill pg-danger pg-striped" role="progressbar" aria-label="Striped danger " aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div></div><div class="pg-track"><div class="pg-fill pg-warning pg-striped" role="progressbar" aria-label="Striped warning " aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"></div></div><div class="pg-track"><div class="pg-fill pg-info pg-striped" role="progressbar" aria-label="Striped info " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%"></div></div><div class="pg-track"><div class="pg-fill pg-dark pg-striped" role="progressbar" aria-label="Striped dark " aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div></div></div></section><section class="pg-card"><h2>Animated</h2><div class="pg-row"><div class="pg-track"><div class="pg-fill pg-primary pg-striped pg-animated" role="progressbar" aria-label="Animated primary " aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%"></div></div><div class="pg-track"><div class="pg-fill pg-secondary pg-striped pg-animated" role="progressbar" aria-label="Animated secondary " aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div></div><div class="pg-track"><div class="pg-fill pg-success pg-striped pg-animated" role="progressbar" aria-label="Animated success " aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%"></div></div><div class="pg-track"><div class="pg-fill pg-danger pg-striped pg-animated" role="progressbar" aria-label="Animated danger " aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div></div><div class="pg-track"><div class="pg-fill pg-warning pg-striped pg-animated" role="progressbar" aria-label="Animated warning " aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"></div></div><div class="pg-track"><div class="pg-fill pg-info pg-striped pg-animated" role="progressbar" aria-label="Animated info " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%"></div></div><div class="pg-track"><div class="pg-fill pg-dark pg-striped pg-animated" role="progressbar" aria-label="Animated dark " aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div></div></div></section><section class="pg-card"><h2>Multiple bars</h2><div class="pg-row"><h3>Default</h3><div class="pg-track" role="group" aria-label="Multiple plain segments; each percentage is relative to the whole track"><div class="pg-fill pg-primary" role="progressbar" aria-label="Multiple plain primary segment" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%"></div><div class="pg-fill pg-success" role="progressbar" aria-label="Multiple plain success segment" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div><div class="pg-fill pg-danger" role="progressbar" aria-label="Multiple plain danger segment" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%"></div></div></div><div class="pg-row"><h3>Striped</h3><div class="pg-track" role="group" aria-label="Multiple striped segments; each percentage is relative to the whole track"><div class="pg-fill pg-primary pg-striped" role="progressbar" aria-label="Multiple striped primary segment" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%"></div><div class="pg-fill pg-success pg-striped" role="progressbar" aria-label="Multiple striped success segment" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div><div class="pg-fill pg-danger pg-striped" role="progressbar" aria-label="Multiple striped danger segment" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%"></div></div></div><div class="pg-row"><h3>Animated</h3><div class="pg-track" role="group" aria-label="Multiple animated segments; each percentage is relative to the whole track"><div class="pg-fill pg-primary pg-striped pg-animated" role="progressbar" aria-label="Multiple animated primary segment" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%"></div><div class="pg-fill pg-success pg-striped pg-animated" role="progressbar" aria-label="Multiple animated success segment" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div><div class="pg-fill pg-danger pg-striped pg-animated" role="progressbar" aria-label="Multiple animated danger segment" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%"></div></div></div></section></div></main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Progress bars examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

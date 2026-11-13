@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Block UI · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+<link rel="stylesheet" href="assets/css/blockui.css" />
+        <script src="assets/js/blockui.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="blockui-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a><a class="menu-link" href="blockui.html" aria-current="page">Block UI</a></nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >User interface / Block UI</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1"><div class="content-inner"><h1 tabindex="-1">Block UI</h1><p>Local demonstrations only. Escape or Unblock releases a block. Multiple messages complete automatically.</p><p id="bu-status" role="status" aria-live="polite">No demo operation is running.</p><div class="bu-grid"><section class="bu-card"><h2>Section Blocking</h2><div class="bu-host" data-bu-target="section"><div class="bu-content"><p>Try this region while it is available. A local block leaves the rest of the page usable.</p><label>Sample input <input value="Keep this value" type="text"></label><button type="button" data-bu-demo>Try local action</button></div></div><div class="bu-controls" role="group" aria-label="section blocking examples"><button type="button" data-bu-start="section" data-bu-variant="default">Default</button><button type="button" data-bu-start="section" data-bu-variant="overlay">Overlay Color</button><button type="button" data-bu-start="section" data-bu-variant="spinner">Custom Spinner</button><button type="button" data-bu-start="section" data-bu-variant="custom">Custom Message</button><button type="button" data-bu-start="section" data-bu-variant="multiple">Multiple Message</button><button type="button" class="bu-remove" data-bu-remove="section">Remove / unblock</button></div></section><div class="bu-host bu-card" data-bu-target="card"><section class="bu-content"><h2>Card Blocking</h2><p>Try this region while it is available. A local block leaves the rest of the page usable.</p><label>Sample input <input value="Keep this value" type="text"></label><button type="button" data-bu-demo>Try local action</button><div class="bu-controls" role="group" aria-label="card blocking examples"><button type="button" data-bu-start="card" data-bu-variant="default">Default</button><button type="button" data-bu-start="card" data-bu-variant="overlay">Overlay Color</button><button type="button" data-bu-start="card" data-bu-variant="spinner">Custom Spinner</button><button type="button" data-bu-start="card" data-bu-variant="custom">Custom Message</button><button type="button" data-bu-start="card" data-bu-variant="multiple">Multiple Message</button><button type="button" class="bu-remove" data-bu-remove="card">Remove / unblock</button></div></section></div><section class="bu-card"><h2>Page Blocking</h2><p>Blocks the whole page until dismissed. No real job is started.</p><div class="bu-controls" role="group" aria-label="page blocking examples"><button type="button" data-bu-start="page" data-bu-variant="default">Default</button><button type="button" data-bu-start="page" data-bu-variant="overlay">Overlay Color</button><button type="button" data-bu-start="page" data-bu-variant="spinner">Custom Spinner</button><button type="button" data-bu-start="page" data-bu-variant="custom">Custom Message</button><button type="button" data-bu-start="page" data-bu-variant="multiple">Multiple Message</button><button type="button" class="bu-remove" data-bu-remove="page">Remove / unblock</button></div></section><div class="bu-host bu-card" data-bu-target="options"><section class="bu-content"><h2>Blocking with multiple options</h2><p>Try this region while it is available. A local block leaves the rest of the page usable.</p><label>Sample input <input value="Keep this value" type="text"></label><button type="button" data-bu-demo>Try local action</button><div class="bu-controls" role="group" aria-label="options blocking examples"><button type="button" data-bu-start="options" data-bu-variant="default">Default</button><button type="button" data-bu-start="options" data-bu-variant="hourglass">Hourglass</button><button type="button" data-bu-start="options" data-bu-variant="circle">Circle</button><button type="button" data-bu-start="options" data-bu-variant="arrows">Arrows</button><button type="button" data-bu-start="options" data-bu-variant="dots">Dots</button><button type="button" data-bu-start="options" data-bu-variant="pulse">Pulse</button><button type="button" class="bu-remove" data-bu-remove="options">Remove / unblock</button></div></section></div><section class="bu-card bu-wide"><h2>Form Block</h2><div class="bu-host" data-bu-target="form"><form class="bu-content" id="bu-form"><label for="bu-name">Name</label><input id="bu-name" name="name" value="Demo user"><label for="bu-email">Email</label><input id="bu-email" name="email" type="email" value="demo@example.test"><div><button type="submit">Submit demo</button><button type="reset">Reset</button></div><p class="bu-form-result" role="status"></p></form></div><div class="bu-controls" role="group" aria-label="form blocking examples"><button type="button" data-bu-start="form" data-bu-variant="default">Default</button><button type="button" data-bu-start="form" data-bu-variant="overlay">Overlay Color</button><button type="button" data-bu-start="form" data-bu-variant="spinner">Custom Spinner</button><button type="button" data-bu-start="form" data-bu-variant="custom">Custom Message</button><button type="button" data-bu-start="form" data-bu-variant="multiple">Multiple Message</button><button type="button" class="bu-remove" data-bu-remove="form">Remove / unblock</button></div></section></div></div></main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Block UI examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    <dialog id="bu-page-modal" aria-label="Page blocked"><div class="bu-panel"><div class="bu-spinner" aria-hidden="true"></div><p class="bu-message" role="status" aria-live="polite"></p><button type="button" data-bu-overlay-remove="page">Unblock page</button></div></dialog></body>
+</html>

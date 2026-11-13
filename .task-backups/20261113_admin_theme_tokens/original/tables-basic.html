@@ -1,0 +1,1294 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Basic Tables · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/tables-basic.css" />
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="tables-basic-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a class="menu-link" href="collapse.html">Collapse</a>
+                    <a class="menu-link" href="alerts.html">Alerts</a
+                    ><a class="menu-link" href="text-divider.html"
+                        >Text Divider</a
+                    >
+                </nav>
+                <nav aria-label="Tables">
+                    <p class="menu-caption">TABLES</p>
+                    <a
+                        class="menu-link"
+                        href="tables-basic.html"
+                        aria-current="page"
+                        >Basic Tables</a
+                    >
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label">Tables / Basic Tables</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1">
+                    <div class="content-inner">
+                        <h1>Basic Tables</h1>
+                        <section class="tb-card">
+                            <h2 id="tb-title-0">Table Basic</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-0"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                            <td>
+                                                <details class="tb-action">
+                                                    <summary
+                                                        aria-label="Details for Atlas"
+                                                    >
+                                                        Details
+                                                    </summary>
+                                                    <p>Atlas · Northwind</p>
+                                                </details>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                            <td>
+                                                <details class="tb-action">
+                                                    <summary
+                                                        aria-label="Details for Beacon"
+                                                    >
+                                                        Details
+                                                    </summary>
+                                                    <p>Beacon · Pine Studio</p>
+                                                </details>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                            <td>
+                                                <details class="tb-action">
+                                                    <summary
+                                                        aria-label="Details for Canvas"
+                                                    >
+                                                        Details
+                                                    </summary>
+                                                    <p>Canvas · Harbor Co.</p>
+                                                </details>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                            <td>
+                                                <details class="tb-action">
+                                                    <summary
+                                                        aria-label="Details for Delta"
+                                                    >
+                                                        Details
+                                                    </summary>
+                                                    <p>Delta · Summit Labs</p>
+                                                </details>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-dark">
+                            <h2 id="tb-title-1">Table Dark</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-1"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-1"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-head-dark">
+                            <h2 id="tb-title-2">Dark Table head</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-2"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-2"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-head-light">
+                            <h2 id="tb-title-3">Light Table head</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-3"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-3"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-footer">
+                            <h2 id="tb-title-4">Table Header &amp; Footer</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-4"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-4"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-caption">
+                            <h2 id="tb-title-5">Table Caption</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-5"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-5"
+                                >
+                                    <caption>
+                                        Project assignments and current status
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-striped">
+                            <h2 id="tb-title-6">Striped rows</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-6"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-6"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-bordered">
+                            <h2 id="tb-title-7">Bordered Table</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-7"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-7"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-borderless">
+                            <h2 id="tb-title-8">Borderless Table</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-8"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-8"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-hover">
+                            <h2 id="tb-title-9">Hoverable rows</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-9"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-9"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-small">
+                            <h2 id="tb-title-10">Small Table</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-10"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-10"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-context">
+                            <h2 id="tb-title-11">Contextual Classes</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-11"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-11"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="tb-tone-primary">
+                                            <th scope="row">Primary</th>
+                                            <td>Sample client</td>
+                                            <td>AL</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr class="tb-tone-secondary">
+                                            <th scope="row">Secondary</th>
+                                            <td>Sample client</td>
+                                            <td>AL</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr class="tb-tone-success">
+                                            <th scope="row">Success</th>
+                                            <td>Sample client</td>
+                                            <td>AL</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr class="tb-tone-danger">
+                                            <th scope="row">Danger</th>
+                                            <td>Sample client</td>
+                                            <td>AL</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr class="tb-tone-warning">
+                                            <th scope="row">Warning</th>
+                                            <td>Sample client</td>
+                                            <td>AL</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr class="tb-tone-info">
+                                            <th scope="row">Info</th>
+                                            <td>Sample client</td>
+                                            <td>AL</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr class="tb-tone-light">
+                                            <th scope="row">Light</th>
+                                            <td>Sample client</td>
+                                            <td>AL</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr class="tb-tone-dark">
+                                            <th scope="row">Dark</th>
+                                            <td>Sample client</td>
+                                            <td>AL</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-plain">
+                            <h2 id="tb-title-12">Table without Card</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-12"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-12"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-responsive">
+                            <h2 id="tb-title-13">Responsive Table</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-13"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-13"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Priority</th>
+                                            <th scope="col">Updated</th>
+                                            <th scope="col">Budget</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                            <td>High</td>
+                                            <td>2026-11-10</td>
+                                            <td>$1,200</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                            <td>Normal</td>
+                                            <td>2026-11-11</td>
+                                            <td>$2,200</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                            <td>Low</td>
+                                            <td>2026-11-12</td>
+                                            <td>$3,200</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                            <td>Normal</td>
+                                            <td>2026-11-13</td>
+                                            <td>$4,200</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="tb-card tb-dark tb-nested">
+                            <h2 id="tb-title-14">Nested table</h2>
+                            <div
+                                class="tb-scroll"
+                                role="region"
+                                aria-labelledby="tb-title-14"
+                                tabindex="0"
+                            >
+                                <table
+                                    class="tb-table"
+                                    aria-labelledby="tb-title-14"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Users</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Atlas</th>
+                                            <td>Northwind</td>
+                                            <td>AL, JM</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-active"
+                                                    >Active</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Beacon</th>
+                                            <td>Pine Studio</td>
+                                            <td>ML</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-pending"
+                                                    >Pending</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Canvas</th>
+                                            <td>Harbor Co.</td>
+                                            <td>RS, KC</td>
+                                            <td>
+                                                <span
+                                                    class="tb-status tb-complete"
+                                                    >Complete</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Delta</th>
+                                            <td>Summit Labs</td>
+                                            <td>TD</td>
+                                            <td>
+                                                <span class="tb-status tb-hold"
+                                                    >On hold</span
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <table
+                                                    class="tb-table tb-inner"
+                                                >
+                                                    <caption>
+                                                        Atlas milestones
+                                                    </caption>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                Milestone
+                                                            </th>
+                                                            <th scope="col">
+                                                                Owner
+                                                            </th>
+                                                            <th scope="col">
+                                                                Status
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                Discovery
+                                                            </th>
+                                                            <td>Alex</td>
+                                                            <td>Complete</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                Delivery
+                                                            </th>
+                                                            <td>Jamie</td>
+                                                            <td>Pending</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Basic Tables examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

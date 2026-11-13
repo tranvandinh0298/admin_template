@@ -1,0 +1,31 @@
+.login-page { display: grid; min-height: 100dvh; }
+.login-basic {
+    place-items: center;
+    padding: 24px;
+    background: radial-gradient(ellipse at 50% 85%, #e8dcff, transparent 60%);
+}
+.login-panel { min-width: 0; padding: clamp(24px, 4vw, 36px); background: var(--surface); }
+.login-basic .login-panel { width: min(100%, 450px); border-radius: 12px; box-shadow: var(--shadow); }
+.login-panel h1 { font-size: 24px; margin: 20px 0 8px; }
+.login-panel p { line-height: 1.5; }
+.login-panel form { display: grid; gap: 18px; margin-top: 24px; }
+.login-options, .login-social { display: flex; gap: 8px 14px; align-items: center; flex-wrap: wrap; }
+.login-options { justify-content: space-between; }
+.login-link { color: #5b2cb6; background: none; border: 0; padding: 0; text-decoration: underline; }
+.login-submit, .login-social button { padding: 9px 14px; border-radius: 6px; border: 1px solid #7540de; }
+.login-submit { color: white; background: #7540de; }
+.login-social button { color: #5b2cb6; background: #f4efff; }
+.login-status { color: #5420af; }
+.login-status:empty { margin-block: 10px; }
+.login-cover { grid-template-columns: minmax(0, 1.6fr) minmax(350px, 1fr); background: var(--surface); }
+.login-cover .login-panel { align-self: center; width: min(100%, 520px); justify-self: center; }
+.login-cover-art { display: grid; place-items: center; margin: 20px; border-radius: 16px; background: linear-gradient(145deg, #f6efff, #e9dcff); }
+.login-orbit { display: grid; place-items: center; width: min(80%, 360px); aspect-ratio: 1; border: 1px solid #c8aff5; border-radius: 50%; background: #f7f2ff; }
+.login-art-card { display: grid; justify-items: center; gap: 12px; width: 60%; padding: 28px; border-radius: 14px; background: white; box-shadow: 0 14px 35px #5420af26; transform: rotate(-7deg); }
+.login-art-card i { font-size: 32px; color: #7540de; }
+.login-art-card span, .login-art-card b { width: 100%; height: 18px; border-radius: 5px; background: #eee6fc; }
+.login-art-card b { background: #7540de; }
+@media (max-width: 850px) {
+    .login-cover { grid-template-columns: minmax(0, 1fr); }
+    .login-cover-art { display: none; }
+}

@@ -1,0 +1,1 @@
+Four neutral raster portrait placeholders drawn from original canvas primitives for this showcase. Not real people; no template photographs/illustrations copied. Sizes192x192 and192x256 demonstrate object-fit cropping. Reusable project demo assets.

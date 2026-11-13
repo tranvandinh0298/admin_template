@@ -1,0 +1,51 @@
+.modals-page .content-inner { max-width:1440px; margin-inline:auto; }
+.modal-intro { color:#6d6777; line-height:1.6; }
+.modal-demo-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:24px; }
+.modal-demo-card { background:white; padding:24px; border-radius:8px; box-shadow:var(--shadow); min-width:0; }
+.modal-demo-card h2 { font-size:17px; font-weight:500; margin:0 0 22px; }
+.modal-demo-card label { display:block; font-size:13px; }
+#animation-choice { width:100%; margin:8px 0 16px; padding:9px; border:1px solid var(--line); border-radius:4px; }
+.demo-dialog { border:0; padding:0; border-radius:9px; background:transparent; color:var(--text); width:min(500px,calc(100vw - 32px)); max-width:none; max-height:calc(100dvh - 48px); margin:24px auto; box-shadow:0 10px 40px #21182b55; overflow:auto; --animate-duration:.4s; }
+.demo-dialog::backdrop { background:#21182b88; }
+.modal-surface { background:white; border-radius:8px; }
+.demo-dialog header { display:flex; align-items:center; gap:12px; padding:22px 24px 10px; }
+.demo-dialog h2 { font-size:22px; font-weight:500; margin:0; flex:1; overflow-wrap:anywhere; }
+.demo-dialog h2:focus { outline:none; }
+.modal-x { flex:none; width:40px; height:40px; border:0; border-radius:5px; background:transparent; font-size:20px; }
+.modal-body { padding:16px 24px; line-height:1.6; }
+.modal-body p { color:#6d6777; }
+.modal-body label { display:block; font-size:13px; margin-bottom:14px; }
+.modal-body input,.modal-body select { display:block; width:100%; border:1px solid #aaa3b3; border-radius:5px; font:inherit; padding:10px; margin-top:5px; min-width:0; }
+.modal-body input:focus-visible,.modal-body select:focus-visible { outline:3px solid #8c57ff; }
+.modal-fields { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.demo-dialog footer { display:flex; align-items:center; justify-content:flex-end; gap:12px; flex-wrap:wrap; padding:16px 24px 24px; }
+.modal-result { padding-inline:24px; color:#397d08; }
+.modal-result:empty { display:none; }
+.demo-dialog.center { margin:auto; }
+.demo-dialog.top { margin:0 auto; border-radius:0 0 9px 9px; }
+.demo-dialog.small { width:min(320px,calc(100vw - 32px)); }
+.demo-dialog.large { width:min(800px,calc(100vw - 32px)); }
+.demo-dialog.xl { width:min(1140px,calc(100vw - 32px)); }
+.demo-dialog.full { width:100vw; height:100dvh; max-height:100dvh; margin:0; border-radius:0; }
+.demo-dialog.full .modal-surface { min-height:100%; }
+.demo-dialog.scrollable .modal-surface { max-height:calc(100dvh - 48px); display:flex; flex-direction:column; }
+.demo-dialog.scrollable form { display:flex; flex-direction:column; min-height:0; }
+.demo-dialog.scrollable .modal-body { overflow:auto; }
+.demo-dialog.scrollable header,.demo-dialog.scrollable footer { flex:none; }
+.demo-dialog.onboard { width:min(600px,calc(100vw - 32px)); margin:auto; }
+.demo-dialog.horizontal { width:min(850px,calc(100vw - 32px)); }
+.onboard-art { background:linear-gradient(145deg,#ded0ff,#8c57ff); border-radius:8px; min-height:130px; display:grid; place-items:center; padding:24px; color:#39225f; margin-bottom:22px; }
+.onboard-art span { font-size:25px; text-align:center; }
+.horizontal .modal-body { display:grid; grid-template-columns:1fr 1.5fr; gap:24px; }
+.horizontal .onboard-art { grid-column:1; grid-row:1/5; height:100%; margin:0; }
+.horizontal .modal-body > :not(.onboard-art) { grid-column:2; }
+[data-step][hidden] { display:none; }
+.step-dots { display:flex; gap:5px; margin-right:auto; }
+.step-dots button { border:0; border-radius:50%; width:28px; height:28px; background:#f0e8ff; }
+.step-dots button[aria-current=step] { background:#8c57ff; color:white; }
+.demo-dialog.transparent { box-shadow:none; }
+.transparent .modal-surface { background:#302448ee; color:#fff; }
+.transparent .modal-body label { color:white; }
+.video-slot iframe { display:block; width:100%; aspect-ratio:16/9; border:0; margin-top:16px; }
+@media(max-width:767px) { .modal-demo-grid { grid-template-columns:minmax(0,1fr); } .modal-fields { grid-template-columns:1fr; gap:0; } .horizontal .modal-body { display:block; } .horizontal .onboard-art { min-height:100px; margin-bottom:20px; } }
+@media(prefers-reduced-motion:reduce) { .demo-dialog { animation:none!important; } }

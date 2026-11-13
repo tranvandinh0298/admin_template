@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ajax-project",
+    "text": "Project",
+    "state": {
+      "opened": true
+    },
+    "children": [
+      {
+        "id": "ajax-css",
+        "text": "css",
+        "children": [
+          {
+            "id": "ajax-app-css",
+            "text": "app.css",
+            "type": "css"
+          },
+          {
+            "id": "ajax-style-css",
+            "text": "style.css",
+            "type": "css"
+          }
+        ]
+      },
+      {
+        "id": "ajax-img",
+        "text": "img",
+        "children": [
+          {
+            "id": "ajax-bg",
+            "text": "bg.jpg",
+            "type": "img"
+          },
+          {
+            "id": "ajax-logo",
+            "text": "logo.png",
+            "type": "img"
+          }
+        ]
+      },
+      {
+        "id": "ajax-index",
+        "text": "index.html",
+        "type": "html"
+      }
+    ]
+  }
+]

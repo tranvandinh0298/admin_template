@@ -1,0 +1,40 @@
+.carousel-page .content-inner { max-width:1440px; margin-inline:auto; }
+.carousel-intro { color:var(--text-muted); line-height:1.6; margin:0 0 24px; }
+.carousel-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.carousel-card { min-width:0; background:var(--surface); border-radius:9px; padding:20px; box-shadow:var(--shadow); overflow:hidden; }
+.carousel-card h2 { font-size:17px; font-weight:500; margin:0 0 18px; }
+.carousel-stage { padding:12px; overflow:hidden; }
+.demo-swiper { width:100%; height:270px; border-radius:7px; --swiper-theme-color:var(--accent); --swiper-navigation-size:22px; }
+.swiper-slide { min-width:0; }
+.scene { position:relative; width:100%; height:100%; border:0; display:grid; align-items:end; padding:24px; color:var(--on-accent); font:inherit; text-align:left; overflow:hidden; background:linear-gradient(155deg,var(--theme-surface-eee0c8),var(--theme-surface-d68675) 40%,var(--theme-surface-3a4268) 41%,var(--theme-surface-516887) 60%,var(--theme-surface-202e48) 61%); }
+.scene::before { content:''; position:absolute; width:64px; height:64px; border-radius:50%; background:var(--theme-surface-ffe6b0); top:18%; right:20%; box-shadow:0 0 65px #ffdca8aa; }
+.scene::after { content:''; position:absolute; inset:42% -20% -35%; background:linear-gradient(140deg,var(--theme-surface-223e56),var(--theme-surface-516674)); clip-path:polygon(0 100%,18% 23%,34% 55%,55% 0,78% 46%,100% 24%,100% 100%); }
+.scene span { position:relative; z-index:1; font-size:20px; font-weight:500; text-shadow:0 2px 6px #000; }
+.scene-1 { background:linear-gradient(var(--theme-surface-a9d7dd),var(--theme-surface-58a9b7) 48%,var(--theme-surface-286d8d) 49%,var(--theme-surface-edcf99)); }
+.scene-1::after { background:var(--theme-surface-28565e); }
+.scene-2 { background:linear-gradient(var(--theme-surface-f0c8a1),var(--theme-surface-dd956d) 50%,var(--theme-surface-a95a4d)); }
+.scene-2::after { background:var(--theme-surface-974d43); }
+.scene-3 { background:linear-gradient(var(--theme-surface-c2d9d6),var(--theme-surface-73968b) 50%,var(--theme-surface-254a49)); }
+.scene-3::after { background:var(--theme-surface-204845); }
+.scene-4 { background:linear-gradient(var(--theme-surface-a1a1cd),var(--theme-surface-67548b) 50%,var(--theme-surface-2b2b4d)); }
+.scene-4::after { background:var(--theme-surface-302e53); }
+.demo-swiper[data-variant="coverflow"] .swiper-slide { width:72%; }
+.demo-swiper[data-variant="cube"],.demo-swiper[data-variant="flip"] { max-width:320px; }
+.swiper-button-next,.swiper-button-prev { border:0; color:var(--on-accent); background:#2e263d66; border-radius:50%; width:36px; height:36px; }
+.carousel-page .swiper-button-next svg,.carousel-page .swiper-button-prev svg { display:none; }
+.swiper-button-next::after,.swiper-button-prev::after { content:none!important; }
+.carousel-page button:focus-visible,.carousel-page .swiper:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+.carousel-tools { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:16px; }
+.carousel-tools button { background:var(--theme-surface-f0e8ff); color:var(--theme-ink-6634b9); border:0; border-radius:5px; padding:9px 12px; }
+.slide-status { color:var(--text-muted); font-size:12px; }
+.gallery-card { grid-column:1/-1; }
+.gallery-thumbs { height:80px; margin:14px 12px 0; }
+.gallery-thumbs .scene { padding:6px; border-radius:4px; }
+.gallery-thumbs .scene span { font-size:11px; }
+.gallery-thumbs .scene::before { width:18px; height:18px; }
+.gallery-thumbs .swiper-slide { opacity:.55; }
+.gallery-thumbs .swiper-slide-thumb-active { opacity:1; }
+.gallery-thumbs button[aria-pressed="true"] { box-shadow:inset 0 0 0 3px var(--accent); }
+.carousel-page .menu-link i { width:24px; text-align:center; }
+.carousel-error { padding:16px; background:var(--theme-surface-ffe2e3); }
+@media(max-width:767px) { .carousel-grid { grid-template-columns:minmax(0,1fr); } .gallery-card { grid-column:auto; } .carousel-card { padding:14px; } .demo-swiper { height:240px; } .scene { padding:16px; } .scene span { font-size:16px; } }

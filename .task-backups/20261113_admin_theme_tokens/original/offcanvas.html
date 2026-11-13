@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Offcanvas · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/buttons.css" />
+        <link rel="stylesheet" href="assets/css/offcanvas.css" />
+        <script src="assets/js/offcanvas.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="offcanvas-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a class="menu-link" href="collapse.html">Collapse</a>
+                    <a class="menu-link" href="alerts.html">Alerts</a
+                    ><a
+                        class="menu-link"
+                        href="offcanvas.html"
+                        aria-current="page"
+                        >Offcanvas</a
+                    >
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >User interface / Offcanvas</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1">
+                    <div class="content-inner">
+                        <h1>Offcanvas</h1>
+                        <p id="oc-status" role="status">
+                            Explore sliding panels. Actions are demonstrations
+                            only.
+                        </p>
+                        <section class="oc-card">
+                            <h2>Placements</h2>
+                            <div class="oc-examples">
+                                <div>
+                                    <p>Start</p>
+                                    <button
+                                        class="btn btn-primary"
+                                        type="button"
+                                        data-oc-open="oc-start"
+                                        aria-controls="oc-start"
+                                        aria-expanded="false"
+                                    >
+                                        Toggle Start
+                                    </button>
+                                </div>
+                                <div>
+                                    <p>End</p>
+                                    <button
+                                        class="btn btn-primary"
+                                        type="button"
+                                        data-oc-open="oc-end"
+                                        aria-controls="oc-end"
+                                        aria-expanded="false"
+                                    >
+                                        Toggle End
+                                    </button>
+                                </div>
+                                <div>
+                                    <p>Top</p>
+                                    <button
+                                        class="btn btn-primary"
+                                        type="button"
+                                        data-oc-open="oc-top"
+                                        aria-controls="oc-top"
+                                        aria-expanded="false"
+                                    >
+                                        Toggle Top
+                                    </button>
+                                </div>
+                                <div>
+                                    <p>Bottom</p>
+                                    <button
+                                        class="btn btn-primary"
+                                        type="button"
+                                        data-oc-open="oc-bottom"
+                                        aria-controls="oc-bottom"
+                                        aria-expanded="false"
+                                    >
+                                        Toggle Bottom
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="oc-card">
+                            <h2>Backdrop</h2>
+                            <div class="oc-examples">
+                                <div>
+                                    <p>Enable Body Scrolling</p>
+                                    <button
+                                        class="btn btn-primary"
+                                        type="button"
+                                        data-oc-open="oc-scroll"
+                                        aria-controls="oc-scroll"
+                                        aria-expanded="false"
+                                    >
+                                        Enable Body Scrolling
+                                    </button>
+                                </div>
+                                <div>
+                                    <p>Enable backdrop</p>
+                                    <button
+                                        class="btn btn-primary"
+                                        type="button"
+                                        data-oc-open="oc-backdrop"
+                                        aria-controls="oc-backdrop"
+                                        aria-expanded="false"
+                                    >
+                                        Enable backdrop
+                                    </button>
+                                </div>
+                                <div>
+                                    <p>Enable both scrolling & backdrop</p>
+                                    <button
+                                        class="btn btn-primary"
+                                        type="button"
+                                        data-oc-open="oc-both"
+                                        aria-controls="oc-both"
+                                        aria-expanded="false"
+                                    >
+                                        Enable both scrolling & backdrop
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="oc-card">
+                            <h2>Responsive offcanvas</h2>
+                            <div class="oc-examples">
+                                <div>
+                                    <p>Responsive offcanvas</p>
+                                    <button
+                                        class="btn btn-primary"
+                                        type="button"
+                                        data-oc-open="oc-responsive"
+                                        aria-controls="oc-responsive"
+                                        aria-expanded="false"
+                                    >
+                                        Toggle offcanvas-xl
+                                    </button>
+                                    <p class="oc-info">
+                                        Resize your browser below the xl
+                                        (1200px) breakpoint to show the
+                                        responsive offcanvas toggle.
+                                    </p>
+                                    <p class="oc-inline">offcanvas</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="oc-card">
+                            <h2>Dark offcanvas</h2>
+                            <div class="oc-examples">
+                                <div>
+                                    <p>Dark offcanvas</p>
+                                    <button
+                                        class="btn btn-primary"
+                                        type="button"
+                                        data-oc-open="oc-dark"
+                                        aria-controls="oc-dark"
+                                        aria-expanded="false"
+                                    >
+                                        Toggle Dark offcanvas
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Offcanvas examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+        <section
+            id="oc-start"
+            class="oc-panel oc-start"
+            data-scroll="false"
+            data-backdrop="true"
+            aria-labelledby="oc-title-start"
+            tabindex="-1"
+            hidden
+        >
+            <header>
+                <h2 id="oc-title-start" tabindex="-1">Offcanvas Start</h2>
+                <button
+                    type="button"
+                    class="oc-x"
+                    data-oc-close
+                    aria-label="Close"
+                >
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="oc-body">
+                <p>
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                    text used in laying out print, graphic or web designs. The
+                    passage is attributed to an unknown typesetter in the 15th
+                    century who is thought to have scrambled parts of Cicero’s
+                    De Finibus Bonorum et Malorum for use in a type specimen
+                    book.
+                </p>
+                <button type="button" class="btn btn-primary" data-oc-demo>
+                    Continue</button
+                ><button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    data-oc-close
+                >
+                    Cancel
+                </button>
+                <p class="oc-result" role="status"></p>
+            </div>
+        </section>
+        <section
+            id="oc-end"
+            class="oc-panel oc-end"
+            data-scroll="false"
+            data-backdrop="true"
+            aria-labelledby="oc-title-end"
+            tabindex="-1"
+            hidden
+        >
+            <header>
+                <h2 id="oc-title-end" tabindex="-1">Offcanvas End</h2>
+                <button
+                    type="button"
+                    class="oc-x"
+                    data-oc-close
+                    aria-label="Close"
+                >
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="oc-body">
+                <p>
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                    text used in laying out print, graphic or web designs. The
+                    passage is attributed to an unknown typesetter in the 15th
+                    century who is thought to have scrambled parts of Cicero’s
+                    De Finibus Bonorum et Malorum for use in a type specimen
+                    book.
+                </p>
+                <button type="button" class="btn btn-primary" data-oc-demo>
+                    Continue</button
+                ><button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    data-oc-close
+                >
+                    Cancel
+                </button>
+                <p class="oc-result" role="status"></p>
+            </div>
+        </section>
+        <section
+            id="oc-top"
+            class="oc-panel oc-top"
+            data-scroll="false"
+            data-backdrop="true"
+            aria-labelledby="oc-title-top"
+            tabindex="-1"
+            hidden
+        >
+            <header>
+                <h2 id="oc-title-top" tabindex="-1">Offcanvas Top</h2>
+                <button
+                    type="button"
+                    class="oc-x"
+                    data-oc-close
+                    aria-label="Close"
+                >
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="oc-body">
+                <p>
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                    text used in laying out print, graphic or web designs. The
+                    passage is attributed to an unknown typesetter in the 15th
+                    century who is thought to have scrambled parts of Cicero’s
+                    De Finibus Bonorum et Malorum for use in a type specimen
+                    book.
+                </p>
+                <button type="button" class="btn btn-primary" data-oc-demo>
+                    Continue</button
+                ><button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    data-oc-close
+                >
+                    Cancel
+                </button>
+                <p class="oc-result" role="status"></p>
+            </div>
+        </section>
+        <section
+            id="oc-bottom"
+            class="oc-panel oc-bottom"
+            data-scroll="false"
+            data-backdrop="true"
+            aria-labelledby="oc-title-bottom"
+            tabindex="-1"
+            hidden
+        >
+            <header>
+                <h2 id="oc-title-bottom" tabindex="-1">Offcanvas Bottom</h2>
+                <button
+                    type="button"
+                    class="oc-x"
+                    data-oc-close
+                    aria-label="Close"
+                >
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="oc-body">
+                <p>
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                    text used in laying out print, graphic or web designs. The
+                    passage is attributed to an unknown typesetter in the 15th
+                    century who is thought to have scrambled parts of Cicero’s
+                    De Finibus Bonorum et Malorum for use in a type specimen
+                    book.
+                </p>
+                <button type="button" class="btn btn-primary" data-oc-demo>
+                    Continue</button
+                ><button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    data-oc-close
+                >
+                    Cancel
+                </button>
+                <p class="oc-result" role="status"></p>
+            </div>
+        </section>
+        <section
+            id="oc-scroll"
+            class="oc-panel oc-end"
+            data-scroll="true"
+            data-backdrop="false"
+            aria-labelledby="oc-title-scroll"
+            tabindex="-1"
+            hidden
+        >
+            <header>
+                <h2 id="oc-title-scroll" tabindex="-1">
+                    Enable Body Scrolling
+                </h2>
+                <button
+                    type="button"
+                    class="oc-x"
+                    data-oc-close
+                    aria-label="Close"
+                >
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="oc-body">
+                <p>
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                    text used in laying out print, graphic or web designs. The
+                    passage is attributed to an unknown typesetter in the 15th
+                    century who is thought to have scrambled parts of Cicero’s
+                    De Finibus Bonorum et Malorum for use in a type specimen
+                    book.
+                </p>
+                <button type="button" class="btn btn-primary" data-oc-demo>
+                    Continue</button
+                ><button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    data-oc-close
+                >
+                    Cancel
+                </button>
+                <p class="oc-result" role="status"></p>
+            </div>
+        </section>
+        <section
+            id="oc-backdrop"
+            class="oc-panel oc-end"
+            data-scroll="false"
+            data-backdrop="true"
+            aria-labelledby="oc-title-backdrop"
+            tabindex="-1"
+            hidden
+        >
+            <header>
+                <h2 id="oc-title-backdrop" tabindex="-1">Enable backdrop</h2>
+                <button
+                    type="button"
+                    class="oc-x"
+                    data-oc-close
+                    aria-label="Close"
+                >
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="oc-body">
+                <p>
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                    text used in laying out print, graphic or web designs. The
+                    passage is attributed to an unknown typesetter in the 15th
+                    century who is thought to have scrambled parts of Cicero’s
+                    De Finibus Bonorum et Malorum for use in a type specimen
+                    book.
+                </p>
+                <button type="button" class="btn btn-primary" data-oc-demo>
+                    Continue</button
+                ><button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    data-oc-close
+                >
+                    Cancel
+                </button>
+                <p class="oc-result" role="status"></p>
+            </div>
+        </section>
+        <section
+            id="oc-both"
+            class="oc-panel oc-end"
+            data-scroll="true"
+            data-backdrop="true"
+            aria-labelledby="oc-title-both"
+            tabindex="-1"
+            hidden
+        >
+            <header>
+                <h2 id="oc-title-both" tabindex="-1">
+                    Enable both scrolling & backdrop
+                </h2>
+                <button
+                    type="button"
+                    class="oc-x"
+                    data-oc-close
+                    aria-label="Close"
+                >
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="oc-body">
+                <p>
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                    text used in laying out print, graphic or web designs. The
+                    passage is attributed to an unknown typesetter in the 15th
+                    century who is thought to have scrambled parts of Cicero’s
+                    De Finibus Bonorum et Malorum for use in a type specimen
+                    book.
+                </p>
+                <button type="button" class="btn btn-primary" data-oc-demo>
+                    Continue</button
+                ><button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    data-oc-close
+                >
+                    Cancel
+                </button>
+                <p class="oc-result" role="status"></p>
+            </div>
+        </section>
+        <section
+            id="oc-responsive"
+            class="oc-panel oc-start"
+            data-scroll="false"
+            data-backdrop="true"
+            aria-labelledby="oc-title-responsive"
+            tabindex="-1"
+            hidden
+        >
+            <header>
+                <h2 id="oc-title-responsive" tabindex="-1">
+                    Responsive offcanvas
+                </h2>
+                <button
+                    type="button"
+                    class="oc-x"
+                    data-oc-close
+                    aria-label="Close"
+                >
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="oc-body">
+                <p>
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                    text used in laying out print, graphic or web designs. The
+                    passage is attributed to an unknown typesetter in the 15th
+                    century who is thought to have scrambled parts of Cicero’s
+                    De Finibus Bonorum et Malorum for use in a type specimen
+                    book.
+                </p>
+                <button type="button" class="btn btn-primary" data-oc-demo>
+                    Continue</button
+                ><button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    data-oc-close
+                >
+                    Cancel
+                </button>
+                <p class="oc-result" role="status"></p>
+            </div>
+        </section>
+        <section
+            id="oc-dark"
+            class="oc-panel oc-start oc-dark"
+            data-scroll="false"
+            data-backdrop="true"
+            aria-labelledby="oc-title-dark"
+            tabindex="-1"
+            hidden
+        >
+            <header>
+                <h2 id="oc-title-dark" tabindex="-1">Dark offcanvas</h2>
+                <button
+                    type="button"
+                    class="oc-x"
+                    data-oc-close
+                    aria-label="Close"
+                >
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="oc-body">
+                <p>
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                    text used in laying out print, graphic or web designs. The
+                    passage is attributed to an unknown typesetter in the 15th
+                    century who is thought to have scrambled parts of Cicero’s
+                    De Finibus Bonorum et Malorum for use in a type specimen
+                    book.
+                </p>
+                <button type="button" class="btn btn-primary" data-oc-demo>
+                    Continue</button
+                ><button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    data-oc-close
+                >
+                    Cancel
+                </button>
+                <p class="oc-result" role="status"></p>
+            </div>
+        </section>
+        <div class="oc-backdrop" hidden></div>
+    </body>
+</html>

@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Buttons · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/buttons.css" />
+        <script src="assets/js/layouts.js" defer></script>
+        <script
+            src="assets/vendor/sweetalert2/sweetalert2.all.min.js"
+            defer
+        ></script>
+        <script src="assets/js/buttons.js" defer></script>
+        <script src="assets/js/admin-theme.js"></script>
+    <link rel="stylesheet" href="assets/css/admin-theme.css">
+</head>
+    <body data-layout="default" class="buttons-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Main navigation"
+            >
+                <div class="drawer-heading">
+                    <a class="brand" href="button.html"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Examples">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><span class="nav-dot" aria-hidden="true"></span
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><span class="nav-dot" aria-hidden="true"></span
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><span class="nav-dot" aria-hidden="true"></span
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><span class="nav-dot" aria-hidden="true"></span
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><span class="nav-dot" aria-hidden="true"></span
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><span class="nav-dot" aria-hidden="true"></span
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html" aria-current="page"
+                        ><i
+                            class="fa-solid fa-circle-check"
+                            aria-hidden="true"
+                        ></i
+                        ><span class="menu-label">Buttons</span></a
+                    >
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >User interface
+                            <span aria-hidden="true">/</span> Buttons</span
+                        ><span class="topbar-note">Component examples</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1">
+                    <div class="content-inner">
+                        <h1 class="page-heading">Buttons</h1>
+                        <noscript
+                            ><p>
+                                Enable JavaScript to preview ripple effects and
+                                confirmation dialogs.
+                            </p></noscript
+                        >
+                        <section
+                            class="button-card"
+                            id="basic"
+                            aria-labelledby="basic-title"
+                        >
+                            <h2 id="basic-title">Basic Buttons</h2>
+                            <div class="example-block">
+                                <h3>Default</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn tone-primary"
+                                    >
+                                        Primary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn tone-secondary"
+                                    >
+                                        Secondary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn tone-success"
+                                    >
+                                        Success
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn tone-danger"
+                                    >
+                                        Danger
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn tone-warning"
+                                    >
+                                        Warning
+                                    </button>
+                                    <button type="button" class="btn tone-info">
+                                        Info
+                                    </button>
+                                    <button type="button" class="btn tone-dark">
+                                        Dark
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="button-card"
+                            id="rounded"
+                            aria-labelledby="rounded-title"
+                        >
+                            <h2 id="rounded-title">Rounded Buttons</h2>
+                            <div class="example-block">
+                                <h3>Pill shape</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn rounded tone-primary"
+                                    >
+                                        Primary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn rounded tone-secondary"
+                                    >
+                                        Secondary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn rounded tone-success"
+                                    >
+                                        Success
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn rounded tone-danger"
+                                    >
+                                        Danger
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn rounded tone-warning"
+                                    >
+                                        Warning
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn rounded tone-info"
+                                    >
+                                        Info
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn rounded tone-dark"
+                                    >
+                                        Dark
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="button-card"
+                            id="label"
+                            aria-labelledby="label-title"
+                        >
+                            <h2 id="label-title">Label Buttons</h2>
+                            <div class="example-block">
+                                <h3>Default · Tonal</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn label tone-primary"
+                                    >
+                                        Primary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label tone-secondary"
+                                    >
+                                        Secondary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label tone-success"
+                                    >
+                                        Success
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label tone-danger"
+                                    >
+                                        Danger
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label tone-warning"
+                                    >
+                                        Warning
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label tone-info"
+                                    >
+                                        Info
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label tone-dark"
+                                    >
+                                        Dark
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="example-block">
+                                <h3>Rounded</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn label rounded tone-primary"
+                                    >
+                                        Primary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label rounded tone-secondary"
+                                    >
+                                        Secondary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label rounded tone-success"
+                                    >
+                                        Success
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label rounded tone-danger"
+                                    >
+                                        Danger
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label rounded tone-warning"
+                                    >
+                                        Warning
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label rounded tone-info"
+                                    >
+                                        Info
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn label rounded tone-dark"
+                                    >
+                                        Dark
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="button-card"
+                            id="outline"
+                            aria-labelledby="outline-title"
+                        >
+                            <h2 id="outline-title">Outline Buttons</h2>
+                            <div class="example-block">
+                                <h3>Default</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn outline tone-primary"
+                                    >
+                                        Primary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline tone-secondary"
+                                    >
+                                        Secondary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline tone-success"
+                                    >
+                                        Success
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline tone-danger"
+                                    >
+                                        Danger
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline tone-warning"
+                                    >
+                                        Warning
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline tone-info"
+                                    >
+                                        Info
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline tone-dark"
+                                    >
+                                        Dark
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="example-block">
+                                <h3>Rounded</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn outline rounded tone-primary"
+                                    >
+                                        Primary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline rounded tone-secondary"
+                                    >
+                                        Secondary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline rounded tone-success"
+                                    >
+                                        Success
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline rounded tone-danger"
+                                    >
+                                        Danger
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline rounded tone-warning"
+                                    >
+                                        Warning
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline rounded tone-info"
+                                    >
+                                        Info
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn outline rounded tone-dark"
+                                    >
+                                        Dark
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="button-card"
+                            id="text"
+                            aria-labelledby="text-title"
+                        >
+                            <h2 id="text-title">Text Buttons</h2>
+                            <div class="example-block">
+                                <h3>Text only</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn text tone-primary"
+                                    >
+                                        Primary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn text tone-secondary"
+                                    >
+                                        Secondary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn text tone-success"
+                                    >
+                                        Success
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn text tone-danger"
+                                    >
+                                        Danger
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn text tone-warning"
+                                    >
+                                        Warning
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn text tone-info"
+                                    >
+                                        Info
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn text tone-dark"
+                                    >
+                                        Dark
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="button-card"
+                            id="icons"
+                            aria-labelledby="icons-title"
+                        >
+                            <h2 id="icons-title">Buttons with Icons</h2>
+                            <div class="example-block">
+                                <h3>Basic</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn tone-primary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Primary</button
+                                    ><button
+                                        type="button"
+                                        class="btn tone-secondary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Secondary</button
+                                    ><button
+                                        type="button"
+                                        class="btn rounded tone-primary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Primary</button
+                                    ><button
+                                        type="button"
+                                        class="btn rounded tone-secondary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Secondary
+                                    </button>
+                                </div>
+                                <div class="button-row icon-row">
+                                    <button
+                                        type="button"
+                                        class="btn icon-only tone-primary"
+                                        aria-label="Primary  basic check"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i></button
+                                    ><button
+                                        type="button"
+                                        class="btn icon-only tone-secondary"
+                                        aria-label="Secondary  basic notification"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i></button
+                                    ><button
+                                        type="button"
+                                        class="btn rounded icon-only tone-primary"
+                                        aria-label="Primary round basic check"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i></button
+                                    ><button
+                                        type="button"
+                                        class="btn rounded icon-only tone-secondary"
+                                        aria-label="Secondary round basic notification"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="example-block">
+                                <h3>Label (Tonal)</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn label tone-primary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Primary</button
+                                    ><button
+                                        type="button"
+                                        class="btn label tone-secondary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Secondary</button
+                                    ><button
+                                        type="button"
+                                        class="btn label rounded tone-primary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Primary</button
+                                    ><button
+                                        type="button"
+                                        class="btn label rounded tone-secondary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Secondary
+                                    </button>
+                                </div>
+                                <div class="button-row icon-row">
+                                    <button
+                                        type="button"
+                                        class="btn label icon-only tone-primary"
+                                        aria-label="Primary  label check"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i></button
+                                    ><button
+                                        type="button"
+                                        class="btn label icon-only tone-secondary"
+                                        aria-label="Secondary  label notification"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i></button
+                                    ><button
+                                        type="button"
+                                        class="btn label rounded icon-only tone-primary"
+                                        aria-label="Primary round label check"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i></button
+                                    ><button
+                                        type="button"
+                                        class="btn label rounded icon-only tone-secondary"
+                                        aria-label="Secondary round label notification"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="example-block">
+                                <h3>Outline</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn outline tone-primary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Primary</button
+                                    ><button
+                                        type="button"
+                                        class="btn outline tone-secondary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Secondary</button
+                                    ><button
+                                        type="button"
+                                        class="btn outline rounded tone-primary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Primary</button
+                                    ><button
+                                        type="button"
+                                        class="btn outline rounded tone-secondary"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Secondary
+                                    </button>
+                                </div>
+                                <div class="button-row icon-row">
+                                    <button
+                                        type="button"
+                                        class="btn outline icon-only tone-primary"
+                                        aria-label="Primary  outline check"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i></button
+                                    ><button
+                                        type="button"
+                                        class="btn outline icon-only tone-secondary"
+                                        aria-label="Secondary  outline notification"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i></button
+                                    ><button
+                                        type="button"
+                                        class="btn outline rounded icon-only tone-primary"
+                                        aria-label="Primary round outline check"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i></button
+                                    ><button
+                                        type="button"
+                                        class="btn outline rounded icon-only tone-secondary"
+                                        aria-label="Secondary round outline notification"
+                                    >
+                                        <i
+                                            class="fa-solid fa-bell"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="button-card"
+                            id="sizes"
+                            aria-labelledby="sizes-title"
+                        >
+                            <h2 id="sizes-title">Button Sizes</h2>
+                            <div class="example-block">
+                                <h3>Extra large to extra small</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn size-xl tone-primary"
+                                    >
+                                        Button XL</button
+                                    ><button
+                                        type="button"
+                                        class="btn size-lg tone-primary"
+                                    >
+                                        Button LG</button
+                                    ><button
+                                        type="button"
+                                        class="btn tone-primary"
+                                    >
+                                        Button</button
+                                    ><button
+                                        type="button"
+                                        class="btn size-sm tone-primary"
+                                    >
+                                        Button SM</button
+                                    ><button
+                                        type="button"
+                                        class="btn size-xs tone-primary"
+                                    >
+                                        Button XS
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="example-block width-examples">
+                                <h3>Full width</h3>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary button-fullwidth"
+                                >
+                                    Full width button
+                                </button>
+                            </div>
+                            <div class="example-block width-examples">
+                                <h3>Near full width · 90%</h3>
+                                <button
+                                    type="button"
+                                    class="btn tone-secondary button-near-fullwidth"
+                                >
+                                    Near full width button
+                                </button>
+                            </div>
+                            <div class="example-block" id="anchor-buttons">
+                                <h3>Link buttons</h3>
+                                <p class="example-note">
+                                    Use the same button classes on links.
+                                    Disabled links omit href and use
+                                    aria-disabled and tabindex="-1".
+                                </p>
+                                <div class="button-row">
+                                    <a class="btn tone-primary" href="#basic"
+                                        >Basic link</a
+                                    >
+                                    <a
+                                        class="btn rounded tone-secondary"
+                                        href="#rounded"
+                                        >Rounded link</a
+                                    >
+                                    <a
+                                        class="btn label tone-primary"
+                                        href="#label"
+                                        >Label link</a
+                                    >
+                                    <a
+                                        class="btn outline tone-primary"
+                                        href="#outline"
+                                        >Outline link</a
+                                    >
+                                    <a
+                                        class="btn text tone-primary"
+                                        href="#text"
+                                        >Text link</a
+                                    >
+                                    <a class="btn tone-primary" href="#icons"
+                                        ><i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Icon link</a
+                                    >
+                                    <a
+                                        class="btn tone-secondary disabled"
+                                        role="link"
+                                        aria-disabled="true"
+                                        tabindex="-1"
+                                        >Disabled link</a
+                                    >
+                                    <a
+                                        class="btn tone-primary"
+                                        href="#confirmation"
+                                        data-action="confirm"
+                                        >Confirm link</a
+                                    >
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="button-card"
+                            id="selection"
+                            aria-labelledby="selection-title"
+                        >
+                            <h2 id="selection-title">Checkbox/Radio Buttons</h2>
+                            <div class="example-block">
+                                <h3>Checkbox · select any</h3>
+                                <div
+                                    class="button-row"
+                                    role="group"
+                                    aria-label="Checkbox options"
+                                >
+                                    <label class="choice"
+                                        ><input
+                                            type="checkbox"
+                                            name="checkbox-1"
+                                            checked
+                                        /><span class="btn outline tone-primary"
+                                            >Checkbox 1</span
+                                        ></label
+                                    ><label class="choice"
+                                        ><input
+                                            type="checkbox"
+                                            name="checkbox-2"
+                                        /><span class="btn outline tone-primary"
+                                            >Checkbox 2</span
+                                        ></label
+                                    ><label class="choice"
+                                        ><input
+                                            type="checkbox"
+                                            name="checkbox-3"
+                                        /><span class="btn outline tone-primary"
+                                            >Checkbox 3</span
+                                        ></label
+                                    >
+                                </div>
+                            </div>
+                            <div class="example-block">
+                                <h3>Radio · select one</h3>
+                                <div
+                                    class="button-row"
+                                    role="group"
+                                    aria-label="Radio options"
+                                >
+                                    <label class="choice"
+                                        ><input
+                                            type="radio"
+                                            name="button-radio"
+                                            checked
+                                        /><span class="btn outline tone-primary"
+                                            >Radio 1</span
+                                        ></label
+                                    ><label class="choice"
+                                        ><input
+                                            type="radio"
+                                            name="button-radio"
+                                        /><span class="btn outline tone-primary"
+                                            >Radio 2</span
+                                        ></label
+                                    ><label class="choice"
+                                        ><input
+                                            type="radio"
+                                            name="button-radio"
+                                        /><span class="btn outline tone-primary"
+                                            >Radio 3</span
+                                        ></label
+                                    >
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="button-card"
+                            id="disabled"
+                            aria-labelledby="disabled-title"
+                        >
+                            <h2 id="disabled-title">Disabled Buttons</h2>
+                            <div class="example-block">
+                                <h3>Unavailable actions</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn tone-primary"
+                                        disabled
+                                    >
+                                        Primary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn tone-secondary"
+                                        disabled
+                                    >
+                                        Secondary
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn tone-success"
+                                        disabled
+                                    >
+                                        Success
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn tone-danger"
+                                        disabled
+                                    >
+                                        Danger
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn tone-warning"
+                                        disabled
+                                    >
+                                        Warning
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn tone-info"
+                                        disabled
+                                    >
+                                        Info
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn tone-dark"
+                                        disabled
+                                    >
+                                        Dark
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="example-block">
+                                <h3>Other styles</h3>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn rounded tone-primary"
+                                        disabled
+                                    >
+                                        Rounded</button
+                                    ><button
+                                        type="button"
+                                        class="btn label tone-primary"
+                                        disabled
+                                    >
+                                        Label</button
+                                    ><button
+                                        type="button"
+                                        class="btn outline tone-primary"
+                                        disabled
+                                    >
+                                        Outline</button
+                                    ><button
+                                        type="button"
+                                        class="btn text tone-primary"
+                                        disabled
+                                    >
+                                        Text</button
+                                    ><label class="choice"
+                                        ><input type="checkbox" disabled /><span
+                                            class="btn outline tone-primary"
+                                            >Checkbox</span
+                                        ></label
+                                    ><label class="choice"
+                                        ><input
+                                            type="radio"
+                                            name="disabled-radio"
+                                            disabled
+                                        /><span class="btn outline tone-primary"
+                                            >Radio</span
+                                        ></label
+                                    ><button
+                                        type="button"
+                                        class="btn tone-danger"
+                                        disabled
+                                        data-action="delete"
+                                        data-title="Delete this item?"
+                                        data-text="Do you want to continue with this delete action?"
+                                        data-confirm-button-text="Yes, delete it"
+                                        data-cancel-button-text="Keep it"
+                                    >
+                                        <i
+                                            class="fa-solid fa-trash-can"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="button-card"
+                            id="confirmation"
+                            aria-labelledby="confirmation-title"
+                        >
+                            <h2 id="confirmation-title">Confirm & Delete</h2>
+                            <div class="example-block">
+                                <p class="example-note">
+                                    Choose an action to preview its confirmation
+                                    dialog.
+                                </p>
+                                <div class="button-row">
+                                    <button
+                                        type="button"
+                                        class="btn tone-primary"
+                                        data-action="confirm"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Confirm</button
+                                    ><button
+                                        type="button"
+                                        class="btn tone-danger"
+                                        data-action="delete"
+                                    >
+                                        <i
+                                            class="fa-solid fa-trash-can"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Delete
+                                    </button>
+                                    <a
+                                        href="https://google.com"
+                                        class="btn tone-primary"
+                                        data-action="confirm"
+                                    >
+                                        <i
+                                            class="fa-solid fa-circle-check"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Confirm</a
+                                    ><a
+                                        href="https://google.com"
+                                        class="btn tone-danger"
+                                        data-action="delete"
+                                    >
+                                        <i
+                                            class="fa-solid fa-trash-can"
+                                            aria-hidden="true"
+                                        ></i
+                                        >Delete
+                                    </a>
+                                </div>
+                                <p
+                                    class="action-status"
+                                    role="status"
+                                    aria-live="polite"
+                                    aria-atomic="true"
+                                >
+                                    No action taken.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Button examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

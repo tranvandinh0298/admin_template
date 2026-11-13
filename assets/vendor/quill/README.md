@@ -1,0 +1,1 @@
+Quill 2.0.3 (BSD-3-Clause), KaTeX 0.16.27 (MIT), highlight.js 11.11.1 (BSD-3-Clause). Browser distributions from the pinned npm packages via jsDelivr. KaTeX CSS retains WOFF2 sources for the bundled fonts. Licenses are in each vendor directory.

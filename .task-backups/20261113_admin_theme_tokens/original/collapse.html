@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Collapse · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/buttons.css" />
+        <link rel="stylesheet" href="assets/css/collapse.css" />
+        <script src="assets/js/collapse.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="collapse-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        aria-current="page"
+                        >Collapse</a
+                    >
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >User interface / Collapse</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1">
+                    <div class="content-inner">
+                        <h1>Collapse</h1>
+                        <noscript
+                            >Enable JavaScript to open and close these
+                            examples.</noscript
+                        >
+                        <section
+                            class="collapse-demo"
+                            aria-labelledby="basic-title"
+                        >
+                            <h2 id="basic-title">Basic</h2>
+                            <p>
+                                Show or hide content using a link or a button.
+                            </p>
+                            <div class="collapse-controls">
+                                <a
+                                    href="#basic-panel"
+                                    role="button"
+                                    class="btn tone-primary"
+                                    data-collapse-targets="basic-panel"
+                                    aria-controls="basic-panel"
+                                    aria-expanded="false"
+                                    >Link with href</a
+                                ><button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-collapse-targets="basic-panel"
+                                    aria-controls="basic-panel"
+                                    aria-expanded="false"
+                                >
+                                    Button with data target
+                                </button>
+                            </div>
+                            <div
+                                id="basic-panel"
+                                class="collapse-panel"
+                                data-collapse-axis="height"
+                                hidden
+                                inert
+                            >
+                                <div class="collapse-body">
+                                    Both controls toggle this content. Open or
+                                    close it using either control; their
+                                    expanded states stay synchronized.
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="collapse-demo"
+                            aria-labelledby="horizontal-title"
+                        >
+                            <h2 id="horizontal-title">Horizontal</h2>
+                            <p>
+                                Expand and collapse content horizontally by
+                                changing its width.
+                            </p>
+                            <div class="collapse-controls">
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-collapse-targets="horizontal-panel"
+                                    aria-controls="horizontal-panel"
+                                    aria-expanded="true"
+                                >
+                                    Toggle width collapse
+                                </button>
+                            </div>
+                            <div class="horizontal-stage">
+                                <div
+                                    id="horizontal-panel"
+                                    class="collapse-panel"
+                                    data-collapse-axis="width"
+                                >
+                                    <div class="collapse-body">
+                                        This panel opens and closes along its
+                                        width. Content stays readable on smaller
+                                        screens.
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="collapse-demo"
+                            aria-labelledby="multiple-title"
+                        >
+                            <h2 id="multiple-title">Multiple targets</h2>
+                            <p>
+                                Toggle either panel independently, or invert
+                                both panels together.
+                            </p>
+                            <div class="collapse-controls">
+                                <a
+                                    href="#multiple-one"
+                                    role="button"
+                                    class="btn tone-primary"
+                                    data-collapse-targets="multiple-one"
+                                    aria-controls="multiple-one"
+                                    aria-expanded="false"
+                                    >Toggle first element</a
+                                ><button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-collapse-targets="multiple-two"
+                                    aria-controls="multiple-two"
+                                    aria-expanded="false"
+                                >
+                                    Toggle second element</button
+                                ><button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-collapse-targets="multiple-one multiple-two"
+                                    aria-controls="multiple-one multiple-two"
+                                    aria-expanded="false"
+                                    aria-describedby="multiple-status"
+                                >
+                                    Toggle both elements
+                                </button>
+                            </div>
+                            <span class="collapse-sr-only" id="multiple-status"
+                                >0 of 2 panels expanded</span
+                            >
+                            <div class="multiple-panels">
+                                <div
+                                    id="multiple-one"
+                                    class="collapse-panel"
+                                    data-collapse-axis="height"
+                                    hidden
+                                    inert
+                                >
+                                    <div class="collapse-body">
+                                        First panel. Its state is independent of
+                                        the second panel. Toggle both inverts
+                                        each panel separately.
+                                    </div>
+                                </div>
+                                <div
+                                    id="multiple-two"
+                                    class="collapse-panel"
+                                    data-collapse-axis="height"
+                                    hidden
+                                    inert
+                                >
+                                    <div class="collapse-body">
+                                        Second panel. When one panel is open and
+                                        the other is closed, Toggle both swaps
+                                        their states.
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Collapse examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

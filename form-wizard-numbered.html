@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Wizard Numbered · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/form-elements.css">
+        <script src="assets/js/form-elements.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+        <script src="assets/js/admin-theme.js"></script>
+    <link rel="stylesheet" href="assets/css/admin-theme.css">
+</head>
+    <body data-layout="default" class="form-wizard-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a></nav>
+                <nav aria-label="Form Elements">
+                    <p class="menu-caption">FORM ELEMENTS</p>
+                    <a class="menu-link" href="basic-inputs.html">Basic Inputs</a>
+                    <a class="menu-link" href="input-groups.html">Input Groups</a>
+                    <a class="menu-link" href="custom-options.html">Custom Options</a>
+                    <a class="menu-link" href="editors.html">Editors</a>
+                    <a class="menu-link" href="file-upload.html">File Upload</a>
+                    <a class="menu-link" href="pickers.html">Pickers</a>
+                    <a class="menu-link" href="selects.html">Selects</a>
+                    <a class="menu-link" href="sliders.html">Sliders</a>
+                    <a class="menu-link" href="switches.html">Switches</a>
+                    <a class="menu-link" href="form-extras.html">Form Extras</a>
+                </nav>
+                <nav aria-label="Form Layouts">
+                    <p class="menu-caption">FORM LAYOUTS</p>
+                    <a class="menu-link" href="form-layouts-vertical.html">Vertical Form</a>
+                    <a class="menu-link" href="form-layouts-horizontal.html">Horizontal Form</a>
+                    <a class="menu-link" href="form-layouts-sticky.html">Sticky Actions</a>
+                </nav>
+                <nav aria-label="Form Wizard">
+                    <p class="menu-caption">FORM WIZARD</p>
+                    <a class="menu-link" href="form-wizard-numbered.html" aria-current="page">Numbered</a>
+                    <a class="menu-link" href="form-wizard-icons.html">Icons</a>
+                </nav>
+                <nav aria-label="Form validation navigation">
+                    <a class="menu-link" href="form-validation.html">Form Validation</a>
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >Form Wizard / Numbered</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1"><div class="content-inner"><h1>Wizard Numbered</h1>
+<section class="wiz-card" aria-labelledby="wiz-default-title"><h2 id="wiz-default-title">Default Wizard</h2><form novalidate autocomplete="off" data-wizard><ol class="wiz-steps" aria-label="Progress"><li><button type="button" data-step="0" aria-controls="wiz-default-panel-0" aria-current="step"><span class="wiz-marker" aria-hidden="true">1</span><span><strong>Account Details</strong><small>Set up account details</small></span></button></li>
+<li><button type="button" data-step="1" aria-controls="wiz-default-panel-1" disabled><span class="wiz-marker" aria-hidden="true">2</span><span><strong>Personal Info</strong><small>Add personal information</small></span></button></li>
+<li><button type="button" data-step="2" aria-controls="wiz-default-panel-2" disabled><span class="wiz-marker" aria-hidden="true">3</span><span><strong>Social Links</strong><small>Add social links</small></span></button></li></ol><div class="wiz-body"><section id="wiz-default-panel-0" aria-labelledby="wiz-default-step-0" data-panel><h3 id="wiz-default-step-0" tabindex="-1">Account Details</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-default-account-0">Username</label><input class="bi-control" id="wiz-default-account-0" type="text"></div>
+<div class="wiz-field"><label for="wiz-default-account-1">Email</label><input class="bi-control" id="wiz-default-account-1" type="email"></div>
+<div class="wiz-field"><label for="wiz-default-account-2">Password</label><input class="bi-control" id="wiz-default-account-2" type="password" autocomplete="new-password" data-password></div>
+<div class="wiz-field"><label for="wiz-default-account-3">Confirm Password</label><input class="bi-control" id="wiz-default-account-3" type="password" autocomplete="new-password" data-confirm></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev disabled>Previous</button><button type="submit" class="wiz-primary">Next</button></div></section>
+<section id="wiz-default-panel-1" aria-labelledby="wiz-default-step-1" data-panel hidden><h3 id="wiz-default-step-1" tabindex="-1">Personal Info</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-default-personal-0">First Name</label><input class="bi-control" id="wiz-default-personal-0" type="text"></div>
+<div class="wiz-field"><label for="wiz-default-personal-1">Last Name</label><input class="bi-control" id="wiz-default-personal-1" type="text"></div>
+<div class="wiz-field"><label for="wiz-default-personal-2">Country</label><select class="bi-control" id="wiz-default-personal-2"><option value="">Choose…</option><option>Thailand</option><option>Vietnam</option><option>Singapore</option><option>Japan</option></select></div>
+<div class="wiz-field"><label for="wiz-default-personal-3">Language</label><select class="bi-control" id="wiz-default-personal-3"><option value="">Choose…</option><option>English</option><option>Thai</option><option>Vietnamese</option><option>Japanese</option></select></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev>Previous</button><button type="submit" class="wiz-primary">Next</button></div></section>
+<section id="wiz-default-panel-2" aria-labelledby="wiz-default-step-2" data-panel hidden><h3 id="wiz-default-step-2" tabindex="-1">Social Links</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-default-social-0">Twitter</label><input class="bi-control" id="wiz-default-social-0" type="url"></div>
+<div class="wiz-field"><label for="wiz-default-social-1">Facebook</label><input class="bi-control" id="wiz-default-social-1" type="url"></div>
+<div class="wiz-field"><label for="wiz-default-social-2">Google+</label><input class="bi-control" id="wiz-default-social-2" type="url"></div>
+<div class="wiz-field"><label for="wiz-default-social-3">LinkedIn</label><input class="bi-control" id="wiz-default-social-3" type="url"></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev>Previous</button><button type="submit" class="wiz-primary">Submit</button></div></section><p class="wiz-status" role="status"></p></div></form></section>
+<section class="wiz-card" aria-labelledby="wiz-validation-title"><h2 id="wiz-validation-title">Validation Wizard</h2><form novalidate autocomplete="off" data-wizard data-validate><ol class="wiz-steps" aria-label="Progress"><li><button type="button" data-step="0" aria-controls="wiz-validation-panel-0" aria-current="step"><span class="wiz-marker" aria-hidden="true">1</span><span><strong>Account Details</strong><small>Set up account details</small></span></button></li>
+<li><button type="button" data-step="1" aria-controls="wiz-validation-panel-1" disabled><span class="wiz-marker" aria-hidden="true">2</span><span><strong>Personal Info</strong><small>Add personal information</small></span></button></li>
+<li><button type="button" data-step="2" aria-controls="wiz-validation-panel-2" disabled><span class="wiz-marker" aria-hidden="true">3</span><span><strong>Social Links</strong><small>Add social links</small></span></button></li></ol><div class="wiz-body"><section id="wiz-validation-panel-0" aria-labelledby="wiz-validation-step-0" data-panel><h3 id="wiz-validation-step-0" tabindex="-1">Account Details</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-validation-account-0">Username</label><input class="bi-control" id="wiz-validation-account-0" required type="text"></div>
+<div class="wiz-field"><label for="wiz-validation-account-1">Email</label><input class="bi-control" id="wiz-validation-account-1" required type="email"></div>
+<div class="wiz-field"><label for="wiz-validation-account-2">Password</label><input class="bi-control" id="wiz-validation-account-2" required type="password" autocomplete="new-password" minlength="6" data-password></div>
+<div class="wiz-field"><label for="wiz-validation-account-3">Confirm Password</label><input class="bi-control" id="wiz-validation-account-3" required type="password" autocomplete="new-password" data-confirm></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev disabled>Previous</button><button type="submit" class="wiz-primary">Next</button></div></section>
+<section id="wiz-validation-panel-1" aria-labelledby="wiz-validation-step-1" data-panel hidden><h3 id="wiz-validation-step-1" tabindex="-1">Personal Info</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-validation-personal-0">First Name</label><input class="bi-control" id="wiz-validation-personal-0" required type="text"></div>
+<div class="wiz-field"><label for="wiz-validation-personal-1">Last Name</label><input class="bi-control" id="wiz-validation-personal-1" required type="text"></div>
+<div class="wiz-field"><label for="wiz-validation-personal-2">Country</label><select class="bi-control" id="wiz-validation-personal-2" required><option value="">Choose…</option><option>Thailand</option><option>Vietnam</option><option>Singapore</option><option>Japan</option></select></div>
+<div class="wiz-field"><label for="wiz-validation-personal-3">Language</label><select class="bi-control" id="wiz-validation-personal-3" required><option value="">Choose…</option><option>English</option><option>Thai</option><option>Vietnamese</option><option>Japanese</option></select></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev>Previous</button><button type="submit" class="wiz-primary">Next</button></div></section>
+<section id="wiz-validation-panel-2" aria-labelledby="wiz-validation-step-2" data-panel hidden><h3 id="wiz-validation-step-2" tabindex="-1">Social Links</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-validation-social-0">Twitter</label><input class="bi-control" id="wiz-validation-social-0" type="url"></div>
+<div class="wiz-field"><label for="wiz-validation-social-1">Facebook</label><input class="bi-control" id="wiz-validation-social-1" type="url"></div>
+<div class="wiz-field"><label for="wiz-validation-social-2">Google+</label><input class="bi-control" id="wiz-validation-social-2" type="url"></div>
+<div class="wiz-field"><label for="wiz-validation-social-3">LinkedIn</label><input class="bi-control" id="wiz-validation-social-3" type="url"></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev>Previous</button><button type="submit" class="wiz-primary">Submit</button></div></section><p class="wiz-status" role="status"></p></div></form></section>
+<section class="wiz-card wiz-vertical" aria-labelledby="wiz-vertical-title"><h2 id="wiz-vertical-title">Vertical Wizard</h2><form novalidate autocomplete="off" data-wizard><ol class="wiz-steps" aria-label="Progress"><li><button type="button" data-step="0" aria-controls="wiz-vertical-panel-0" aria-current="step"><span class="wiz-marker" aria-hidden="true">1</span><span><strong>Account Details</strong><small>Set up account details</small></span></button></li>
+<li><button type="button" data-step="1" aria-controls="wiz-vertical-panel-1" disabled><span class="wiz-marker" aria-hidden="true">2</span><span><strong>Personal Info</strong><small>Add personal information</small></span></button></li>
+<li><button type="button" data-step="2" aria-controls="wiz-vertical-panel-2" disabled><span class="wiz-marker" aria-hidden="true">3</span><span><strong>Social Links</strong><small>Add social links</small></span></button></li></ol><div class="wiz-body"><section id="wiz-vertical-panel-0" aria-labelledby="wiz-vertical-step-0" data-panel><h3 id="wiz-vertical-step-0" tabindex="-1">Account Details</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-vertical-account-0">Username</label><input class="bi-control" id="wiz-vertical-account-0" type="text"></div>
+<div class="wiz-field"><label for="wiz-vertical-account-1">Email</label><input class="bi-control" id="wiz-vertical-account-1" type="email"></div>
+<div class="wiz-field"><label for="wiz-vertical-account-2">Password</label><input class="bi-control" id="wiz-vertical-account-2" type="password" autocomplete="new-password" data-password></div>
+<div class="wiz-field"><label for="wiz-vertical-account-3">Confirm Password</label><input class="bi-control" id="wiz-vertical-account-3" type="password" autocomplete="new-password" data-confirm></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev disabled>Previous</button><button type="submit" class="wiz-primary">Next</button></div></section>
+<section id="wiz-vertical-panel-1" aria-labelledby="wiz-vertical-step-1" data-panel hidden><h3 id="wiz-vertical-step-1" tabindex="-1">Personal Info</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-vertical-personal-0">First Name</label><input class="bi-control" id="wiz-vertical-personal-0" type="text"></div>
+<div class="wiz-field"><label for="wiz-vertical-personal-1">Last Name</label><input class="bi-control" id="wiz-vertical-personal-1" type="text"></div>
+<div class="wiz-field"><label for="wiz-vertical-personal-2">Country</label><select class="bi-control" id="wiz-vertical-personal-2"><option value="">Choose…</option><option>Thailand</option><option>Vietnam</option><option>Singapore</option><option>Japan</option></select></div>
+<div class="wiz-field"><label for="wiz-vertical-personal-3">Language</label><select class="bi-control" id="wiz-vertical-personal-3"><option value="">Choose…</option><option>English</option><option>Thai</option><option>Vietnamese</option><option>Japanese</option></select></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev>Previous</button><button type="submit" class="wiz-primary">Next</button></div></section>
+<section id="wiz-vertical-panel-2" aria-labelledby="wiz-vertical-step-2" data-panel hidden><h3 id="wiz-vertical-step-2" tabindex="-1">Social Links</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-vertical-social-0">Twitter</label><input class="bi-control" id="wiz-vertical-social-0" type="url"></div>
+<div class="wiz-field"><label for="wiz-vertical-social-1">Facebook</label><input class="bi-control" id="wiz-vertical-social-1" type="url"></div>
+<div class="wiz-field"><label for="wiz-vertical-social-2">Google+</label><input class="bi-control" id="wiz-vertical-social-2" type="url"></div>
+<div class="wiz-field"><label for="wiz-vertical-social-3">LinkedIn</label><input class="bi-control" id="wiz-vertical-social-3" type="url"></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev>Previous</button><button type="submit" class="wiz-primary">Submit</button></div></section><p class="wiz-status" role="status"></p></div></form></section>
+<section class="wiz-card wiz-modern" aria-labelledby="wiz-modern-title"><h2 id="wiz-modern-title">Modern Wizard</h2><form novalidate autocomplete="off" data-wizard><ol class="wiz-steps" aria-label="Progress"><li><button type="button" data-step="0" aria-controls="wiz-modern-panel-0" aria-current="step"><span class="wiz-marker" aria-hidden="true">1</span><span><strong>Account Details</strong><small>Set up account details</small></span></button></li>
+<li><button type="button" data-step="1" aria-controls="wiz-modern-panel-1" disabled><span class="wiz-marker" aria-hidden="true">2</span><span><strong>Personal Info</strong><small>Add personal information</small></span></button></li>
+<li><button type="button" data-step="2" aria-controls="wiz-modern-panel-2" disabled><span class="wiz-marker" aria-hidden="true">3</span><span><strong>Social Links</strong><small>Add social links</small></span></button></li></ol><div class="wiz-body"><section id="wiz-modern-panel-0" aria-labelledby="wiz-modern-step-0" data-panel><h3 id="wiz-modern-step-0" tabindex="-1">Account Details</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-modern-account-0">Username</label><input class="bi-control" id="wiz-modern-account-0" type="text"></div>
+<div class="wiz-field"><label for="wiz-modern-account-1">Email</label><input class="bi-control" id="wiz-modern-account-1" type="email"></div>
+<div class="wiz-field"><label for="wiz-modern-account-2">Password</label><input class="bi-control" id="wiz-modern-account-2" type="password" autocomplete="new-password" data-password></div>
+<div class="wiz-field"><label for="wiz-modern-account-3">Confirm Password</label><input class="bi-control" id="wiz-modern-account-3" type="password" autocomplete="new-password" data-confirm></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev disabled>Previous</button><button type="submit" class="wiz-primary">Next</button></div></section>
+<section id="wiz-modern-panel-1" aria-labelledby="wiz-modern-step-1" data-panel hidden><h3 id="wiz-modern-step-1" tabindex="-1">Personal Info</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-modern-personal-0">First Name</label><input class="bi-control" id="wiz-modern-personal-0" type="text"></div>
+<div class="wiz-field"><label for="wiz-modern-personal-1">Last Name</label><input class="bi-control" id="wiz-modern-personal-1" type="text"></div>
+<div class="wiz-field"><label for="wiz-modern-personal-2">Country</label><select class="bi-control" id="wiz-modern-personal-2"><option value="">Choose…</option><option>Thailand</option><option>Vietnam</option><option>Singapore</option><option>Japan</option></select></div>
+<div class="wiz-field"><label for="wiz-modern-personal-3">Language</label><select class="bi-control" id="wiz-modern-personal-3"><option value="">Choose…</option><option>English</option><option>Thai</option><option>Vietnamese</option><option>Japanese</option></select></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev>Previous</button><button type="submit" class="wiz-primary">Next</button></div></section>
+<section id="wiz-modern-panel-2" aria-labelledby="wiz-modern-step-2" data-panel hidden><h3 id="wiz-modern-step-2" tabindex="-1">Social Links</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-modern-social-0">Twitter</label><input class="bi-control" id="wiz-modern-social-0" type="url"></div>
+<div class="wiz-field"><label for="wiz-modern-social-1">Facebook</label><input class="bi-control" id="wiz-modern-social-1" type="url"></div>
+<div class="wiz-field"><label for="wiz-modern-social-2">Google+</label><input class="bi-control" id="wiz-modern-social-2" type="url"></div>
+<div class="wiz-field"><label for="wiz-modern-social-3">LinkedIn</label><input class="bi-control" id="wiz-modern-social-3" type="url"></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev>Previous</button><button type="submit" class="wiz-primary">Submit</button></div></section><p class="wiz-status" role="status"></p></div></form></section>
+<section class="wiz-card wiz-vertical wiz-modern" aria-labelledby="wiz-modern-vertical-title"><h2 id="wiz-modern-vertical-title">Modern Vertical Wizard</h2><form novalidate autocomplete="off" data-wizard><ol class="wiz-steps" aria-label="Progress"><li><button type="button" data-step="0" aria-controls="wiz-modern-vertical-panel-0" aria-current="step"><span class="wiz-marker" aria-hidden="true">1</span><span><strong>Account Details</strong><small>Set up account details</small></span></button></li>
+<li><button type="button" data-step="1" aria-controls="wiz-modern-vertical-panel-1" disabled><span class="wiz-marker" aria-hidden="true">2</span><span><strong>Personal Info</strong><small>Add personal information</small></span></button></li>
+<li><button type="button" data-step="2" aria-controls="wiz-modern-vertical-panel-2" disabled><span class="wiz-marker" aria-hidden="true">3</span><span><strong>Social Links</strong><small>Add social links</small></span></button></li></ol><div class="wiz-body"><section id="wiz-modern-vertical-panel-0" aria-labelledby="wiz-modern-vertical-step-0" data-panel><h3 id="wiz-modern-vertical-step-0" tabindex="-1">Account Details</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-modern-vertical-account-0">Username</label><input class="bi-control" id="wiz-modern-vertical-account-0" type="text"></div>
+<div class="wiz-field"><label for="wiz-modern-vertical-account-1">Email</label><input class="bi-control" id="wiz-modern-vertical-account-1" type="email"></div>
+<div class="wiz-field"><label for="wiz-modern-vertical-account-2">Password</label><input class="bi-control" id="wiz-modern-vertical-account-2" type="password" autocomplete="new-password" data-password></div>
+<div class="wiz-field"><label for="wiz-modern-vertical-account-3">Confirm Password</label><input class="bi-control" id="wiz-modern-vertical-account-3" type="password" autocomplete="new-password" data-confirm></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev disabled>Previous</button><button type="submit" class="wiz-primary">Next</button></div></section>
+<section id="wiz-modern-vertical-panel-1" aria-labelledby="wiz-modern-vertical-step-1" data-panel hidden><h3 id="wiz-modern-vertical-step-1" tabindex="-1">Personal Info</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-modern-vertical-personal-0">First Name</label><input class="bi-control" id="wiz-modern-vertical-personal-0" type="text"></div>
+<div class="wiz-field"><label for="wiz-modern-vertical-personal-1">Last Name</label><input class="bi-control" id="wiz-modern-vertical-personal-1" type="text"></div>
+<div class="wiz-field"><label for="wiz-modern-vertical-personal-2">Country</label><select class="bi-control" id="wiz-modern-vertical-personal-2"><option value="">Choose…</option><option>Thailand</option><option>Vietnam</option><option>Singapore</option><option>Japan</option></select></div>
+<div class="wiz-field"><label for="wiz-modern-vertical-personal-3">Language</label><select class="bi-control" id="wiz-modern-vertical-personal-3"><option value="">Choose…</option><option>English</option><option>Thai</option><option>Vietnamese</option><option>Japanese</option></select></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev>Previous</button><button type="submit" class="wiz-primary">Next</button></div></section>
+<section id="wiz-modern-vertical-panel-2" aria-labelledby="wiz-modern-vertical-step-2" data-panel hidden><h3 id="wiz-modern-vertical-step-2" tabindex="-1">Social Links</h3><div class="wiz-fields"><div class="wiz-field"><label for="wiz-modern-vertical-social-0">Twitter</label><input class="bi-control" id="wiz-modern-vertical-social-0" type="url"></div>
+<div class="wiz-field"><label for="wiz-modern-vertical-social-1">Facebook</label><input class="bi-control" id="wiz-modern-vertical-social-1" type="url"></div>
+<div class="wiz-field"><label for="wiz-modern-vertical-social-2">Google+</label><input class="bi-control" id="wiz-modern-vertical-social-2" type="url"></div>
+<div class="wiz-field"><label for="wiz-modern-vertical-social-3">LinkedIn</label><input class="bi-control" id="wiz-modern-vertical-social-3" type="url"></div></div><div class="wiz-actions"><button type="button" class="wiz-back" data-prev>Previous</button><button type="submit" class="wiz-primary">Submit</button></div></section><p class="wiz-status" role="status"></p></div></form></section></div></main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Form Wizard examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

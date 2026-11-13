@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Custom Options · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/form-elements.css">
+        <script src="assets/js/form-elements.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+        <script src="assets/js/admin-theme.js"></script>
+    <link rel="stylesheet" href="assets/css/admin-theme.css">
+</head>
+    <body data-layout="default" class="custom-options-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a></nav>
+                <nav aria-label="Form Elements">
+                    <p class="menu-caption">FORM ELEMENTS</p>
+                    <a class="menu-link" href="basic-inputs.html">Basic Inputs</a>
+                    <a class="menu-link" href="input-groups.html">Input Groups</a>
+                    <a class="menu-link" href="custom-options.html" aria-current="page">Custom Options</a>
+                    <a class="menu-link" href="editors.html">Editors</a>
+                    <a class="menu-link" href="file-upload.html">File Upload</a>
+                    <a class="menu-link" href="pickers.html">Pickers</a>
+                    <a class="menu-link" href="selects.html">Selects</a>
+                    <a class="menu-link" href="sliders.html">Sliders</a>
+                    <a class="menu-link" href="switches.html">Switches</a>
+                    <a class="menu-link" href="form-extras.html">Form Extras</a>
+                </nav>
+                <nav aria-label="Form Layouts">
+                    <p class="menu-caption">FORM LAYOUTS</p>
+                    <a class="menu-link" href="form-layouts-vertical.html">Vertical Form</a>
+                    <a class="menu-link" href="form-layouts-horizontal.html">Horizontal Form</a>
+                    <a class="menu-link" href="form-layouts-sticky.html">Sticky Actions</a>
+                </nav>
+                <nav aria-label="Form Wizard">
+                    <p class="menu-caption">FORM WIZARD</p>
+                    <a class="menu-link" href="form-wizard-numbered.html">Numbered</a>
+                    <a class="menu-link" href="form-wizard-icons.html">Icons</a>
+                </nav>
+                <nav aria-label="Form validation navigation">
+                    <a class="menu-link" href="form-validation.html">Form Validation</a>
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >Form Elements / Custom Options</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1">
+    <div class="content-inner">
+      <h1>Custom Options</h1>
+      <div class="co-grid">
+        <fieldset class="co-card co-basic">
+          <legend>Basic Radio</legend>
+          <div class="co-choices">
+            <label class="co-option">
+              <input type="radio" name="basic-radio" value="basic-radio-1" aria-labelledby="basic-radio-1-label" aria-describedby="basic-radio-1-description" checked>
+              
+              <span class="co-title" id="basic-radio-1-label">Basic</span>
+              <span class="co-meta">$0</span>
+              <span class="co-description" id="basic-radio-1-description">For personal projects</span>
+            </label>
+            <label class="co-option">
+              <input type="radio" name="basic-radio" value="basic-radio-2" aria-labelledby="basic-radio-2-label" aria-describedby="basic-radio-2-description">
+              
+              <span class="co-title" id="basic-radio-2-label">Premium</span>
+              <span class="co-meta">$49</span>
+              <span class="co-description" id="basic-radio-2-description">For teams and larger projects</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="co-card co-basic">
+          <legend>Basic Checkboxes</legend>
+          <div class="co-choices">
+            <label class="co-option">
+              <input type="checkbox" name="basic-checkbox" value="basic-checkbox-1" aria-labelledby="basic-checkbox-1-label" aria-describedby="basic-checkbox-1-description" checked>
+              
+              <span class="co-title" id="basic-checkbox-1-label">Basic</span>
+              <span class="co-meta">$0</span>
+              <span class="co-description" id="basic-checkbox-1-description">For personal projects</span>
+            </label>
+            <label class="co-option">
+              <input type="checkbox" name="basic-checkbox" value="basic-checkbox-2" aria-labelledby="basic-checkbox-2-label" aria-describedby="basic-checkbox-2-description">
+              
+              <span class="co-title" id="basic-checkbox-2-label">Premium</span>
+              <span class="co-meta">$49</span>
+              <span class="co-description" id="basic-checkbox-2-description">For teams and larger projects</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="co-card co-label">
+          <legend>Basic Label Radio</legend>
+          <div class="co-choices">
+            <label class="co-option">
+              <input type="radio" name="label-radio" value="label-radio-1" aria-labelledby="label-radio-1-label" aria-describedby="label-radio-1-description" checked>
+              
+              <span class="co-title" id="label-radio-1-label">Starter</span>
+              <span class="co-meta">Free</span>
+              <span class="co-description" id="label-radio-1-description">Email support and one workspace</span>
+            </label>
+            <label class="co-option">
+              <input type="radio" name="label-radio" value="label-radio-2" aria-labelledby="label-radio-2-label" aria-describedby="label-radio-2-description">
+              
+              <span class="co-title" id="label-radio-2-label">Pro</span>
+              <span class="co-meta">Popular</span>
+              <span class="co-description" id="label-radio-2-description">Priority support and shared workspaces</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="co-card co-label">
+          <legend>Basic Label Checkboxes</legend>
+          <div class="co-choices">
+            <label class="co-option">
+              <input type="checkbox" name="label-checkbox" value="label-checkbox-1" aria-labelledby="label-checkbox-1-label" aria-describedby="label-checkbox-1-description" checked>
+              
+              <span class="co-title" id="label-checkbox-1-label">Starter</span>
+              <span class="co-meta">Free</span>
+              <span class="co-description" id="label-checkbox-1-description">Email support and one workspace</span>
+            </label>
+            <label class="co-option">
+              <input type="checkbox" name="label-checkbox" value="label-checkbox-2" aria-labelledby="label-checkbox-2-label" aria-describedby="label-checkbox-2-description">
+              
+              <span class="co-title" id="label-checkbox-2-label">Pro</span>
+              <span class="co-meta">Popular</span>
+              <span class="co-description" id="label-checkbox-2-description">Priority support and shared workspaces</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="co-card co-icon">
+          <legend>Radio With Icons</legend>
+          <div class="co-choices">
+            <label class="co-option">
+              <input type="radio" name="icon-radio" value="icon-radio-1" aria-labelledby="icon-radio-1-label" aria-describedby="icon-radio-1-description" checked>
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
+              <span class="co-title" id="icon-radio-1-label">Home</span>
+              
+              <span class="co-description" id="icon-radio-1-description">Deliver to your home</span>
+            </label>
+            <label class="co-option">
+              <input type="radio" name="icon-radio" value="icon-radio-2" aria-labelledby="icon-radio-2-label" aria-describedby="icon-radio-2-description">
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-building"></i></span>
+              <span class="co-title" id="icon-radio-2-label">Office</span>
+              
+              <span class="co-description" id="icon-radio-2-description">Deliver to your office</span>
+            </label>
+            <label class="co-option">
+              <input type="radio" name="icon-radio" value="icon-radio-3" aria-labelledby="icon-radio-3-label" aria-describedby="icon-radio-3-description">
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-store"></i></span>
+              <span class="co-title" id="icon-radio-3-label">Pickup</span>
+              
+              <span class="co-description" id="icon-radio-3-description">Collect your order</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="co-card co-icon">
+          <legend>Checkboxes With Icons</legend>
+          <div class="co-choices">
+            <label class="co-option">
+              <input type="checkbox" name="icon-checkbox" value="icon-checkbox-1" aria-labelledby="icon-checkbox-1-label" aria-describedby="icon-checkbox-1-description" checked>
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
+              <span class="co-title" id="icon-checkbox-1-label">Home</span>
+              
+              <span class="co-description" id="icon-checkbox-1-description">Deliver to your home</span>
+            </label>
+            <label class="co-option">
+              <input type="checkbox" name="icon-checkbox" value="icon-checkbox-2" aria-labelledby="icon-checkbox-2-label" aria-describedby="icon-checkbox-2-description">
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-building"></i></span>
+              <span class="co-title" id="icon-checkbox-2-label">Office</span>
+              
+              <span class="co-description" id="icon-checkbox-2-description">Deliver to your office</span>
+            </label>
+            <label class="co-option">
+              <input type="checkbox" name="icon-checkbox" value="icon-checkbox-3" aria-labelledby="icon-checkbox-3-label" aria-describedby="icon-checkbox-3-description">
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-store"></i></span>
+              <span class="co-title" id="icon-checkbox-3-label">Pickup</span>
+              
+              <span class="co-description" id="icon-checkbox-3-description">Collect your order</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="co-card co-illustration">
+          <legend>Radio With Illustrations</legend>
+          <div class="co-choices">
+            <label class="co-option">
+              <input type="radio" name="illustration-radio" value="illustration-radio-1" aria-labelledby="illustration-radio-1-label" aria-describedby="illustration-radio-1-description" checked>
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-desktop"></i></span>
+              <span class="co-title" id="illustration-radio-1-label">Standard</span>
+              
+              <span class="co-description" id="illustration-radio-1-description">A balanced workspace</span>
+            </label>
+            <label class="co-option">
+              <input type="radio" name="illustration-radio" value="illustration-radio-2" aria-labelledby="illustration-radio-2-label" aria-describedby="illustration-radio-2-description">
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-table-columns"></i></span>
+              <span class="co-title" id="illustration-radio-2-label">Compact</span>
+              
+              <span class="co-description" id="illustration-radio-2-description">A focused workspace</span>
+            </label>
+            <label class="co-option">
+              <input type="radio" name="illustration-radio" value="illustration-radio-3" aria-labelledby="illustration-radio-3-label" aria-describedby="illustration-radio-3-description">
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-window-maximize"></i></span>
+              <span class="co-title" id="illustration-radio-3-label">Minimal</span>
+              
+              <span class="co-description" id="illustration-radio-3-description">A clean workspace</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="co-card co-illustration">
+          <legend>Checkboxes With Illustrations</legend>
+          <div class="co-choices">
+            <label class="co-option">
+              <input type="checkbox" name="illustration-checkbox" value="illustration-checkbox-1" aria-labelledby="illustration-checkbox-1-label" aria-describedby="illustration-checkbox-1-description" checked>
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-desktop"></i></span>
+              <span class="co-title" id="illustration-checkbox-1-label">Standard</span>
+              
+              <span class="co-description" id="illustration-checkbox-1-description">A balanced workspace</span>
+            </label>
+            <label class="co-option">
+              <input type="checkbox" name="illustration-checkbox" value="illustration-checkbox-2" aria-labelledby="illustration-checkbox-2-label" aria-describedby="illustration-checkbox-2-description">
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-table-columns"></i></span>
+              <span class="co-title" id="illustration-checkbox-2-label">Compact</span>
+              
+              <span class="co-description" id="illustration-checkbox-2-description">A focused workspace</span>
+            </label>
+            <label class="co-option">
+              <input type="checkbox" name="illustration-checkbox" value="illustration-checkbox-3" aria-labelledby="illustration-checkbox-3-label" aria-describedby="illustration-checkbox-3-description">
+              <span class="co-visual" aria-hidden="true"><i class="fa-solid fa-window-maximize"></i></span>
+              <span class="co-title" id="illustration-checkbox-3-label">Minimal</span>
+              
+              <span class="co-description" id="illustration-checkbox-3-description">A clean workspace</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="co-card co-image">
+          <legend>Radio With Images</legend>
+          <div class="co-choices">
+            <label class="co-option">
+              <input type="radio" name="image-radio" value="image-radio-1" aria-labelledby="image-radio-1-label" checked>
+              <img src="assets/img/avatar-demo/person-1.png" alt="" width="192" height="192">
+              <span class="co-title" id="image-radio-1-label">Portrait A</span>
+              
+              
+            </label>
+            <label class="co-option">
+              <input type="radio" name="image-radio" value="image-radio-2" aria-labelledby="image-radio-2-label">
+              <img src="assets/img/avatar-demo/person-2.png" alt="" width="192" height="192">
+              <span class="co-title" id="image-radio-2-label">Portrait B</span>
+              
+              
+            </label>
+            <label class="co-option">
+              <input type="radio" name="image-radio" value="image-radio-3" aria-labelledby="image-radio-3-label">
+              <img src="assets/img/avatar-demo/person-3.png" alt="" width="192" height="192">
+              <span class="co-title" id="image-radio-3-label">Portrait C</span>
+              
+              
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="co-card co-image">
+          <legend>Checkboxes With Images</legend>
+          <div class="co-choices">
+            <label class="co-option">
+              <input type="checkbox" name="image-checkbox" value="image-checkbox-1" aria-labelledby="image-checkbox-1-label" checked>
+              <img src="assets/img/avatar-demo/person-1.png" alt="" width="192" height="192">
+              <span class="co-title" id="image-checkbox-1-label">Portrait A</span>
+              
+              
+            </label>
+            <label class="co-option">
+              <input type="checkbox" name="image-checkbox" value="image-checkbox-2" aria-labelledby="image-checkbox-2-label">
+              <img src="assets/img/avatar-demo/person-2.png" alt="" width="192" height="192">
+              <span class="co-title" id="image-checkbox-2-label">Portrait B</span>
+              
+              
+            </label>
+            <label class="co-option">
+              <input type="checkbox" name="image-checkbox" value="image-checkbox-3" aria-labelledby="image-checkbox-3-label">
+              <img src="assets/img/avatar-demo/person-3.png" alt="" width="192" height="192">
+              <span class="co-title" id="image-checkbox-3-label">Portrait C</span>
+              
+              
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+</main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Custom Options examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

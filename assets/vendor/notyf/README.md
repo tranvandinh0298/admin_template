@@ -1,0 +1,1 @@
+Notyf3.10.0 MIT. Source:https://www.npmjs.com/package/notyf/v/3.10.0. Vendored exact version via jsDelivr. Unmodified library; scoped page adapter handles safe text,position instances,pause timers and animationend fallback. No Bootstrap Toast.

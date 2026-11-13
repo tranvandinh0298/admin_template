@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Selects · Materio</title>
+        <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/basic-inputs.css">
+        <link rel="stylesheet" href="assets/vendor/select2/select2.min.css">
+        <link rel="stylesheet" href="assets/vendor/tagify/tagify.css">
+        <link rel="stylesheet" href="assets/vendor/bootstrap-select/bootstrap-select.min.css">
+        <script src="assets/vendor/jquery/jquery.min.js" defer></script>
+        <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js" defer></script>
+        <script src="assets/vendor/select2/select2.min.js" defer></script>
+        <script src="assets/vendor/tagify/tagify.min.js" defer></script>
+        <script src="assets/vendor/typeahead/typeahead.bundle.min.js" defer></script>
+        <script src="assets/vendor/bootstrap-select/bootstrap-select.min.js" defer></script>
+        <script src="assets/js/selects.js" defer></script>
+        <link rel="stylesheet" href="assets/css/selects.css">
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="selects-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a></nav>
+                <nav aria-label="Form Elements">
+                    <p class="menu-caption">FORM ELEMENTS</p>
+                    <a class="menu-link" href="basic-inputs.html">Basic Inputs</a>
+                    <a class="menu-link" href="input-groups.html">Input Groups</a>
+                    <a class="menu-link" href="custom-options.html">Custom Options</a>
+                    <a class="menu-link" href="editors.html">Editors</a>
+                    <a class="menu-link" href="file-upload.html">File Upload</a>
+                    <a class="menu-link" href="pickers.html">Pickers</a>
+                    <a class="menu-link" href="selects.html" aria-current="page">Selects</a>
+                    <a class="menu-link" href="sliders.html">Sliders</a>
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >Form Elements / Selects</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1"><div class="content-inner"><h1>Selects</h1>
+<section class="sel-card">
+  <h2>Select2</h2>
+  <div class="sel-grid">
+    <div class="sel-field ">
+      <label id="s2-basic-label" for="s2-basic">Basic</label>
+      <select id="s2-basic" class="bi-control" data-select-demo><option></option><option>Bangkok</option><option>Hanoi</option><option>Singapore</option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="s2-multiple-label" for="s2-multiple">Multiple</label>
+      <select id="s2-multiple" class="bi-control" data-select-demo multiple><option>Bangkok</option><option>Hanoi</option><option>Singapore</option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="s2-disabled-label" for="s2-disabled">Disabled</label>
+      <select id="s2-disabled" class="bi-control" data-select-demo disabled><option>Bangkok</option><option>Hanoi</option><option>Singapore</option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="s2-icons-label" for="s2-icons">Icons</label>
+      <select id="s2-icons" class="bi-control" data-select-demo data-icons><option data-icon="fa-solid fa-building">Bangkok</option><option data-icon="fa-solid fa-location-dot">Hanoi</option><option data-icon="fa-solid fa-plane">Singapore</option><option data-icon="fa-solid fa-train">Tokyo</option><option data-icon="fa-solid fa-globe">Seoul</option><option data-icon="fa-solid fa-map">Osaka</option></select>
+    </div>
+    <div class="sel-field sel-primary">
+      <label id="s2-primary-label" for="s2-primary">Primary</label>
+      <select id="s2-primary" class="bi-control" data-select-demo multiple><option selected>Bangkok</option><option>Hanoi</option><option>Singapore</option><option selected>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field sel-success">
+      <label id="s2-success-label" for="s2-success">Success</label>
+      <select id="s2-success" class="bi-control" data-select-demo multiple><option selected>Bangkok</option><option>Hanoi</option><option>Singapore</option><option selected>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field sel-info">
+      <label id="s2-info-label" for="s2-info">Info</label>
+      <select id="s2-info" class="bi-control" data-select-demo multiple><option selected>Bangkok</option><option>Hanoi</option><option>Singapore</option><option selected>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field sel-warning">
+      <label id="s2-warning-label" for="s2-warning">Warning</label>
+      <select id="s2-warning" class="bi-control" data-select-demo multiple><option selected>Bangkok</option><option>Hanoi</option><option>Singapore</option><option selected>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field sel-danger">
+      <label id="s2-danger-label" for="s2-danger">Danger</label>
+      <select id="s2-danger" class="bi-control" data-select-demo multiple><option selected>Bangkok</option><option>Hanoi</option><option>Singapore</option><option selected>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field sel-dark">
+      <label id="s2-dark-label" for="s2-dark">Dark</label>
+      <select id="s2-dark" class="bi-control" data-select-demo multiple><option selected>Bangkok</option><option>Hanoi</option><option>Singapore</option><option selected>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+  </div>
+</section>
+<section class="sel-card">
+  <h2>Tagify</h2>
+  <div class="sel-grid">
+    <div class="sel-field ">
+      <label id="sel-tag-0-label" for="sel-tag-0">Basic</label>
+      <input id="sel-tag-0" class="bi-control" data-tags="0" autocomplete="off" value="Design,Development" placeholder="Add a tag">
+    </div>
+    <div class="sel-field ">
+      <label id="sel-tag-1-label" for="sel-tag-1">Readonly</label>
+      <input id="sel-tag-1" class="bi-control" data-tags="1" autocomplete="off" value="Design,Development" readonly placeholder="Add a tag">
+    </div>
+    <div class="sel-field ">
+      <label id="sel-tag-2-label" for="sel-tag-2">Custom Inline Suggestions</label>
+      <input id="sel-tag-2" class="bi-control" data-tags="2" autocomplete="off" placeholder="Add a tag">
+    </div>
+    <div class="sel-field ">
+      <label id="sel-tag-3-label" for="sel-tag-3">Custom List Suggestions</label>
+      <input id="sel-tag-3" class="bi-control" data-tags="3" autocomplete="off" placeholder="Add a tag">
+    </div>
+    <div class="sel-field ">
+      <label id="sel-tag-4-label" for="sel-tag-4">Users List</label>
+      <input id="sel-tag-4" class="bi-control" data-tags="4" autocomplete="off" placeholder="Add a tag">
+    </div>
+    <div class="sel-field ">
+      <label id="sel-tag-5-label" for="sel-tag-5">Email List</label>
+      <input id="sel-tag-5" class="bi-control" data-tags="5" autocomplete="off" placeholder="Add a tag">
+    </div>
+  </div>
+</section>
+<section class="sel-card">
+  <h2>Typeahead</h2>
+  <div class="sel-grid">
+    <div class="sel-field ">
+      <label id="sel-type-0-label" for="sel-type-0">Basic</label>
+      <input id="sel-type-0" class="bi-control" data-type="0" autocomplete="off" placeholder="Search cities">
+    </div>
+    <div class="sel-field ">
+      <label id="sel-type-1-label" for="sel-type-1">BloodHound (Suggestion Engine)</label>
+      <input id="sel-type-1" class="bi-control" data-type="1" autocomplete="off" placeholder="Search cities">
+    </div>
+    <div class="sel-field ">
+      <label id="sel-type-2-label" for="sel-type-2">Prefetch</label>
+      <input id="sel-type-2" class="bi-control" data-type="2" autocomplete="off" placeholder="Search cities">
+    </div>
+    <div class="sel-field ">
+      <label id="sel-type-3-label" for="sel-type-3">Default Suggestions</label>
+      <input id="sel-type-3" class="bi-control" data-type="3" autocomplete="off" placeholder="Search cities">
+    </div>
+    <div class="sel-field ">
+      <label id="sel-type-4-label" for="sel-type-4">Custom Template</label>
+      <input id="sel-type-4" class="bi-control" data-type="4" autocomplete="off" placeholder="Search cities">
+    </div>
+    <div class="sel-field ">
+      <label id="sel-type-5-label" for="sel-type-5">Multiple Datasets</label>
+      <input id="sel-type-5" class="bi-control" data-type="5" autocomplete="off" placeholder="Search cities">
+    </div>
+  </div>
+</section>
+<section class="sel-card">
+  <h2>Bootstrap Select</h2>
+  <div class="sel-grid">
+    <div class="sel-field ">
+      <label id="sel-bootstrap-0-label" for="sel-bootstrap-0">Basic</label>
+      <select id="sel-bootstrap-0" class="bi-control" data-bootstrap-select ><option>Bangkok</option><option>Hanoi</option><option>Singapore</option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="sel-bootstrap-1-label" for="sel-bootstrap-1">Groups</label>
+      <select id="sel-bootstrap-1" class="bi-control" data-bootstrap-select ><optgroup label="Southeast Asia"><option>Bangkok</option><option>Hanoi</option><option>Singapore</option></optgroup><optgroup label="East Asia"><option>Tokyo</option><option>Seoul</option><option>Osaka</option></optgroup></select>
+    </div>
+    <div class="sel-field ">
+      <label id="sel-bootstrap-2-label" for="sel-bootstrap-2">Multiple</label>
+      <select id="sel-bootstrap-2" class="bi-control" data-bootstrap-select multiple><option>Bangkok</option><option>Hanoi</option><option>Singapore</option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="sel-bootstrap-3-label" for="sel-bootstrap-3">Live Search</label>
+      <select id="sel-bootstrap-3" class="bi-control" data-bootstrap-select data-live-search="true"><option>Bangkok</option><option>Hanoi</option><option>Singapore</option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="sel-bootstrap-4-label" for="sel-bootstrap-4">Icons</label>
+      <select id="sel-bootstrap-4" class="bi-control" data-bootstrap-select ><option data-icon="fa-solid fa-building">Bangkok</option><option data-icon="fa-solid fa-location-dot">Hanoi</option><option data-icon="fa-solid fa-plane">Singapore</option><option data-icon="fa-solid fa-train">Tokyo</option><option data-icon="fa-solid fa-globe">Seoul</option><option data-icon="fa-solid fa-map">Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="sel-bootstrap-5-label" for="sel-bootstrap-5">Subtext</label>
+      <select id="sel-bootstrap-5" class="bi-control" data-bootstrap-select data-show-subtext="true"><option data-subtext="Southeast Asia">Bangkok</option><option data-subtext="Southeast Asia">Hanoi</option><option data-subtext="Southeast Asia">Singapore</option><option data-subtext="East Asia">Tokyo</option><option data-subtext="East Asia">Seoul</option><option data-subtext="East Asia">Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="sel-bootstrap-6-label" for="sel-bootstrap-6">Selection Limit</label>
+      <select id="sel-bootstrap-6" class="bi-control" data-bootstrap-select multiple data-max-options="2"><option>Bangkok</option><option>Hanoi</option><option>Singapore</option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="sel-bootstrap-7-label" for="sel-bootstrap-7">Select / Deselect All</label>
+      <select id="sel-bootstrap-7" class="bi-control" data-bootstrap-select multiple data-actions-box="true"><option>Bangkok</option><option>Hanoi</option><option>Singapore</option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="sel-bootstrap-8-label" for="sel-bootstrap-8">Divider</label>
+      <select id="sel-bootstrap-8" class="bi-control" data-bootstrap-select ><option>Bangkok</option><option>Hanoi</option><option>Singapore</option><option data-divider="true"></option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="sel-bootstrap-9-label" for="sel-bootstrap-9">Header</label>
+      <select id="sel-bootstrap-9" class="bi-control" data-bootstrap-select data-header="Choose a city"><option>Bangkok</option><option>Hanoi</option><option>Singapore</option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="sel-bootstrap-10-label" for="sel-bootstrap-10">Disabled</label>
+      <select id="sel-bootstrap-10" class="bi-control" data-bootstrap-select disabled><option>Bangkok</option><option>Hanoi</option><option>Singapore</option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+    <div class="sel-field ">
+      <label id="sel-bootstrap-11-label" for="sel-bootstrap-11">Disabled Options</label>
+      <select id="sel-bootstrap-11" class="bi-control" data-bootstrap-select ><option>Bangkok</option><option disabled>Hanoi</option><option>Singapore</option><option>Tokyo</option><option>Seoul</option><option>Osaka</option></select>
+    </div>
+  </div>
+</section>
+</div></main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Select examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

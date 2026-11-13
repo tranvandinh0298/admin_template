@@ -1,0 +1,212 @@
+# 20261113_admin_theme_tokens
+Iteration 1 2026-11-13T03:08:18.949Z
+- assets/css/accordion.css | modify | original/assets/css/accordion.css | faf7830f3e9359bd731c40b1068663bb6fb6bb5feb0f393aebcd974d58d0db40
+- assets/css/alerts.css | modify | original/assets/css/alerts.css | 8499cd3b3fa5ed135cbb2ebf15ac5241aaadcde81db8602ee98aa2447bf80113
+- assets/css/auth-login.css | modify | original/assets/css/auth-login.css | da0b9561a5848081f0bc03314f3c53bb5bc264b7aca648ef6aff0db196dafeaf
+- assets/css/avatar.css | modify | original/assets/css/avatar.css | 3708418412004c0f4ce26b3e61c172bad85128f1816fc8495f6066cad8ddb41c
+- assets/css/badges.css | modify | original/assets/css/badges.css | a1e83f344eb2d685a089ef27723af6ca9d3d3a5f607ab1eb3f50870c38531a64
+- assets/css/blockui.css | modify | original/assets/css/blockui.css | 0a479b4cac837009f7bbd6db6e1e6e9101030f5cd35ffa7553ddcf0085c85284
+- assets/css/buttons.css | modify | original/assets/css/buttons.css | 168a5d01cf51f6d4c71b11f383e275f54facabe5db2b57a36d4e4a8ec2f1d770
+- assets/css/cards.css | modify | original/assets/css/cards.css | 6223642d3c0d3d4dd7dc5c837d81cc93bb205c33388b35d94e02e1923640a201
+- assets/css/carousel.css | modify | original/assets/css/carousel.css | d19ed552d683622f183aa3e4af8a987a58e4c01e1458869ad77e52b5fa73661a
+- assets/css/collapse.css | modify | original/assets/css/collapse.css | 2105668e2c753cb06d7cbdb7f0e56626b9c6d3b9eaaa884254aeaa605b3f9a26
+- assets/css/drag-drop.css | modify | original/assets/css/drag-drop.css | 909c7a6e9ea6d6bd4362710f97a082c109ecbd9d37025ad997cf9dcb80011cec
+- assets/css/dropdowns.css | modify | original/assets/css/dropdowns.css | 23072390380f4fdaabd501f1cb12f803ca3eabdbd45eaf802f73e606739fc8a7
+- assets/css/form-elements.css | modify | original/assets/css/form-elements.css | 0cc544d7f90bbac1675d362b8b9ba34caab802863b13b321a7ec3cafdc6e78e3
+- assets/css/layouts.css | modify | original/assets/css/layouts.css | 39775d4df81e21979945722252771773fc7cbcc1d618dd1cca32e5cef54f1471
+- assets/css/modals.css | modify | original/assets/css/modals.css | e6362802fbfebfba89939d1b17859daed07eaa3dec18667d2bb6d84a1c4969b7
+- assets/css/navbar.css | modify | original/assets/css/navbar.css | 6b8627b7c829ffafa4ba92f0955cc5a3e777bd8505dace573c2c7625a9aad13b
+- assets/css/offcanvas.css | modify | original/assets/css/offcanvas.css | 76c0bbdc55d8d668ed53c79227f4c96e799641b1ff50862a6bb8f7cdc079421e
+- assets/css/pagination-breadcrumbs.css | modify | original/assets/css/pagination-breadcrumbs.css | 6a67ac7a0156f31fa1e42ba239394ef1e05eb132d905c31fd62e193b19773aeb
+- assets/css/perfect-scrollbar.css | modify | original/assets/css/perfect-scrollbar.css | 2fb0a75dd6ed5b158b31722fd575a52b671e31b3318c22fb03af09fa76b9b1bd
+- assets/css/progress.css | modify | original/assets/css/progress.css | a5e838bf07f13202e1ed009418e5bf758d559951aa5242347a161b7df454840f
+- assets/css/tables-basic.css | modify | original/assets/css/tables-basic.css | 364a3ee3c83c16b3a45c5c17f60890dffdcbcdce999f8f6663be97b9b46b1613
+- assets/css/tabs-pills.css | modify | original/assets/css/tabs-pills.css | 598fc8368437dcf6bd3df4a9b199ec089a2d88ac0d4e757218034f70a1b762a5
+- assets/css/text-divider.css | modify | original/assets/css/text-divider.css | 6979eb6bc68d030bc48ff1abfbd25b6df06cf7e111dc814878e876adf0cfc1f3
+- assets/css/toasts.css | modify | original/assets/css/toasts.css | e6280d7b4f6bd81a22eb2f3b63607606abd57cc95c4638328d69715c81cb15cf
+- assets/css/tooltips-popovers.css | modify | original/assets/css/tooltips-popovers.css | 0f1809f97560a0a1c9e7742afe463737cbb25fd147f66e444e411461cdb9885c
+- assets/css/tour.css | modify | original/assets/css/tour.css | 251eb37755b0a2a04d0a45ea4e0a27a9bc9667302425b4d488fa2e462bf55459
+- assets/css/treeview.css | modify | original/assets/css/treeview.css | 58338781a7e92cb5e6da5945bb737ab912fa77e43991ff04a459269c9644a837
+- assets/css/typography.css | modify | original/assets/css/typography.css | fdbb2fc2a6e14a6270ca423853a8a74f83be24e3d4a84a5343b78bbdc9ec7b83
+- accordion.html | modify | original/accordion.html | 02c83cf409c2d8e830215bb837b5c864d94dc530bed1131ccc77620224e1e157
+- alerts.html | modify | original/alerts.html | 0ce3cdb334b36c4f280bf2a08eef401fac0187be566b645e578c1a94636d1ace
+- auth-login-basic.html | modify | original/auth-login-basic.html | dfdbbf561dd111c3cbdfb58e8c9aa100e9445084cc2bb28f80baac48367bb458
+- auth-login-cover.html | modify | original/auth-login-cover.html | 28df19aaea377cd872f529beee00b6bd330cc4ca4f215510a8551eaffc45f520
+- avatar.html | modify | original/avatar.html | 662dddd503bd223feafb0c2af8989272f432b54e9faed983df6ed96cde0d1331
+- badges.html | modify | original/badges.html | 53c003966fa18b4f9fe2e291a0fc0ff37534b3466985f8ff7f80475e82445d3c
+- basic-inputs.html | modify | original/basic-inputs.html | 75df3e5082d3b5686d1fb1a63029cc1ebbddb0ac1289dadbb8a6af91f0c4b5a3
+- blockui.html | modify | original/blockui.html | 737af35cb85eeaca2c13947580524295cefbe76694c6491769ef8937e950a7cf
+- button.html | modify | original/button.html | 4b351a7b57f82cfd43cabe068ab16a17caf09862869a0b5c4f3ff4bfc1450792
+- cards.html | modify | original/cards.html | bd098a6dd5a197ce6569e800f9bfd0832c237013419892a5e118d08cacd15cd8
+- carousel.html | modify | original/carousel.html | 3f41a1ab9cd0b3b5150d889a05ffa5b368893129898bf65a6c68d8fa2dee639e
+- collapse.html | modify | original/collapse.html | 0c8c77704fed4493139b33f8f04481cb9924cccc3ef5ca783066674adf797224
+- custom-options.html | modify | original/custom-options.html | 2a113e606d398273105e1d314dc6435d1acf3aaf142ee059e63c14bce6cd578c
+- drag-drop.html | modify | original/drag-drop.html | 908c1e8a06f8d62389a2f49507701213ae28a8eb851b2d3254dd2b46b54ec1dd
+- dropdowns.html | modify | original/dropdowns.html | d0a004876f44306d6fb71bb6f12fea6e7bdee02a4820a08dab9d29bfb162d78a
+- editors.html | modify | original/editors.html | 8929a513dc218c7094d63b5aef8905495c03e828b938b4ad4bb37cf95f89a979
+- file-upload.html | modify | original/file-upload.html | 63c74ed0f4f31f771bf1e1666091aa20768b049b060928d30b6a27bf55f7f83d
+- form-extras.html | modify | original/form-extras.html | 1886a12362fc61760942379143762fffff2ff6e358bbc174c8b72aeb88c4153d
+- form-layouts-horizontal.html | modify | original/form-layouts-horizontal.html | 19522a72caa8ef8f5f8fd48d303b1ce50eb873c4cabda2e4c7a886cfd9310453
+- form-layouts-sticky.html | modify | original/form-layouts-sticky.html | 9f67bba95adf8c66a49b6ddcb134f03b221fa038b03ff630872d60a8f79d2cd4
+- form-layouts-vertical.html | modify | original/form-layouts-vertical.html | 10126aaca5274e94684adce9b3188364b65c86a81d45905ed04cc6ea394ba453
+- form-validation.html | modify | original/form-validation.html | 8f782d518615dc37d1fc2f087cd4706cd8d93ce9d135b130e9e762c4a0535124
+- form-wizard-icons.html | modify | original/form-wizard-icons.html | a0cdf31864c9ebdb216d9bed5a72a4dbe0240b25d1f1c45554f5c45ccb9a6a75
+- form-wizard-numbered.html | modify | original/form-wizard-numbered.html | c8a3620f591bd2d551b4823760a2a6b582a23e140cf82d079a4e4a67fa63ae59
+- input-groups.html | modify | original/input-groups.html | 19fbd097dc32bd681bc6946af5f89bf0bd509a6463165b4db34452c088ec8e54
+- login.html | modify | original/login.html | fbebad5bc218466bdfeaeba6c9c6a7330d31254450b2aada8eb3d8c102d43af3
+- modals.html | modify | original/modals.html | ced4872597da9d754b9900a2c1c2d8ea9bf23e40b5c639749965b17350c2b724
+- navbar.html | modify | original/navbar.html | ad6d12adad8388c16a4c668d74ac4425631b14daa8bf52eef1da1c9cc1548863
+- offcanvas.html | modify | original/offcanvas.html | 76468104024f044f94e74287fdf4412f220ea882c51e677144a5c42e6579b9cd
+- pagination-breadcrumbs.html | modify | original/pagination-breadcrumbs.html | c5962a11b1ca8992d4c1985260b47bdef8740521a4eeceb28aa514793b4931c5
+- perfect-scrollbar.html | modify | original/perfect-scrollbar.html | a7b42b1e46c58a3913b1fe3f4f8948b201527869295756cb1bf440d5dce9286a
+- pickers.html | modify | original/pickers.html | d8a48e5e4247630dd58bc8bcba8e701e93073391b0add9cec019ce8c53835265
+- progress.html | modify | original/progress.html | 5e8bb619969596774cf95531fd9325a08ce6b8ff625fd6f8bf0092ffd30fa816
+- selects.html | modify | original/selects.html | 756f04071a41d3ee0259872239c64643cfbdef37f96b232dd0b626299204e359
+- sliders.html | modify | original/sliders.html | fbe636d8dc1e073c14ce936778013f5de82ea9d0c7e0b526c4ab047c2a5eca27
+- switches.html | modify | original/switches.html | 0e7669eddca063581a2dc9956c5a48a3897131a45a6c6ed0c9654aca7db0facc
+- tables-basic.html | modify | original/tables-basic.html | d9cf4458e61cf696a8d0b77a466b62a8ab7b00dc0d55c14be2d98f3e35035b5f
+- tabs-pills.html | modify | original/tabs-pills.html | 5dc3d565d442fe264d753d0a42ab852a2d6f6e4b798c54ecd46f191b6a08a91b
+- text-divider.html | modify | original/text-divider.html | 35b238816b428d742c422e5777e2515c6c30688025fdc311a7c7053889e2c8a2
+- toasts.html | modify | original/toasts.html | 45cc79a4193e6325c6f8a24843d5818589a2c68b0d22005eca211d949475cac5
+- tooltips-popovers.html | modify | original/tooltips-popovers.html | 2208e7fba70ba474cb11a2521aad92747f9eced0a018bd3b394121fd3ef9d555
+- tour.html | modify | original/tour.html | 9c67950260933ba8313d16321dd57c3eb3c47cce495e3bf2224f2b5b985451be
+- treeview.html | modify | original/treeview.html | d08c8b96e9769fd17e9130fe19c0fe3240440e230385ab55921a284f8c665b0a
+- typography.html | modify | original/typography.html | 3bc3a9e5cb2bde82123798bba2d74bbbcb5c69ece4e2305ecd489c2404234c94
+- layouts/blank_layout.html | modify | original/layouts/blank_layout.html | 2d5c68147ee3908f92eebb9f34ee772ad4267e37c1e56db32e52dde2f5aeee09
+- layouts/boxed_layout.html | modify | original/layouts/boxed_layout.html | a8991c96c257f20722a790b9c8046f7adae90f4e9d3e071befb03ec634d8e385
+- layouts/compact_layout.html | modify | original/layouts/compact_layout.html | b8b40e4cab8d90176f8ddea6af9c0e91878bfbe490530dee0a87f2b165bb6994
+- layouts/default_layout.html | modify | original/layouts/default_layout.html | 800f24293fddc6df8933d1389ac3dce5bb48c0879ccfbb457bba5c537cf91cea
+- layouts/horizontal_layout.html | modify | original/layouts/horizontal_layout.html | 19692ad212bc70208766aff461471b87c98a6895c5b635e4abe679e7d1529b8b
+- layouts/single_column_layout.html | modify | original/layouts/single_column_layout.html | ec3842114327fc9a5fc9435c3cd3701c693c55c57b0f5e63dc9a81e7933f0909
+- assets/css/admin-theme.css | absent | create
+- assets/js/admin-theme.js | absent | create
+- tests/admin-theme.spec.js | absent | create
+- tests/accordion.spec.js | modify | original/tests/accordion.spec.js | 7c542a58dfdb6a0b410da8912bc733ac33d9126f88af3e2d2d965db2adc63aba
+- tests/alerts.spec.js | modify | original/tests/alerts.spec.js | e529667cc5f1e689e6918183836b7d7625873950f078267223bbe7ad977fd8ca
+- tests/avatar.spec.js | modify | original/tests/avatar.spec.js | d52531c97d34a79f2973b690b58e6d10f0867a39847a51bcaec65bdef55f9055
+- tests/badges.spec.js | modify | original/tests/badges.spec.js | a7977d3d3f33bd00dc44674f21221fb591d0a4127920e50c28f674e44c5cd45c
+- tests/blockui.spec.js | modify | original/tests/blockui.spec.js | 685d8cba01247fa770e2fcdbe890fded4e3cdd84807c2b9b6d34a8d350a26154
+- tests/buttons.spec.js | modify | original/tests/buttons.spec.js | 67000656c112fe55cf5a8be90afbf620b2eb96cae8722427f7fcdce5c0b3968d
+- tests/cards.spec.js | modify | original/tests/cards.spec.js | 1c6e9b55338975a989c1e2e26d6cc000d899ee0a716c100830cdf4c95597e974
+- tests/carousel.spec.js | modify | original/tests/carousel.spec.js | 1f3317212020856df58cefbf986508a578da708758e6f38555d3065457f7c729
+- tests/collapse.spec.js | modify | original/tests/collapse.spec.js | 2bd3a4faacdf40bacc0820b30fe943273314af2c3b1462cfa7d5455763693078
+- tests/drag-drop.spec.js | modify | original/tests/drag-drop.spec.js | 8b8e33312930607152a1255af70cf7979c2efbf0560de654be5527c3fdca7924
+- tests/dropdowns.spec.js | modify | original/tests/dropdowns.spec.js | 60ba7d2066c4d11c3e1d96c2b250082c840b0991d3b0b32a38d8f85bd0f64fa5
+- tests/form-elements.spec.js | modify | original/tests/form-elements.spec.js | 28a4af42992ba2e9b58f6306f97ebb7d66b38465461d7880abdd7ef48085e9b4
+- tests/layouts.spec.js | modify | original/tests/layouts.spec.js | 534e9386c4a4b400994dcef7f2bce51aacff27c4e15025c0d53f802fdc3f85cb
+- tests/modals.spec.js | modify | original/tests/modals.spec.js | 4f449ef7caebcbd80c7cd50a84a25c5409525c330fff3e28d8012c16bee49452
+- tests/navbar.spec.js | modify | original/tests/navbar.spec.js | 62e171064e54742191c75fe435780756b71f254634b61f139956a4ccdff837d3
+- tests/offcanvas.spec.js | modify | original/tests/offcanvas.spec.js | 1e34aecf42618a8b38cb4b46c7127c82c115a0dc224cabdc8d49e0f654e8c2ba
+- tests/pagination-breadcrumbs.spec.js | modify | original/tests/pagination-breadcrumbs.spec.js | e7a941d889443716b28e451b259eef094525961d3cbe6ad52822a693c57d2c26
+- tests/progress.spec.js | modify | original/tests/progress.spec.js | 703090c4f5ea0de97e44bb3fb54531d70b47ce60524bf2f88cd04fc69ef72d71
+- tests/tabs-pills.spec.js | modify | original/tests/tabs-pills.spec.js | c0177cb9fb5fafb1d2c45ce9599ea163c07023b79c480ed565a26d4ba2ec455b
+- tests/toasts.spec.js | modify | original/tests/toasts.spec.js | 97b0c7056989974557f7cf4dfda71edc643d6dd7a4650bdf8f6316f231e48b69
+- tests/tooltips-popovers.spec.js | modify | original/tests/tooltips-popovers.spec.js | ee51959462963a43696312341f223620620aaf1fcab993804df8ee5a1c7f0ed9
+- tests/typography.spec.js | modify | original/tests/typography.spec.js | 4f4e461d621679b63da1597721dbfad8bd2b612acf04df0b793bea8c3a2e6272
+Iteration 2 | assets/js/admin-theme.js | .task-backups/20261113_admin_theme_tokens/iterations/2/assets/js/admin-theme.js | 0C9F872BF95BB0DFEC8F4E23C2CD15007CB2EF795630C7E6E2EE5E95E62770DE
+Iteration 2 | assets/css/admin-theme.css | .task-backups/20261113_admin_theme_tokens/iterations/2/assets/css/admin-theme.css | 3207FA5ABF57584F4121D8D1286930CEEB90C3010501D535006BAD8801E6EEBD
+Final SHA-256
+- accordion.html | 9BC0ED3CEA58AE823F62C1C9B9A8AEECA9B131118C6FA759FA98ABEB4660FCAC
+- alerts.html | BB9D2016BB4B5326CF7D2754F64CFC944F8379A6C87B0A0E9F33B1988A292098
+- assets/css/accordion.css | 666461306DBEB29103869BEA006787D9D49B0189959029455692E4179A18F231
+- assets/css/admin-theme.css | BDA57196F708F4CDDA0FB74EB45D160BB6D708C1943633E5FB7F0125DD3411FF
+- assets/css/alerts.css | FF8D8AC27D89E7FC353723B758538FA42D68E74162E56AA708D0EA53A44160AD
+- assets/css/auth-login.css | CB83144736778083F7F97D8691AF0D9391FA6CBE65CBB91CAB339B0B9DF0AB2A
+- assets/css/avatar.css | B016A23DCE749F954C742618228103AE678C0AE02529B95E5312A74DBBD88F98
+- assets/css/badges.css | A17B6A4E37292234847CB24437385DBFE7577A2E9B6EE1B5FA597F92C99B0BF7
+- assets/css/blockui.css | B6F6D4884D4FA445713FA444A53074300BCFBF640713319D056C99FEDC2E4754
+- assets/css/buttons.css | 44141DDB55C59D44233126B52AE1F92DED018568B3D0687EE970D9D38FB7ECA8
+- assets/css/cards.css | 7E534FAAA8CF0BE5FEBF9EA74C4D50640FD418213ECF64D825E946E18554754D
+- assets/css/carousel.css | 2F2EBAA2BCDF975732DD2DED4D63C6B2673C8B5CD9B8CC7C72B1DCF094CA962B
+- assets/css/collapse.css | F23DFF66C714A2E24D2839716CA148A1F6CF9E3697347CB98C87A4DBF852D3FB
+- assets/css/drag-drop.css | EC9BEB2E770F4B242633B9B34D05882E67C610EA5AF588E3CCE5692605CF1769
+- assets/css/dropdowns.css | ADEC5902B609C72A0C82654E22920092CFD936B8407EF23450A1304899AB530F
+- assets/css/form-elements.css | 5C45F6D14FE919284C1C03B26710722DB6BF8AFA5811FECD58CB08A393A8CA1B
+- assets/css/layouts.css | 13F62ADDA01165C279F1744392CA23375C805E314E90DA93768CFECF3E58ECA2
+- assets/css/modals.css | 2595D34597005E0C2DCEB37E51D4BCCC88C6CD111B996E4126DCA99149AF7B9A
+- assets/css/navbar.css | C2C0A7B59D1A378E230A6F04EF41D7443DEF9C0788BFB4FA4EE1CDE465941C96
+- assets/css/offcanvas.css | 21B35FDB73E42CB9D7843257B7365B67E0C2884481F2E487DCB8EE0CF511235C
+- assets/css/pagination-breadcrumbs.css | 638A6FF3D68B24B993C8EB17A307E402A0FDE542C7E054130866C8254EAB06AB
+- assets/css/perfect-scrollbar.css | 29940B43FDDE0D64ECAF8F907C2C439147E61439BBD4FEEF8065098BD4B02B0B
+- assets/css/progress.css | FE3B6601BE020F031796E994E43628DA8AF8A55996D1F2365DE60A11759FD4AA
+- assets/css/tables-basic.css | 82CEC5A16D7215632A3CFBA99C51998F13B3361929D54691E9B92100280F4EE5
+- assets/css/tabs-pills.css | DD8F4D1DF7A065DD62C00D8376B15111644048FE489BCF946A27D70A16971B15
+- assets/css/text-divider.css | 9BFF0B6E835C8A1874C4AC1BF8DF26FE8E78EAADA7C630BFF60A89FDA2DF807F
+- assets/css/toasts.css | A633439914F03AC2C109FC811AEE667F6209ECA589E4F352E9C93DD10EC2903A
+- assets/css/tooltips-popovers.css | AE7B860A7480863395F556452B1A7D1A98808D1EDB3BFA86F6418F491E9CC838
+- assets/css/tour.css | CBADCB68D333D195136AB1EBAA17AB1A588119EB6D781B50BB32218E522831E7
+- assets/css/treeview.css | 31DF886C126C0C330435AFDF692CE0C0043E2373078FF60109BB3A7FCC0CE8E8
+- assets/css/typography.css | B8271818D2E21D812C7DF69463A082D703AC656A4A3239877707DD3C8EB3D39C
+- assets/js/admin-theme.js | E30CA02401F127741F9BE04D0688FBAEC181C66923032DEF9F7F9BB1649E6BAF
+- auth-login-basic.html | 3469C6804B477BCFD7DB096ADF49A10671989E6A1F17F3F61102E6ED7925D549
+- auth-login-cover.html | 586521BC4448BA7CF9D69CB61B978C9C3F3DCFEF1438EEEF70F1D9BECB0D11CB
+- avatar.html | 3863C315342B8228523688EAEA5E2098D66FCC34E2E2EB152C308C77CC3A848D
+- badges.html | 9B3F2133413D32DFBE152583C21952C6A5E80B5CE65D8F424BE031A07BF315C3
+- basic-inputs.html | 068B019093B575993FAD3FAEA79DE15CFCA3A643CCEACEEBE23912C3C3C96057
+- blockui.html | 2D38F22D97EABC7507C4F87A0249F31803E919651B57814E4F8AF431ABF76494
+- button.html | 333FBA62DD9FFA6F7DADF37722D8198354E67295C405B42B786832A1CF4C9212
+- cards.html | C7CE4DFBB4782D605F505AA186C89FFDEEEEC966AD9C724B8DD86716D9A1CF9D
+- carousel.html | DF72AF65A22C8F7F55DBB36BD64C1F4AE96E1DFE6E35C1C544F9FA73CC33DA29
+- collapse.html | 2542CE8310EAD577F6FC352CF8978EE01736E3E7B920349A215D759D2736F334
+- custom-options.html | DA09FC52BC1EFBE0EB24E55B13C89032F6A14F140765C84FC93C08ED4DDBC3CB
+- drag-drop.html | 5946D00E9ED580F7855773C4DBD679377B2215FC99F4521C1F6B684F68EC2C40
+- dropdowns.html | AFB23C07078650E0D9BD583A40048EEF29F352E506D199F3C2DED43AC5474F75
+- editors.html | 4194F20450F9757B3F93806947A322EA5DB5929638DF010B3E4B7560A1DF7BE3
+- file-upload.html | 01E29122DFC8F0C3AF9F9E21ED53886B0BC91129E897870A51FCE364BBD3B8DB
+- form-extras.html | 66E989B6592E3580DCA0D32D4EB38BC3959F83EE927CE0134596770F00F189CE
+- form-layouts-horizontal.html | 499CA47E02FFE84F8F1347F9A9E59D9E50BCFC0117E164DBF57C547408EDB6D4
+- form-layouts-sticky.html | 7F9B84A4033F09DFAC952A58E66E70A21ED3CCB323AD1B3C86C2FA28E0BB18CA
+- form-layouts-vertical.html | F2CC9276C7E3E4A45FA57A5DF54626E2CD579229FDB14FB838C43ECAA18DCB68
+- form-validation.html | 51B1F178B1AB965CEB9F4510A2DBCFD1268A9F67903569E5EF5DD1A37A94431B
+- form-wizard-icons.html | 72511E1EDF663144C05D0157E286CC2E8F4645CF1C52E46EE42DBE4DD64BB1D0
+- form-wizard-numbered.html | C2BE0736FAFD377457E50F8ECD632D798BC1888F92D8DDF1014A67EB9B72720C
+- input-groups.html | B1050E417D29AB9283395CA6A3DF0D6552D92FCE9DF7965732031CCAD4536582
+- layouts/blank_layout.html | DC71282E1EFB67E5F36A7F8EB51CF465076F4945AFA3DC2042174E80F353CF88
+- layouts/boxed_layout.html | FCEF45543E8C8ECC8D643C45BA76BF539E0F50FFB88317EA22294311A371CEA2
+- layouts/compact_layout.html | 426CBE0A6606D5700262329551F0870D7F7EA26FF8B822AE32D3189E3645A381
+- layouts/default_layout.html | E307ED55D355D8F81A45E923D0C4DBC6B818F1793CC031E37C2F997EDD019D0F
+- layouts/horizontal_layout.html | 51CB971E872EF0C9D41454BF1B0ED33B7D671B52F39B841FC2CC3CD35D54EC90
+- layouts/single_column_layout.html | 54770E7F3387F62EA796182FFAD04EA1F89F36226DB1CCB3B06BBF5CEBCE0CC3
+- login.html | A323EEC25FBC04220F82FF96823D2725D8DCE9FDAAF734DF1FA997075FEE044F
+- modals.html | AAF1F9188205A490C0E1676A34EDB2B4796A13A4BC8AA44D5ADEA4114874D8DC
+- navbar.html | FDD214629D0FADA78FC90C90F4C2AF7E62C09E1B34EECDF5AD39224ECA0FA62B
+- offcanvas.html | C8DA9530F78961ABF0AF456D4E7FF8D06081147B9AE7BC157CDE67E190140B77
+- pagination-breadcrumbs.html | 86F77A1FC43E3F3B4D54AA7EBA2240718DE71176778D4D8CE81B8EB57D747DB1
+- perfect-scrollbar.html | AF1DF45C2168957A9AA0CEA9C4486FFE9B19CF097DAD0E05DF298EAF41AABE86
+- pickers.html | F7547963395C8102A853A0BDC8A4ABC0570AB277399A9D8B9AE79D51612591F2
+- progress.html | 7B39A8A27D71A4211F964405B2EDC637E8A4966900134536407ED8ADD9346626
+- selects.html | 4327D03F9A65FAE54E9EC11EF0CE599E41EFA70CB28CCEEDA20E362F27F66A89
+- sliders.html | 39449C7ED9EF324AE4346D882C8EFEDA02CC559A7174A9A37BAE933E4875E8C7
+- switches.html | 3BB31863B973C3358E9EEAF63B7DD2D8EA7C8ADAEB331D48414DB18772972E00
+- tables-basic.html | D0DE3071C10535A5B535DF47F9A13B364C93DAEE744DF6A703B07D35F32436F5
+- tabs-pills.html | 804BBC440414C5363B88007B605CF515F44F079EE1209AF10412313C0D46CE1D
+- tests/accordion.spec.js | B0AED8464BAB6C6703AC6F0C959A21DBD528CB1B21D2F93CDA46A135B7747BD8
+- tests/admin-theme.spec.js | 0D3510C7003613517140D852BDCB216018417099966F205B64127FCE962B5EBE
+- tests/alerts.spec.js | 56DDD2304B9D1AF5C78780462D6BA3BC5045A854F65776034860805B07605873
+- tests/avatar.spec.js | 42BEAF17D8B393A70DE568CFF463C2C485F9FA775A633B874C1E5D75B33DEF04
+- tests/badges.spec.js | 570A6208BEC1C0BCE4DFD6C7C06463F320DB6823F0C9A0381CC738D488DCFE89
+- tests/blockui.spec.js | 0ECBD7C46E61B0753581B6D37E0E887408FC27851C08F6394493E6903BBB076D
+- tests/buttons.spec.js | C040AB7F37DEE53AAC22B96C5B8B4D5BE7BA0E62C7C1F31580223948E5CCD450
+- tests/cards.spec.js | 345872B9FB6EA00194109864A977D6794363E5F8F55DEA60634A99E98AE87FBF
+- tests/carousel.spec.js | 454EFF42648FBD8541020CFD7AB27DA1E2E05BB8CF8ECEBED5E0EA70A951663E
+- tests/collapse.spec.js | B99791976C826B0F4E1F01FCD874CAC62479C3991A0E1B34ED0B3EE63B9DA539
+- tests/drag-drop.spec.js | 8B0AADBAF2B303BEEA0E569CAAA26CFD63A86C8DBF0050E477B6712CDB0365F3
+- tests/dropdowns.spec.js | DF36720B28A6314CE0EEF0C83C671EEE34C71948ED9F8108696F6F331FF1232F
+- tests/form-elements.spec.js | C08F90A83AF814216CE9C3C9806154344E0C4C2B3F8BD983BC8CB981EDC943A6
+- tests/layouts.spec.js | 703B807D393FC1A5231509671FD5BE9872A161BDE6EA035A9565C22CA1826C28
+- tests/modals.spec.js | D674AF4E943E7EE1C10DCB6DC5A69D6D14778B25DC71657C127EC72BD9A0EE29
+- tests/navbar.spec.js | 331F0CD6273AFD7A9EC117E346CBBB02FE7A1EDC3B77F3A819FFD43FB8F198D2
+- tests/offcanvas.spec.js | FE460B73D3D88E7EB341E2E16B6BDBAC2A8A1A8C515E9B8F11531BA969EA85C1
+- tests/pagination-breadcrumbs.spec.js | 99EABAC9C9FEAE0F14AFC47FA65ABBB494DBB43FEBAE008C16F8A0FF9AA1B7AC
+- tests/progress.spec.js | DCB0DF02944B95C0787030332D2F4B508999FFF5CA846778ACCFBC972E376054
+- tests/tabs-pills.spec.js | E6E7D4062BB9E06CF5CE8D4B05D73909D37E7CB0D013636D94EDC490577A1594
+- tests/toasts.spec.js | 1DF907B508A62264689EFA67295CC8709C3A589A43245B3CC047838DA966E206
+- tests/tooltips-popovers.spec.js | 6C6DABA06B18ACA5765A81B6548B262B9B9DFE0967251DFA184822F514B77A59
+- tests/typography.spec.js | 4039A6180C8FCA42BE59EC46BC0822580B51797136A97B503B76E72D430C7B1E
+- text-divider.html | FD72EB4787F9AE1C4065901676DFC0267E0EF5021E4C6E9586747135F98E2EF5
+- toasts.html | 94F6A60F90498D9286648BE752EFBAEE2BCA436224F6CB784197AF728FE5134C
+- tooltips-popovers.html | 7FF5B5E9A55118120490C478D99387C8F7504EE370274F85652E0352FD4C9A80
+- tour.html | C08F3053A842E56BDC99E046EEB42A60ABFB390E01AAEDDA8FCA82C0DD8159CC
+- treeview.html | A483CD47DB02EFE875545E1B0D5FACAFF7B7B391C4C2C3682DFC74839912F918
+- typography.html | 104DCEE951E97A00AF2CAB62670A0B0F0429176F116BDB97A7862389110F475C
+Chrome PASS: 50 pages in both modes, keyboard switching, HTTP persistence, System changes, blocked storage, calendar popup. Layouts, accordion, alerts, form-elements, pickers, selects and form-validation passed. git diff --check passed.

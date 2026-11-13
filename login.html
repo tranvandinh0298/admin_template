@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Variants · Materio</title>
+    <link rel="stylesheet" href="assets/css/layouts.css">
+    <style>
+        .login-gallery { max-width: 1120px; margin: auto; padding: 24px; }
+        .login-variants { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+        .login-variant { padding: 24px; border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); }
+        .login-variant h2 { margin: 16px 0 8px; font-size: 18px; }
+        .login-variant a { color: var(--theme-ink-5420af); text-decoration: underline; }
+        .login-diagram { display: grid; place-items: center; height: 150px; border-radius: 6px; background: var(--theme-surface-f1e9ff); }
+        .login-diagram span { width: 35%; height: 70%; border-radius: 5px; background: var(--surface); box-shadow: var(--shadow); }
+        .login-diagram-cover { grid-template-columns: 3fr 2fr; background: linear-gradient(to right, var(--theme-surface-e8dcff) 60%, var(--surface) 60%); }
+        .login-diagram-cover span { grid-column: 2; width: 72%; }
+        @media (max-width: 599px) { .login-variants { grid-template-columns: minmax(0, 1fr); } }
+    </style>
+    <script src="assets/js/admin-theme.js"></script>
+    <link rel="stylesheet" href="assets/css/admin-theme.css">
+</head>
+<body>
+    <main class="login-gallery">
+        <h1>Login Variants</h1>
+        <div class="login-variants">
+            <section class="login-variant">
+                <div class="login-diagram" aria-hidden="true"><span></span></div>
+                <h2>Basic Login</h2>
+                <p>A centered sign-in card.</p>
+                <a href="auth-login-basic.html">Open Basic Login</a>
+            </section>
+            <section class="login-variant">
+                <div class="login-diagram login-diagram-cover" aria-hidden="true"><span></span></div>
+                <h2>Cover Login</h2>
+                <p>A split layout with an illustration on wider screens.</p>
+                <a href="auth-login-cover.html">Open Cover Login</a>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

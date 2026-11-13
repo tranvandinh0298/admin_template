@@ -1,0 +1,37 @@
+.ed-card {
+    min-width: 0;
+    margin-block-end: 24px;
+    padding: 24px;
+    background: var(--surface);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+.ed-card h2 { margin: 0 0 18px; font-size: 18px; font-weight: 500; }
+.ed-help { color: #625a70; font-size: 14px; }
+.ed-frame .ql-container { font: inherit; }
+.ed-frame .ql-editor { min-height: 170px; overflow-wrap: anywhere; }
+.ed-frame[data-editor="full"] .ql-editor { min-height: 240px; }
+.ed-frame[data-editor="bubble"] { border: 1px solid #c6bfce; border-radius: 6px; }
+.ed-frame .ql-toolbar.ql-snow { border-radius: 6px 6px 0 0; border-color: #c6bfce; }
+.ed-frame .ql-container.ql-snow { border-radius: 0 0 6px 6px; border-color: #c6bfce; }
+.ed-frame .ql-toolbar .ql-formats { margin: 2px 8px 2px 0; }
+.ed-frame .ql-editor:focus-visible, .ed-frame .ql-toolbar :focus-visible {
+    outline: 2px solid #7540de;
+    outline-offset: -2px;
+}
+.ed-frame .ql-bubble .ql-tooltip {
+    max-width: 100%;
+    white-space: normal;
+    z-index: 4;
+}
+.ed-frame .ql-bubble .ql-toolbar { padding: 4px 8px; }
+.ed-frame .ql-snow .ql-tooltip {
+    max-width: 100%;
+    white-space: normal;
+    z-index: 4;
+}
+.ed-frame .ql-snow .ql-tooltip input { max-width: 100%; }
+.ed-frame .ql-editor :is(img, iframe) { max-width: 100%; }
+@media (max-width: 600px) {
+    .ed-card { padding: 16px; }
+}

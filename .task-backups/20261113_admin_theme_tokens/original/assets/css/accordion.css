@@ -1,0 +1,29 @@
+.accordion-page .content-inner { max-width:1440px; margin-inline:auto; }
+.accordion-page .content h1 { font-size:18px; margin-bottom:24px; }
+.accordion-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.accordion-section { min-width:0; }
+.accordion-section h3 { font-size:13px; font-weight:400; color:#6d6777; margin:0 0 18px; }
+.accordion-demo { border-radius:6px; background:#fff; box-shadow:0 3px 9px #2e263d26; }
+.accordion-item { border-bottom:1px solid var(--line); }
+.accordion-item:last-child { border-bottom:0; }
+.accordion-item h4 { margin:0; font-weight:400; }
+.accordion-trigger { display:flex; align-items:center; gap:10px; width:100%; border:0; background:#fff; color:var(--text); font:inherit; font-size:15px; line-height:1.5; padding:12px 20px; text-align:left; border-radius:5px; }
+.accordion-trigger > span { flex:1; min-width:0; overflow-wrap:anywhere; }
+.accordion-trigger:focus-visible { outline:3px solid var(--accent); outline-offset:-3px; }
+.accordion-trigger:hover { color:var(--accent); }
+.accordion-indicator { font-size:12px; flex:none; }
+.accordion-demo:not(.custom) .is-open .accordion-indicator { transform:rotate(180deg); }
+.accordion-body { padding:0 20px 20px; color:#6d6777; font-size:15px; line-height:1.4; overflow-wrap:anywhere; }
+.accordion-body p { margin:0; }
+.accordion-panel[hidden] { display:none; }
+.accordion-demo:not(.custom) .is-open { margin-block:8px; box-shadow:0 3px 9px #2e263d20; border-radius:6px; background:#fff; border-bottom:0; }
+.accordion-demo:not(.custom) .is-open:first-child { margin-top:0; }
+.accordion-demo:not(.custom) .is-open:last-child { margin-bottom:0; }
+.accordion-demo.custom { border:1px solid var(--line); box-shadow:none; overflow:hidden; }
+.accordion-demo.custom .accordion-trigger { background:#fafafa; border-radius:0; }
+.accordion-demo.custom .accordion-body { padding-top:20px; }
+.accordion-demo.custom .is-open .accordion-trigger { border-bottom:1px solid var(--line); }
+.accordion-page .custom-heading { font-size:18px; font-weight:500; border-top:1px solid var(--line); padding-top:48px; margin:48px 0 24px; }
+.accordion-page .menu-link > i { width:24px; text-align:center; }
+.accordion-page .menu-toggle i { font-size:22px; }
+@media(max-width:767px) { .accordion-grid { grid-template-columns:minmax(0,1fr); gap:28px; } .accordion-page .custom-heading { margin-top:32px; padding-top:32px; } }

@@ -1,0 +1,1 @@
+SortableJS1.15.6 MIT,unmodified. Source:https://www.npmjs.com/package/sortablejs/v/1.15.6. Local versioned jsDelivr assets. Adapter adds accessible toolbar,unique clones,cancel snapshots and reducedmotion. ExistingneutralavatarPNGassets reused.

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Input Groups · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/form-elements-demo.css">
+        <script src="assets/js/form-elements.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="input-groups-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a></nav>
+                <nav aria-label="Form Elements">
+                    <p class="menu-caption">FORM ELEMENTS</p>
+                    <a class="menu-link" href="basic-inputs.html">Basic Inputs</a>
+                    <a class="menu-link" href="input-groups.html" aria-current="page">Input Groups</a>
+                    <a class="menu-link" href="custom-options.html">Custom Options</a>
+                    <a class="menu-link" href="editors.html">Editors</a>
+                    <a class="menu-link" href="file-upload.html">File Upload</a>
+                    <a class="menu-link" href="pickers.html">Pickers</a>
+                    <a class="menu-link" href="selects.html">Selects</a>
+                    <a class="menu-link" href="sliders.html">Sliders</a>
+                    <a class="menu-link" href="switches.html">Switches</a>
+                    <a class="menu-link" href="form-extras.html">Form Extras</a>
+                </nav>
+                <nav aria-label="Form Layouts">
+                    <p class="menu-caption">FORM LAYOUTS</p>
+                    <a class="menu-link" href="form-layouts-vertical.html">Vertical Form</a>
+                    <a class="menu-link" href="form-layouts-horizontal.html">Horizontal Form</a>
+                    <a class="menu-link" href="form-layouts-sticky.html">Sticky Actions</a>
+                </nav>
+                <nav aria-label="Form Wizard">
+                    <p class="menu-caption">FORM WIZARD</p>
+                    <a class="menu-link" href="form-wizard-numbered.html">Numbered</a>
+                    <a class="menu-link" href="form-wizard-icons.html">Icons</a>
+                </nav>
+                <nav aria-label="Form validation navigation">
+                    <a class="menu-link" href="form-validation.html">Form Validation</a>
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >Form Elements / Input Groups</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1"><div class="content-inner"><h1>Input Groups</h1><p id="ig-status" role="status" class="ig-status"></p><div class="ig-grid">
+<section class="bi-card"><h2>Floating (Outline)</h2>
+<div class="ig-row"><span class="ig-addon"><i class="fa-solid fa-list" aria-hidden="true"></i></span><div class="bi-field ig-control bi-floating"><select id="ig-1" class="bi-control" ><option>Choose…</option><option>One</option><option>Two</option><option>Three</option></select><label for="ig-1">Works with selects</label></div></div>
+<div class="ig-row"><span class="ig-addon">@</span><div class="bi-field ig-control bi-floating"><input type="text" id="ig-2" class="bi-control" placeholder="Jane Doe"><label for="ig-2">Username</label></div></div>
+<div class="ig-row"><span class="ig-addon"><i class="fa-solid fa-lock" aria-hidden="true"></i></span><div class="bi-field ig-control bi-floating"><input type="password" id="ig-3" class="bi-control" placeholder="Password" autocomplete="new-password"><label for="ig-3">Password</label></div><button type="button" class="ig-button" data-password aria-label="Show password" aria-pressed="false"><i class="fa-solid fa-eye" aria-hidden="true"></i></button></div>
+<div class="ig-row"><div class="bi-field ig-control bi-floating"><input type="text" id="ig-4" class="bi-control" placeholder="jane.doe"><label for="ig-4">Recipient’s username</label></div><span class="ig-addon">@example.com</span></div>
+<div class="ig-row"><span class="ig-addon">https://example.com/</span><div class="bi-field ig-control bi-floating"><input type="text" id="ig-5" class="bi-control" placeholder="id"><label for="ig-5">URL</label></div></div>
+<div class="ig-row"><span class="ig-addon">$</span><div class="bi-field ig-control bi-floating"><input type="number" id="ig-6" class="bi-control" placeholder="499"><label for="ig-6">Amount</label></div><span class="ig-addon">.00</span></div>
+<div class="ig-row"><span class="ig-addon"><i class="fa-solid fa-comment" aria-hidden="true"></i></span><div class="bi-field ig-control bi-floating"><textarea id="ig-7" class="bi-control" placeholder="Add a comment" rows="2"></textarea><label for="ig-7">Comment</label></div></div>
+</section>
+<section class="bi-card"><h2>Floating (Filled)</h2>
+<div class="ig-row"><span class="ig-addon"><i class="fa-solid fa-list" aria-hidden="true"></i></span><div class="bi-field ig-control bi-floating bi-filled"><select id="ig-8" class="bi-control" ><option>Choose…</option><option>One</option><option>Two</option><option>Three</option></select><label for="ig-8">Works with selects</label></div></div>
+<div class="ig-row"><span class="ig-addon">@</span><div class="bi-field ig-control bi-floating bi-filled"><input type="text" id="ig-9" class="bi-control" placeholder="Jane Doe"><label for="ig-9">Username</label></div></div>
+<div class="ig-row"><span class="ig-addon"><i class="fa-solid fa-lock" aria-hidden="true"></i></span><div class="bi-field ig-control bi-floating bi-filled"><input type="password" id="ig-10" class="bi-control" placeholder="Password" autocomplete="new-password"><label for="ig-10">Password</label></div><button type="button" class="ig-button" data-password aria-label="Show password" aria-pressed="false"><i class="fa-solid fa-eye" aria-hidden="true"></i></button></div>
+<div class="ig-row"><div class="bi-field ig-control bi-floating bi-filled"><input type="text" id="ig-11" class="bi-control" placeholder="jane.doe"><label for="ig-11">Recipient’s username</label></div><span class="ig-addon">@example.com</span></div>
+<div class="ig-row"><span class="ig-addon">https://example.com/</span><div class="bi-field ig-control bi-floating bi-filled"><input type="text" id="ig-12" class="bi-control" placeholder="id"><label for="ig-12">URL</label></div></div>
+<div class="ig-row"><span class="ig-addon">$</span><div class="bi-field ig-control bi-floating bi-filled"><input type="number" id="ig-13" class="bi-control" placeholder="499"><label for="ig-13">Amount</label></div><span class="ig-addon">.00</span></div>
+<div class="ig-row"><span class="ig-addon"><i class="fa-solid fa-comment" aria-hidden="true"></i></span><div class="bi-field ig-control bi-floating bi-filled"><textarea id="ig-14" class="bi-control" placeholder="Add a comment" rows="2"></textarea><label for="ig-14">Comment</label></div></div>
+</section>
+<section class="bi-card"><h2>Merged</h2>
+<div class="ig-merged"><div class="ig-row"><span class="ig-addon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></span><div class="bi-field ig-control ig-hidden-label"><input type="search" id="ig-15" class="bi-control" placeholder="Search…"><label for="ig-15">Search</label></div></div><div class="ig-row"><span class="ig-addon"><i class="fa-solid fa-lock" aria-hidden="true"></i></span><div class="bi-field ig-control "><input type="password" id="ig-16" class="bi-control" placeholder="Password" autocomplete="new-password"><label for="ig-16">Password</label></div><button type="button" class="ig-button" data-password aria-label="Show password" aria-pressed="false"><i class="fa-solid fa-eye" aria-hidden="true"></i></button></div><div class="ig-row"><div class="bi-field ig-control "><input type="text" id="ig-17" class="bi-control" ><label for="ig-17">Recipient’s username</label></div><span class="ig-addon">@example.com</span></div><div class="ig-row"><span class="ig-addon">$</span><div class="bi-field ig-control "><input type="number" id="ig-18" class="bi-control" ><label for="ig-18">Amount</label></div><span class="ig-addon">.00</span></div></div>
+</section>
+<section class="bi-card"><h2>Basic</h2>
+<div class="ig-row"><span class="ig-addon"><i class="fa-solid fa-list" aria-hidden="true"></i></span><div class="bi-field ig-control "><select id="ig-19" class="bi-control" ><option>Choose…</option><option>One</option><option>Two</option><option>Three</option></select><label for="ig-19">Works with selects</label></div></div>
+<div class="ig-row"><span class="ig-addon">@</span><div class="bi-field ig-control "><input type="text" id="ig-20" class="bi-control" placeholder="Jane Doe"><label for="ig-20">Username</label></div></div>
+<div class="ig-row"><span class="ig-addon"><i class="fa-solid fa-lock" aria-hidden="true"></i></span><div class="bi-field ig-control "><input type="password" id="ig-21" class="bi-control" placeholder="Password" autocomplete="new-password"><label for="ig-21">Password</label></div><button type="button" class="ig-button" data-password aria-label="Show password" aria-pressed="false"><i class="fa-solid fa-eye" aria-hidden="true"></i></button></div>
+<div class="ig-row"><div class="bi-field ig-control "><input type="text" id="ig-22" class="bi-control" placeholder="jane.doe"><label for="ig-22">Recipient’s username</label></div><span class="ig-addon">@example.com</span></div>
+<div class="ig-row"><span class="ig-addon">https://example.com/</span><div class="bi-field ig-control "><input type="text" id="ig-23" class="bi-control" placeholder="id"><label for="ig-23">URL</label></div></div>
+<div class="ig-row"><span class="ig-addon">$</span><div class="bi-field ig-control "><input type="number" id="ig-24" class="bi-control" placeholder="499"><label for="ig-24">Amount</label></div><span class="ig-addon">.00</span></div>
+<div class="ig-row"><span class="ig-addon"><i class="fa-solid fa-comment" aria-hidden="true"></i></span><div class="bi-field ig-control "><textarea id="ig-25" class="bi-control" placeholder="Add a comment" rows="2"></textarea><label for="ig-25">Comment</label></div></div>
+</section>
+<section class="bi-card"><h2>Sizing &amp; Shape</h2>
+<div class="ig-size ig-size-0"><div class="ig-row"><span class="ig-addon">Small</span><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-26" class="bi-control" placeholder="Username"><label for="ig-26">Username</label></div></div></div>
+<div class="ig-size ig-size-1"><div class="ig-row"><span class="ig-addon">Default</span><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-27" class="bi-control" placeholder="Username"><label for="ig-27">Username</label></div></div></div>
+<div class="ig-size ig-size-2"><div class="ig-row"><span class="ig-addon">Large</span><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-28" class="bi-control" placeholder="Username"><label for="ig-28">Username</label></div></div></div>
+<div class="ig-size ig-size-3"><div class="ig-row"><span class="ig-addon">Rounded</span><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-29" class="bi-control" placeholder="Username"><label for="ig-29">Username</label></div></div></div>
+<div class="ig-size ig-size-4"><div class="ig-row"><span class="ig-addon">Rounded small</span><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-30" class="bi-control" placeholder="Username"><label for="ig-30">Username</label></div></div></div>
+<div class="ig-size ig-size-5"><div class="ig-row"><span class="ig-addon">Rounded large</span><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-31" class="bi-control" placeholder="Username"><label for="ig-31">Username</label></div></div></div>
+<div class="ig-size ig-size-6"><div class="ig-row"><span class="ig-addon">Merged</span><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-32" class="bi-control" placeholder="Username"><label for="ig-32">Username</label></div></div></div>
+</section>
+<section class="bi-card"><h2>Checkbox and radio addons</h2>
+<div class="ig-row"><span class="ig-addon"><input type="checkbox" aria-label="Enable option"></span><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-33" class="bi-control" placeholder="Username"><label for="ig-33">Username</label></div></div>
+<div class="ig-row"><span class="ig-addon"><input type="radio" name="group-choice" aria-label="Select option"></span><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-34" class="bi-control" placeholder="Username"><label for="ig-34">Username</label></div></div>
+</section>
+<section class="bi-card"><h2>Multiple inputs &amp; addon</h2>
+<div class="ig-row"><span class="ig-addon">Name</span><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-35" class="bi-control" placeholder="First name"><label for="ig-35">First name</label></div><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-36" class="bi-control" placeholder="Last name"><label for="ig-36">Last name</label></div></div>
+<div class="ig-row"><span class="ig-addon">$</span><span class="ig-addon">0.00</span><div class="bi-field ig-control ig-hidden-label"><input type="number" id="ig-37" class="bi-control" ><label for="ig-37">Amount</label></div></div>
+<div class="ig-row"><div class="bi-field ig-control ig-hidden-label"><input type="number" id="ig-38" class="bi-control" ><label for="ig-38">Amount</label></div><span class="ig-addon">$</span><span class="ig-addon">0.00</span></div>
+</section>
+<section class="bi-card"><h2>Speech To Text</h2>
+<div class="ig-row"><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-39" class="bi-control" placeholder="Say it"><label for="ig-39">Dictation</label></div><button type="button" class="ig-button" data-speech aria-label="Start dictation"><i class="fa-solid fa-microphone" aria-hidden="true"></i></button></div>
+<div class="ig-row"><button type="button" class="ig-button" data-speech aria-label="Start dictation"><i class="fa-solid fa-microphone" aria-hidden="true"></i></button><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-40" class="bi-control" placeholder="Say it"><label for="ig-40">Dictation</label></div></div>
+<p class="ig-note">Dictation uses your browser’s speech service. You can also type.</p>
+</section>
+<section class="bi-card"><h2>Button with dropdowns &amp; addons</h2>
+<div class="ig-row"><button type="button" class="ig-button" data-action>Button</button><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-41" class="bi-control" placeholder="Username"><label for="ig-41">Username</label></div></div>
+<div class="ig-row"><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-42" class="bi-control" placeholder="Username"><label for="ig-42">Username</label></div><button type="button" class="ig-button" data-action>Button</button></div>
+<div class="ig-row"><button type="button" class="ig-button" data-action>Button</button><button type="button" class="ig-button" data-action>Button</button><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-43" class="bi-control" placeholder="Username"><label for="ig-43">Username</label></div></div>
+<div class="ig-row"><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-44" class="bi-control" placeholder="Username"><label for="ig-44">Username</label></div><button type="button" class="ig-button" data-action>Button</button><button type="button" class="ig-button" data-action>Button</button></div>
+<div class="ig-row"><details class="ig-dropdown"><summary>Dropdown <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary><div class="ig-popup"><button type="button" class="ig-button" data-option>Action</button><button type="button" class="ig-button" data-option>Another action</button><button type="button" class="ig-button" data-option>Something else</button></div></details><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-45" class="bi-control" placeholder="Username"><label for="ig-45">Username</label></div></div>
+<div class="ig-row"><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-46" class="bi-control" placeholder="Username"><label for="ig-46">Username</label></div><details class="ig-dropdown"><summary>Dropdown <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary><div class="ig-popup"><button type="button" class="ig-button" data-option>Action</button><button type="button" class="ig-button" data-option>Another action</button><button type="button" class="ig-button" data-option>Something else</button></div></details></div>
+<div class="ig-row"><details class="ig-dropdown"><summary>Dropdown <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary><div class="ig-popup"><button type="button" class="ig-button" data-option>Action</button><button type="button" class="ig-button" data-option>Another action</button><button type="button" class="ig-button" data-option>Something else</button></div></details><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-47" class="bi-control" placeholder="Username"><label for="ig-47">Username</label></div><details class="ig-dropdown"><summary>Dropdown <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary><div class="ig-popup"><button type="button" class="ig-button" data-option>Action</button><button type="button" class="ig-button" data-option>Another action</button><button type="button" class="ig-button" data-option>Something else</button></div></details></div>
+</section>
+<section class="bi-card"><h2>Segmented buttons</h2>
+<div class="ig-row"><button type="button" class="ig-button" data-action>Action</button><details class="ig-dropdown"><summary aria-label="More actions"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary><div class="ig-popup"><button type="button" class="ig-button" data-option>Action</button><button type="button" class="ig-button" data-option>Another action</button><button type="button" class="ig-button" data-option>Something else</button></div></details><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-48" class="bi-control" placeholder="Username"><label for="ig-48">Username</label></div></div>
+<div class="ig-row"><div class="bi-field ig-control ig-hidden-label"><input type="text" id="ig-49" class="bi-control" placeholder="Username"><label for="ig-49">Username</label></div><button type="button" class="ig-button" data-action>Action</button><details class="ig-dropdown"><summary aria-label="More actions"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary><div class="ig-popup"><button type="button" class="ig-button" data-option>Action</button><button type="button" class="ig-button" data-option>Another action</button><button type="button" class="ig-button" data-option>Something else</button></div></details></div>
+</section>
+<section class="bi-card"><h2>Custom select</h2>
+<div class="ig-row"><span class="ig-addon">Options</span><div class="bi-field ig-control ig-hidden-label"><select id="ig-50" class="bi-control" ><option>Choose…</option><option>One</option><option>Two</option><option>Three</option></select><label for="ig-50">Options</label></div></div>
+<div class="ig-row"><div class="bi-field ig-control ig-hidden-label"><select id="ig-51" class="bi-control" ><option>Choose…</option><option>One</option><option>Two</option><option>Three</option></select><label for="ig-51">Options</label></div><span class="ig-addon">Options</span></div>
+<div class="ig-row"><button type="button" class="ig-button" data-action>Button</button><div class="bi-field ig-control ig-hidden-label"><select id="ig-52" class="bi-control" ><option>Choose…</option><option>One</option><option>Two</option><option>Three</option></select><label for="ig-52">Options</label></div></div>
+<div class="ig-row"><div class="bi-field ig-control ig-hidden-label"><select id="ig-53" class="bi-control" ><option>Choose…</option><option>One</option><option>Two</option><option>Three</option></select><label for="ig-53">Options</label></div><button type="button" class="ig-button" data-action>Button</button></div>
+</section>
+<section class="bi-card"><h2>Custom file input</h2>
+<div class="ig-row"><label class="ig-addon" for="ig-54">Upload</label><div class="bi-field ig-control ig-hidden-label"><input type="file" id="ig-54" class="bi-control" ></div></div>
+<div class="ig-row"><div class="bi-field ig-control ig-hidden-label"><input type="file" id="ig-55" class="bi-control" ><label for="ig-55">Choose file</label></div><label class="ig-addon" for="ig-54">Upload</label></div>
+<div class="ig-row"><button type="button" class="ig-button" data-action>Button</button><div class="bi-field ig-control ig-hidden-label"><input type="file" id="ig-56" class="bi-control" ><label for="ig-56">Choose file</label></div></div>
+<div class="ig-row"><div class="bi-field ig-control ig-hidden-label"><input type="file" id="ig-57" class="bi-control" ><label for="ig-57">Choose file</label></div><button type="button" class="ig-button" data-action>Button</button></div>
+</section>
+</div></div></main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Input Groups examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

@@ -1,0 +1,1793 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Modals · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/buttons.css" />
+        <link rel="stylesheet" href="assets/vendor/animate/animate.min.css" />
+        <link rel="stylesheet" href="assets/css/modals.css" />
+        <script src="assets/js/modals.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="modals-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a class="menu-link" href="collapse.html">Collapse</a>
+                    <a class="menu-link" href="alerts.html">Alerts</a
+                    ><a class="menu-link" href="modals.html" aria-current="page"
+                        >Modals</a
+                    >
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >User interface / Modals</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1">
+                    <div class="content-inner">
+                        <h1>Modals</h1>
+                        <p class="modal-intro">
+                            Dialog styles, placement and onboarding examples.
+                            Forms are demonstrations only.
+                        </p>
+                        <noscript
+                            >Enable JavaScript to open these dialogs.</noscript
+                        >
+                        <div class="modal-demo-grid">
+                            <section class="modal-demo-card">
+                                <h2>Default</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="basic"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Vertically centered</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="center"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Slide from top</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="top"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>YouTube video</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="video"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Toggle between modals</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="switch-one"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Fullscreen</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="fullscreen"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Small</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="small"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Large</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="large"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Extra large</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="extra-large"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Scrolling long content · page</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="long"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Scrolling long content · body</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="scrollable"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Static backdrop</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="static"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Animations</h2>
+                                <label for="animation-choice"
+                                    >Entrance animation</label
+                                ><select id="animation-choice">
+                                    <option value="fadeIn">fadeIn</option>
+                                    <option value="bounce">bounce</option>
+                                    <option value="flash">flash</option>
+                                    <option value="pulse">pulse</option>
+                                    <option value="rubberBand">
+                                        rubberBand
+                                    </option>
+                                    <option value="shakeX">shakeX</option>
+                                    <option value="swing">swing</option>
+                                    <option value="tada">tada</option>
+                                    <option value="wobble">wobble</option>
+                                    <option value="jello">jello</option>
+                                    <option value="heartBeat">heartBeat</option>
+                                    <option value="bounceIn">bounceIn</option>
+                                    <option value="bounceInDown">
+                                        bounceInDown
+                                    </option>
+                                    <option value="bounceInLeft">
+                                        bounceInLeft
+                                    </option>
+                                    <option value="bounceInRight">
+                                        bounceInRight
+                                    </option>
+                                    <option value="bounceInUp">
+                                        bounceInUp
+                                    </option>
+                                    <option value="fadeInDown">
+                                        fadeInDown
+                                    </option>
+                                    <option value="fadeInDownBig">
+                                        fadeInDownBig
+                                    </option>
+                                    <option value="fadeInLeft">
+                                        fadeInLeft
+                                    </option>
+                                    <option value="fadeInLeftBig">
+                                        fadeInLeftBig
+                                    </option>
+                                    <option value="fadeInRight">
+                                        fadeInRight
+                                    </option>
+                                    <option value="fadeInRightBig">
+                                        fadeInRightBig
+                                    </option>
+                                    <option value="fadeInUp">fadeInUp</option>
+                                    <option value="fadeInUpBig">
+                                        fadeInUpBig
+                                    </option>
+                                    <option value="flip">flip</option>
+                                    <option value="flipInX">flipInX</option>
+                                    <option value="flipInY">flipInY</option>
+                                    <option value="lightSpeedInRight">
+                                        lightSpeedInRight
+                                    </option>
+                                    <option value="rotateIn">rotateIn</option>
+                                    <option value="rotateInDownLeft">
+                                        rotateInDownLeft
+                                    </option>
+                                    <option value="rotateInDownRight">
+                                        rotateInDownRight
+                                    </option>
+                                    <option value="rotateInUpLeft">
+                                        rotateInUpLeft
+                                    </option>
+                                    <option value="rotateInUpRight">
+                                        rotateInUpRight
+                                    </option>
+                                    <option value="slideInUp">slideInUp</option>
+                                    <option value="slideInDown">
+                                        slideInDown
+                                    </option>
+                                    <option value="slideInLeft">
+                                        slideInLeft
+                                    </option>
+                                    <option value="slideInRight">
+                                        slideInRight
+                                    </option>
+                                    <option value="zoomIn">zoomIn</option>
+                                    <option value="zoomInDown">
+                                        zoomInDown
+                                    </option>
+                                    <option value="zoomInLeft">
+                                        zoomInLeft
+                                    </option>
+                                    <option value="zoomInRight">
+                                        zoomInRight
+                                    </option>
+                                    <option value="zoomInUp">zoomInUp</option>
+                                    <option value="jackInTheBox">
+                                        jackInTheBox
+                                    </option>
+                                    <option value="rollIn">
+                                        rollIn
+                                    </option></select
+                                ><button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="animation"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Onboarding multistep</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="onboarding"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Onboarding form</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="onboarding-form"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Horizontal onboarding multistep</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="horizontal"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Horizontal onboarding form</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="horizontal-form"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                            <section class="modal-demo-card">
+                                <h2>Transparent</h2>
+                                <button
+                                    type="button"
+                                    class="btn tone-primary"
+                                    data-open="transparent"
+                                >
+                                    Launch modal
+                                </button>
+                            </section>
+                        </div>
+                    </div>
+                </main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Modal examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+        <dialog
+            id="modal-basic"
+            class="demo-dialog"
+            aria-labelledby="title-basic"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-basic" tabindex="-1">Default</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Default"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <label
+                            >Name<input
+                                name="name"
+                                type="text"
+                                autocomplete="off"
+                        /></label>
+                        <div class="modal-fields">
+                            <label
+                                >Email<input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="off" /></label
+                            ><label>DOB<input name="dob" type="date" /></label>
+                        </div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-center"
+            class="demo-dialog center"
+            aria-labelledby="title-center"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-center" tabindex="-1">Vertically centered</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Vertically centered"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <label
+                            >Name<input
+                                name="name"
+                                type="text"
+                                autocomplete="off"
+                        /></label>
+                        <div class="modal-fields">
+                            <label
+                                >Email<input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="off" /></label
+                            ><label>DOB<input name="dob" type="date" /></label>
+                        </div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-top"
+            class="demo-dialog top"
+            aria-labelledby="title-top"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-top" tabindex="-1">Slide from top</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Slide from top"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <label
+                            >Name<input
+                                name="name"
+                                type="text"
+                                autocomplete="off"
+                        /></label>
+                        <div class="modal-fields">
+                            <label
+                                >Email<input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="off" /></label
+                            ><label>DOB<input name="dob" type="date" /></label>
+                        </div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-video"
+            class="demo-dialog center"
+            aria-labelledby="title-video"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-video" tabindex="-1">YouTube video</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close YouTube video"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <p>
+                            Load the video from YouTube only when you choose. An
+                            internet connection is required.
+                        </p>
+                        <button
+                            type="button"
+                            class="btn tone-primary"
+                            data-load-video
+                        >
+                            Load video
+                        </button>
+                        <div class="video-slot"></div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-switch-one"
+            class="demo-dialog center"
+            aria-labelledby="title-switch-one"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-switch-one" tabindex="-1">
+                        Toggle between modals
+                    </h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Toggle between modals"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <p>Open the second modal while this one closes.</p>
+                        <button
+                            type="button"
+                            class="btn tone-primary"
+                            data-switch="switch-two"
+                        >
+                            Open second modal
+                        </button>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-switch-two"
+            class="demo-dialog center"
+            aria-labelledby="title-switch-two"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-switch-two" tabindex="-1">Modal 2</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Modal 2"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <p>
+                            Return to the first modal without stacking dialogs.
+                        </p>
+                        <button
+                            type="button"
+                            class="btn tone-primary"
+                            data-switch="switch-one"
+                        >
+                            Back to first
+                        </button>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-fullscreen"
+            class="demo-dialog full"
+            aria-labelledby="title-fullscreen"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-fullscreen" tabindex="-1">Fullscreen</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Fullscreen"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-small"
+            class="demo-dialog small"
+            aria-labelledby="title-small"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-small" tabindex="-1">Small</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Small"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <label
+                            >Name<input
+                                name="name"
+                                type="text"
+                                autocomplete="off"
+                        /></label>
+                        <div class="modal-fields">
+                            <label
+                                >Email<input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="off" /></label
+                            ><label>DOB<input name="dob" type="date" /></label>
+                        </div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-large"
+            class="demo-dialog large"
+            aria-labelledby="title-large"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-large" tabindex="-1">Large</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Large"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <label
+                            >Name<input
+                                name="name"
+                                type="text"
+                                autocomplete="off"
+                        /></label>
+                        <div class="modal-fields">
+                            <label
+                                >Email<input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="off" /></label
+                            ><label>DOB<input name="dob" type="date" /></label>
+                        </div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-extra-large"
+            class="demo-dialog xl"
+            aria-labelledby="title-extra-large"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-extra-large" tabindex="-1">Extra large</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Extra large"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <label
+                            >Name<input
+                                name="name"
+                                type="text"
+                                autocomplete="off"
+                        /></label>
+                        <div class="modal-fields">
+                            <label
+                                >Email<input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="off" /></label
+                            ><label>DOB<input name="dob" type="date" /></label>
+                        </div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-long"
+            class="demo-dialog long"
+            aria-labelledby="title-long"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-long" tabindex="-1">
+                        Scrolling long content · page
+                    </h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Scrolling long content · page"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-scrollable"
+            class="demo-dialog scrollable"
+            aria-labelledby="title-scrollable"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-scrollable" tabindex="-1">
+                        Scrolling long content · body
+                    </h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Scrolling long content · body"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                        <p>
+                            Explore a longer dialog. This content demonstrates
+                            scrolling while preserving access to the title,
+                            close button and footer controls. Resize the window
+                            to see how the layout adapts.
+                        </p>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-static"
+            class="demo-dialog center"
+            aria-labelledby="title-static"
+            data-static="true"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-static" tabindex="-1">Static backdrop</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Static backdrop"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <label
+                            >Name<input
+                                name="name"
+                                type="text"
+                                autocomplete="off"
+                        /></label>
+                        <div class="modal-fields">
+                            <label
+                                >Email<input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="off" /></label
+                            ><label>DOB<input name="dob" type="date" /></label>
+                        </div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-animation"
+            class="demo-dialog center"
+            aria-labelledby="title-animation"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-animation" tabindex="-1">Animations</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Animations"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <label
+                            >Name<input
+                                name="name"
+                                type="text"
+                                autocomplete="off"
+                        /></label>
+                        <div class="modal-fields">
+                            <label
+                                >Email<input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="off" /></label
+                            ><label>DOB<input name="dob" type="date" /></label>
+                        </div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-onboarding"
+            class="demo-dialog onboard"
+            aria-labelledby="title-onboarding"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-onboarding" tabindex="-1">
+                        Onboarding multistep
+                    </h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Onboarding multistep"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <div
+                            class="onboard-art"
+                            role="img"
+                            aria-label="Original abstract mountain illustration"
+                        >
+                            <span>Discover something new</span>
+                        </div>
+                        <div class="onboard-steps">
+                            <div data-step="0">
+                                <h3>Welcome aboard</h3>
+                                <p>
+                                    Step 1 of 3. Review this demonstration
+                                    before continuing.
+                                </p>
+                                <label
+                                    >Your full name<input
+                                        name="name"
+                                        type="text"
+                                        autocomplete="off" /></label
+                                ><label
+                                    >Your role<select name="role">
+                                        <option>Web Developer</option>
+                                        <option>Business Owner</option>
+                                        <option>Other</option>
+                                    </select></label
+                                >
+                            </div>
+                            <div data-step="1" hidden>
+                                <h3>Tell us about yourself</h3>
+                                <p>
+                                    Step 2 of 3. Review this demonstration
+                                    before continuing.
+                                </p>
+                                <label
+                                    >Your full name<input
+                                        name="name"
+                                        type="text"
+                                        autocomplete="off" /></label
+                                ><label
+                                    >Your role<select name="role">
+                                        <option>Web Developer</option>
+                                        <option>Business Owner</option>
+                                        <option>Other</option>
+                                    </select></label
+                                >
+                            </div>
+                            <div data-step="2" hidden>
+                                <h3>Ready to explore</h3>
+                                <p>
+                                    Step 3 of 3. Review this demonstration
+                                    before continuing.
+                                </p>
+                                <label
+                                    >Your full name<input
+                                        name="name"
+                                        type="text"
+                                        autocomplete="off" /></label
+                                ><label
+                                    >Your role<select name="role">
+                                        <option>Web Developer</option>
+                                        <option>Business Owner</option>
+                                        <option>Other</option>
+                                    </select></label
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn text tone-secondary"
+                            data-close
+                        >
+                            Skip intro
+                        </button>
+                        <div class="step-dots">
+                            <button
+                                type="button"
+                                data-step-to="0"
+                                aria-label="Go to step 1"
+                            >
+                                1</button
+                            ><button
+                                type="button"
+                                data-step-to="1"
+                                aria-label="Go to step 2"
+                            >
+                                2</button
+                            ><button
+                                type="button"
+                                data-step-to="2"
+                                aria-label="Go to step 3"
+                            >
+                                3
+                            </button>
+                        </div>
+                        <button
+                            type="button"
+                            class="btn label tone-primary"
+                            data-prev
+                        >
+                            Previous</button
+                        ><button
+                            type="button"
+                            class="btn tone-primary"
+                            data-next
+                        >
+                            Next
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-onboarding-form"
+            class="demo-dialog onboard"
+            aria-labelledby="title-onboarding-form"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-onboarding-form" tabindex="-1">
+                        Onboarding form
+                    </h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Onboarding form"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <div
+                            class="onboard-art"
+                            role="img"
+                            aria-label="Original abstract mountain illustration"
+                        >
+                            <span>Discover something new</span>
+                        </div>
+                        <h3>Example Request Information</h3>
+                        <label
+                            >Your full name<input
+                                name="name"
+                                type="text"
+                                autocomplete="off" /></label
+                        ><label
+                            >Your role<select name="role">
+                                <option>Web Developer</option>
+                                <option>Business Owner</option>
+                                <option>Other</option>
+                            </select></label
+                        >
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Submit
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-horizontal"
+            class="demo-dialog onboard horizontal"
+            aria-labelledby="title-horizontal"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-horizontal" tabindex="-1">
+                        Horizontal onboarding multistep
+                    </h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Horizontal onboarding multistep"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <div
+                            class="onboard-art"
+                            role="img"
+                            aria-label="Original abstract mountain illustration"
+                        >
+                            <span>Discover something new</span>
+                        </div>
+                        <div class="onboard-steps">
+                            <div data-step="0">
+                                <h3>Welcome aboard</h3>
+                                <p>
+                                    Step 1 of 3. Review this demonstration
+                                    before continuing.
+                                </p>
+                                <label
+                                    >Your full name<input
+                                        name="name"
+                                        type="text"
+                                        autocomplete="off" /></label
+                                ><label
+                                    >Your role<select name="role">
+                                        <option>Web Developer</option>
+                                        <option>Business Owner</option>
+                                        <option>Other</option>
+                                    </select></label
+                                >
+                            </div>
+                            <div data-step="1" hidden>
+                                <h3>Tell us about yourself</h3>
+                                <p>
+                                    Step 2 of 3. Review this demonstration
+                                    before continuing.
+                                </p>
+                                <label
+                                    >Your full name<input
+                                        name="name"
+                                        type="text"
+                                        autocomplete="off" /></label
+                                ><label
+                                    >Your role<select name="role">
+                                        <option>Web Developer</option>
+                                        <option>Business Owner</option>
+                                        <option>Other</option>
+                                    </select></label
+                                >
+                            </div>
+                            <div data-step="2" hidden>
+                                <h3>Ready to explore</h3>
+                                <p>
+                                    Step 3 of 3. Review this demonstration
+                                    before continuing.
+                                </p>
+                                <label
+                                    >Your full name<input
+                                        name="name"
+                                        type="text"
+                                        autocomplete="off" /></label
+                                ><label
+                                    >Your role<select name="role">
+                                        <option>Web Developer</option>
+                                        <option>Business Owner</option>
+                                        <option>Other</option>
+                                    </select></label
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn text tone-secondary"
+                            data-close
+                        >
+                            Skip intro
+                        </button>
+                        <div class="step-dots">
+                            <button
+                                type="button"
+                                data-step-to="0"
+                                aria-label="Go to step 1"
+                            >
+                                1</button
+                            ><button
+                                type="button"
+                                data-step-to="1"
+                                aria-label="Go to step 2"
+                            >
+                                2</button
+                            ><button
+                                type="button"
+                                data-step-to="2"
+                                aria-label="Go to step 3"
+                            >
+                                3
+                            </button>
+                        </div>
+                        <button
+                            type="button"
+                            class="btn label tone-primary"
+                            data-prev
+                        >
+                            Previous</button
+                        ><button
+                            type="button"
+                            class="btn tone-primary"
+                            data-next
+                        >
+                            Next
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-horizontal-form"
+            class="demo-dialog onboard horizontal"
+            aria-labelledby="title-horizontal-form"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-horizontal-form" tabindex="-1">
+                        Horizontal onboarding form
+                    </h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Horizontal onboarding form"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <div
+                            class="onboard-art"
+                            role="img"
+                            aria-label="Original abstract mountain illustration"
+                        >
+                            <span>Discover something new</span>
+                        </div>
+                        <h3>Example Request Information</h3>
+                        <label
+                            >Your full name<input
+                                name="name"
+                                type="text"
+                                autocomplete="off" /></label
+                        ><label
+                            >Your role<select name="role">
+                                <option>Web Developer</option>
+                                <option>Business Owner</option>
+                                <option>Other</option>
+                            </select></label
+                        >
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Submit
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+        <dialog
+            id="modal-transparent"
+            class="demo-dialog transparent center"
+            aria-labelledby="title-transparent"
+        >
+            <div class="modal-surface">
+                <header>
+                    <h2 id="title-transparent" tabindex="-1">Transparent</h2>
+                    <button
+                        type="button"
+                        class="modal-x"
+                        data-close
+                        aria-label="Close Transparent"
+                    >
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </header>
+                <form>
+                    <div class="modal-body">
+                        <label
+                            >Name<input
+                                name="name"
+                                type="text"
+                                autocomplete="off"
+                        /></label>
+                        <div class="modal-fields">
+                            <label
+                                >Email<input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="off" /></label
+                            ><label>DOB<input name="dob" type="date" /></label>
+                        </div>
+                    </div>
+                    <p class="modal-result" role="status"></p>
+                    <footer>
+                        <button
+                            type="button"
+                            class="btn outline tone-secondary"
+                            data-close
+                        >
+                            Close</button
+                        ><button type="submit" class="btn tone-primary">
+                            Save changes
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </dialog>
+    </body>
+</html>

@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Avatar · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/avatar.css" />
+        <script src="assets/vendor/popper/popper.min.js" defer></script>
+        <script src="assets/js/avatar.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+        <script src="assets/js/admin-theme.js"></script>
+    <link rel="stylesheet" href="assets/css/admin-theme.css">
+</head>
+    <body data-layout="default" class="avatar-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a class="menu-link" href="collapse.html">Collapse</a>
+                    <a class="menu-link" href="alerts.html">Alerts</a
+                    ><a class="menu-link" href="avatar.html" aria-current="page"
+                        >Avatar</a
+                    >
+                </nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >User interface / Avatar</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1">
+                    <div class="content-inner">
+                        <h1>Avatars</h1>
+                        <p class="av-intro">
+                            Reusable image, initial, status and group
+                            treatments. Portraits and identities are
+                            illustrative.
+                        </p>
+                        <div class="av-grid">
+                            <section
+                                class="av-card"
+                                id="av-sizes"
+                                aria-labelledby="av-sizes-title"
+                            >
+                                <h2 id="av-sizes-title">Sizes</h2>
+                                <div class="av-row">
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-xs av-circle av-image av-primary"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                        /></span>
+                                        <figcaption>XS</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-sm av-circle av-image av-primary"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                        /></span>
+                                        <figcaption>SM</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-image av-primary"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                        /></span>
+                                        <figcaption>Default</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-md av-circle av-image av-primary"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                        /></span>
+                                        <figcaption>MD</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-lg av-circle av-image av-primary"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                        /></span>
+                                        <figcaption>LG</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-xl av-circle av-image av-primary"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                        /></span>
+                                        <figcaption>XL</figcaption>
+                                    </figure>
+                                </div>
+                            </section>
+                            <section
+                                class="av-card"
+                                id="av-initials"
+                                aria-labelledby="av-initials-title"
+                            >
+                                <h2 id="av-initials-title">Initials</h2>
+                                <div class="av-row">
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-xs av-circle av-solid av-primary"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>XS</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-sm av-circle av-solid av-secondary"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>SM</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-solid av-success"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>Default</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-md av-circle av-solid av-danger"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>MD</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-lg av-circle av-solid av-warning"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>LG</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-xl av-circle av-solid av-info"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>XL</figcaption>
+                                    </figure>
+                                </div>
+                            </section>
+                            <section
+                                class="av-card"
+                                id="av-labels"
+                                aria-labelledby="av-labels-title"
+                            >
+                                <h2 id="av-labels-title">Label Initials</h2>
+                                <div class="av-row">
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-xs av-circle av-tint av-primary"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>XS</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-sm av-circle av-tint av-secondary"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>SM</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-tint av-success"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>Default</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-md av-circle av-tint av-danger"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>MD</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-lg av-circle av-tint av-warning"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>LG</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-xl av-circle av-tint av-info"
+                                            role="img"
+                                            aria-label="Parker Ives"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>XL</figcaption>
+                                    </figure>
+                                </div>
+                            </section>
+                            <section
+                                class="av-card"
+                                id="av-shapes"
+                                aria-labelledby="av-shapes-title"
+                            >
+                                <h2 id="av-shapes-title">Shapes</h2>
+                                <div class="av-row">
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-image av-primary"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                        /></span>
+                                        <figcaption>circle</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-rounded av-image av-primary"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                        /></span>
+                                        <figcaption>rounded</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-square av-image av-primary"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                        /></span>
+                                        <figcaption>square</figcaption>
+                                    </figure>
+                                </div>
+                            </section>
+                            <section
+                                class="av-card"
+                                id="av-image-status"
+                                aria-labelledby="av-image-status-title"
+                            >
+                                <h2 id="av-image-status-title">
+                                    Status Indicator
+                                </h2>
+                                <div class="av-row">
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-image av-primary av-status av-online"
+                                            role="img"
+                                            aria-label="Alex Morgan, online"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                        /></span>
+                                        <figcaption>online</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-image av-primary av-status av-away"
+                                            role="img"
+                                            aria-label="Casey Lane, away"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-2.png"
+                                                alt=""
+                                                width="192"
+                                                height="256"
+                                        /></span>
+                                        <figcaption>away</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-image av-primary av-status av-busy"
+                                            role="img"
+                                            aria-label="Jordan Reed, busy"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-3.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                        /></span>
+                                        <figcaption>busy</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-image av-primary av-status av-offline"
+                                            role="img"
+                                            aria-label="Sam Taylor, offline"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-4.png"
+                                                alt=""
+                                                width="192"
+                                                height="256"
+                                        /></span>
+                                        <figcaption>offline</figcaption>
+                                    </figure>
+                                </div>
+                            </section>
+                            <section
+                                class="av-card"
+                                id="av-label-status"
+                                aria-labelledby="av-label-status-title"
+                            >
+                                <h2 id="av-label-status-title">
+                                    Label Avatar Status Indicator
+                                </h2>
+                                <div class="av-row">
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-tint av-success av-status av-online"
+                                            role="img"
+                                            aria-label="Parker Ives, online"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>online</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-tint av-warning av-status av-away"
+                                            role="img"
+                                            aria-label="Parker Ives, away"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>away</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-tint av-danger av-status av-busy"
+                                            role="img"
+                                            aria-label="Parker Ives, busy"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>busy</figcaption>
+                                    </figure>
+                                    <figure class="av-item">
+                                        <span
+                                            class="av-avatar av-default av-circle av-tint av-secondary av-status av-offline"
+                                            role="img"
+                                            aria-label="Parker Ives, offline"
+                                            ><span
+                                                class="av-face av-initial"
+                                                aria-hidden="true"
+                                                >pi</span
+                                            ></span
+                                        >
+                                        <figcaption>offline</figcaption>
+                                    </figure>
+                                </div>
+                            </section>
+                            <section
+                                class="av-card av-wide"
+                                id="av-groups"
+                                aria-labelledby="av-groups-title"
+                            >
+                                <h2 id="av-groups-title">Avatar Group</h2>
+                                <div class="av-group-example">
+                                    <h3>Default</h3>
+                                    <div
+                                        class="av-group"
+                                        role="group"
+                                        aria-label="Default demo group"
+                                    >
+                                        <span
+                                            class="av-avatar av-default av-circle av-image av-primary"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192" /></span
+                                        ><span
+                                            class="av-avatar av-default av-circle av-image av-primary"
+                                            role="img"
+                                            aria-label="Casey Lane"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-2.png"
+                                                alt=""
+                                                width="192"
+                                                height="256" /></span
+                                        ><span
+                                            class="av-avatar av-default av-circle av-image av-primary"
+                                            role="img"
+                                            aria-label="Jordan Reed"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-3.png"
+                                                alt=""
+                                                width="192"
+                                                height="192" /></span
+                                        ><span
+                                            class="av-avatar av-default av-circle av-image av-primary"
+                                            role="img"
+                                            aria-label="Sam Taylor"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-4.png"
+                                                alt=""
+                                                width="192"
+                                                height="256"
+                                        /></span>
+                                    </div>
+                                    <p class="av-members">
+                                        Alex Morgan, Casey Lane, Jordan Reed,
+                                        Sam Taylor.
+                                    </p>
+                                </div>
+                                <div class="av-group-example">
+                                    <h3>Pull Up</h3>
+                                    <div
+                                        class="av-group"
+                                        role="group"
+                                        aria-label="Pull Up demo group"
+                                    >
+                                        <span
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192" /></span
+                                        ><span
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            role="img"
+                                            aria-label="Casey Lane"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-2.png"
+                                                alt=""
+                                                width="192"
+                                                height="256" /></span
+                                        ><span
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            role="img"
+                                            aria-label="Jordan Reed"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-3.png"
+                                                alt=""
+                                                width="192"
+                                                height="192" /></span
+                                        ><span
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            role="img"
+                                            aria-label="Sam Taylor"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-4.png"
+                                                alt=""
+                                                width="192"
+                                                height="256"
+                                        /></span>
+                                    </div>
+                                    <p class="av-members">
+                                        Alex Morgan, Casey Lane, Jordan Reed,
+                                        Sam Taylor.
+                                    </p>
+                                </div>
+                                <div class="av-group-example">
+                                    <h3>Pull Up with Tooltip</h3>
+                                    <div
+                                        class="av-group"
+                                        role="group"
+                                        aria-label="Pull Up with Tooltip demo group"
+                                    >
+                                        <button
+                                            type="button"
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            aria-label="Alex Morgan"
+                                            data-av-tip="Alex Morgan"
+                                            data-av-placement="top"
+                                        >
+                                            <img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                            /></button
+                                        ><button
+                                            type="button"
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            aria-label="Casey Lane"
+                                            data-av-tip="Casey Lane"
+                                            data-av-placement="top"
+                                        >
+                                            <img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-2.png"
+                                                alt=""
+                                                width="192"
+                                                height="256"
+                                            /></button
+                                        ><button
+                                            type="button"
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            aria-label="Jordan Reed"
+                                            data-av-tip="Jordan Reed"
+                                            data-av-placement="top"
+                                        >
+                                            <img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-3.png"
+                                                alt=""
+                                                width="192"
+                                                height="192"
+                                            /></button
+                                        ><button
+                                            type="button"
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            aria-label="Sam Taylor"
+                                            data-av-tip="Sam Taylor"
+                                            data-av-placement="top"
+                                        >
+                                            <img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-4.png"
+                                                alt=""
+                                                width="192"
+                                                height="256"
+                                            />
+                                        </button>
+                                    </div>
+                                    <p class="av-members">
+                                        Alex Morgan, Casey Lane, Jordan Reed,
+                                        Sam Taylor.
+                                    </p>
+                                </div>
+                                <div class="av-group-example">
+                                    <h3>Avatar with count</h3>
+                                    <div
+                                        class="av-group"
+                                        role="group"
+                                        aria-label="Avatar with count demo group"
+                                    >
+                                        <span
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            role="img"
+                                            aria-label="Alex Morgan"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-1.png"
+                                                alt=""
+                                                width="192"
+                                                height="192" /></span
+                                        ><span
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            role="img"
+                                            aria-label="Casey Lane"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-2.png"
+                                                alt=""
+                                                width="192"
+                                                height="256" /></span
+                                        ><span
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            role="img"
+                                            aria-label="Jordan Reed"
+                                            ><img
+                                                class="av-face"
+                                                src="assets/img/avatar-demo/person-3.png"
+                                                alt=""
+                                                width="192"
+                                                height="192" /></span
+                                        ><button
+                                            type="button"
+                                            class="av-avatar av-default av-circle av-image av-primary av-pull"
+                                            aria-label="3 additional members"
+                                            data-av-tip="3 additional members"
+                                            data-av-placement="bottom"
+                                        >
+                                            <span
+                                                class="av-face av-initial av-count"
+                                                aria-hidden="true"
+                                                >+3</span
+                                            >
+                                        </button>
+                                    </div>
+                                    <p class="av-members">
+                                        Alex Morgan, Casey Lane, Jordan Reed and
+                                        3 additional members.
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Avatar examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

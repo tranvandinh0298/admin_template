@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Tooltips & Popovers · Materio</title>
+        <link rel="stylesheet" href="assets/css/layouts.css" />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome/css/solid.min.css"
+        />
+<link rel="stylesheet" href="assets/css/tooltips-popovers.css" />
+        <script src="assets/vendor/popper/popper.min.js" defer></script><script src="assets/js/tooltips-popovers.js" defer></script>
+        <script src="assets/js/layouts.js" defer></script>
+    </head>
+    <body data-layout="default" class="tooltips-popovers-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="shell">
+            <aside
+                class="navigation"
+                id="layout-menu"
+                aria-label="Layout navigation"
+            >
+                <div class="drawer-heading">
+                    <a
+                        class="brand"
+                        href="layouts/default_layout.html"
+                        aria-label="Materio layouts"
+                        ><span class="brand-mark" aria-hidden="true">M</span
+                        ><span class="brand-name">materio</span></a
+                    ><button
+                        class="icon-button close-menu"
+                        type="button"
+                        aria-label="Close navigation"
+                    >
+                        ×
+                    </button>
+                </div>
+                <nav aria-label="Layouts">
+                    <p class="menu-caption">LAYOUTS</p>
+                    <a class="menu-link" href="layouts/default_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Default</span></a
+                    >
+                    <a class="menu-link" href="layouts/horizontal_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Horizontal</span></a
+                    >
+                    <a class="menu-link" href="layouts/boxed_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Boxed</span></a
+                    >
+                    <a class="menu-link" href="layouts/compact_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Compact</span></a
+                    >
+                    <a
+                        class="menu-link"
+                        href="layouts/single_column_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Single column</span></a
+                    >
+                    <a class="menu-link" href="layouts/blank_layout.html"
+                        ><i class="fa-solid fa-bars" aria-hidden="true"></i
+                        ><span class="menu-label">Blank</span></a
+                    >
+                    <p class="menu-caption">COMPONENTS</p>
+                    <a class="menu-link" href="button.html">Buttons</a
+                    ><a class="menu-link" href="accordion.html">Accordion</a
+                    ><a
+                        class="menu-link"
+                        href="collapse.html"
+                        >Collapse</a
+                    >
+                <a class="menu-link" href="alerts.html">Alerts</a><a class="menu-link" href="tooltips-popovers.html" aria-current="page">Tooltips &amp; Popovers</a></nav>
+            </aside>
+            <div class="page">
+                <header class="topbar-wrap">
+                    <div class="topbar">
+                        <button
+                            class="icon-button menu-toggle"
+                            type="button"
+                            aria-controls="layout-menu"
+                            aria-expanded="false"
+                            aria-label="Open navigation"
+                        >
+                            <i
+                                class="fa-solid fa-bars"
+                                aria-hidden="true"
+                            ></i></button
+                        ><span class="topbar-label"
+                            >User interface / Tooltips &amp; Popovers</span
+                        ><span class="topbar-note">Admin template</span>
+                    </div>
+                </header>
+                <main id="main-content" class="content" tabindex="-1"><div class="content-inner"><h1>Tooltips &amp; Popovers</h1><p>Hover or focus for tooltips. Click for popovers. Press Escape to dismiss.</p><section class="hp-card"><h2>Tooltips</h2><div class="hp-row"><h3>Directions</h3><div class="hp-buttons"><button type="button" class="hp-trigger hp-primary" data-hp-kind="tooltip" data-hp-placement="right" data-hp-title="Tooltip on right" data-hp-content="" data-hp-style="">Right</button><button type="button" class="hp-trigger hp-primary" data-hp-kind="tooltip" data-hp-placement="top" data-hp-title="Tooltip on top" data-hp-content="" data-hp-style="">Top</button><button type="button" class="hp-trigger hp-primary" data-hp-kind="tooltip" data-hp-placement="bottom" data-hp-title="Tooltip on bottom" data-hp-content="" data-hp-style="">Bottom</button><button type="button" class="hp-trigger hp-primary" data-hp-kind="tooltip" data-hp-placement="left" data-hp-title="Tooltip on left" data-hp-content="" data-hp-style="">Left</button></div></div><div class="hp-row"><h3>Colors</h3><div class="hp-buttons"><button type="button" class="hp-trigger hp-primary" data-hp-kind="tooltip" data-hp-placement="top" data-hp-title="Primary tooltip" data-hp-content="" data-hp-style="tooltip-primary">Primary</button><button type="button" class="hp-trigger hp-secondary" data-hp-kind="tooltip" data-hp-placement="top" data-hp-title="Secondary tooltip" data-hp-content="" data-hp-style="tooltip-secondary">Secondary</button><button type="button" class="hp-trigger hp-success" data-hp-kind="tooltip" data-hp-placement="top" data-hp-title="Success tooltip" data-hp-content="" data-hp-style="tooltip-success">Success</button><button type="button" class="hp-trigger hp-danger" data-hp-kind="tooltip" data-hp-placement="top" data-hp-title="Danger tooltip" data-hp-content="" data-hp-style="tooltip-danger">Danger</button><button type="button" class="hp-trigger hp-warning" data-hp-kind="tooltip" data-hp-placement="top" data-hp-title="Warning tooltip" data-hp-content="" data-hp-style="tooltip-warning">Warning</button><button type="button" class="hp-trigger hp-info" data-hp-kind="tooltip" data-hp-placement="top" data-hp-title="Info tooltip" data-hp-content="" data-hp-style="tooltip-info">Info</button><button type="button" class="hp-trigger hp-dark" data-hp-kind="tooltip" data-hp-placement="top" data-hp-title="Dark tooltip" data-hp-content="" data-hp-style="tooltip-dark">Dark</button></div></div></section><section class="hp-card"><h2>Popovers</h2><div class="hp-row"><h3>Directions</h3><div class="hp-buttons"><button type="button" class="hp-trigger hp-primary" data-hp-kind="popover" data-hp-placement="right" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="" aria-expanded="false">Popover on right</button><button type="button" class="hp-trigger hp-primary" data-hp-kind="popover" data-hp-placement="top" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="" aria-expanded="false">Popover on top</button><button type="button" class="hp-trigger hp-primary" data-hp-kind="popover" data-hp-placement="bottom" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="" aria-expanded="false">Popover on bottom</button><button type="button" class="hp-trigger hp-primary" data-hp-kind="popover" data-hp-placement="left" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="" aria-expanded="false">Popover on left</button></div></div><div class="hp-row"><h3>Colors</h3><div class="hp-buttons"><button type="button" class="hp-trigger hp-primary" data-hp-kind="popover" data-hp-placement="right" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-primary" aria-expanded="false">Primary</button><button type="button" class="hp-trigger hp-secondary" data-hp-kind="popover" data-hp-placement="right" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-secondary" aria-expanded="false">Secondary</button><button type="button" class="hp-trigger hp-success" data-hp-kind="popover" data-hp-placement="top" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-success" aria-expanded="false">Success</button><button type="button" class="hp-trigger hp-danger" data-hp-kind="popover" data-hp-placement="top" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-danger" aria-expanded="false">Danger</button><button type="button" class="hp-trigger hp-warning" data-hp-kind="popover" data-hp-placement="left" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-warning" aria-expanded="false">Warning</button><button type="button" class="hp-trigger hp-info" data-hp-kind="popover" data-hp-placement="bottom" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-info" aria-expanded="false">Info</button><button type="button" class="hp-trigger hp-dark" data-hp-kind="popover" data-hp-placement="top" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-dark" aria-expanded="false">Dark</button></div></div><div class="hp-row"><h3>Colored headers</h3><div class="hp-buttons"><button type="button" class="hp-trigger hp-primary" data-hp-kind="popover" data-hp-placement="right" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-header-primary" aria-expanded="false">Primary</button><button type="button" class="hp-trigger hp-secondary" data-hp-kind="popover" data-hp-placement="right" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-header-secondary" aria-expanded="false">Secondary</button><button type="button" class="hp-trigger hp-success" data-hp-kind="popover" data-hp-placement="top" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-header-success" aria-expanded="false">Success</button><button type="button" class="hp-trigger hp-danger" data-hp-kind="popover" data-hp-placement="bottom" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-header-danger" aria-expanded="false">Danger</button><button type="button" class="hp-trigger hp-warning" data-hp-kind="popover" data-hp-placement="left" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-header-warning" aria-expanded="false">Warning</button><button type="button" class="hp-trigger hp-info" data-hp-kind="popover" data-hp-placement="bottom" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-header-info" aria-expanded="false">Info</button><button type="button" class="hp-trigger hp-dark" data-hp-kind="popover" data-hp-placement="bottom" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="popover-header-dark" aria-expanded="false">Dark</button></div></div><div class="hp-row"><h3>Custom popover</h3><div class="hp-buttons"><button type="button" class="hp-trigger hp-popover" data-hp-kind="popover" data-hp-placement="right" data-hp-title="Popover title" data-hp-content="This is a very beautiful popover, show some love." data-hp-style="custom-popover" aria-expanded="false">custom-popover</button></div></div></section></div></main>
+                <footer class="footer">
+                    <div class="footer-inner">
+                        <span>Materio · Tooltips &amp; Popovers examples</span
+                        ><span>Explore styles & interactions</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="backdrop" hidden></div>
+    </body>
+</html>

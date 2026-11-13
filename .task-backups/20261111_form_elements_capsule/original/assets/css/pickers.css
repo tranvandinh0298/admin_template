@@ -1,0 +1,38 @@
+.pk-card {
+    min-width: 0;
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+.pk-card h2 { margin: 0 0 20px; font-size: 18px; font-weight: 500; }
+.pk-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; }
+.pk-field { min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 6px; }
+.pk-field label, .pk-field output { font-size: 14px; }
+.pickers-page .pk-field .bi-control[readonly] { background: var(--surface); cursor: pointer; }
+.pickers-page .flatpickr-calendar, .pickers-page .daterangepicker, .pickers-page .pcr-app,
+.pickers-page .ui-timepicker-wrapper { z-index: 100; }
+.pickers-page .daterangepicker { max-width: calc(100vw - 16px); }
+.pickers-page .daterangepicker .applyBtn { background: #7540de; color: white; border: 1px solid #7540de; border-radius: 4px; padding: 6px 10px; }
+.pickers-page .daterangepicker .cancelBtn { background: white; border: 1px solid #b7afc2; border-radius: 4px; padding: 6px 10px; }
+.pk-color .pickr { margin-block: 4px; }
+.pickers-page .pcr-app { max-width: calc(100vw - 16px); }
+@media (max-width: 767px) {
+    .pk-grid { grid-template-columns: minmax(0, 1fr); }
+    .pk-card { padding: 18px; }
+    .pickers-page .flatpickr-calendar.inline { max-width: 100%; }
+    .pickers-page .flatpickr-calendar.inline :is(.flatpickr-innerContainer,.flatpickr-rContainer,.flatpickr-days,.dayContainer) {
+        width: 100%; min-width: 0; max-width: 100%;
+    }
+    .pickers-page .daterangepicker .drp-calendar { float: none; margin-inline: auto; }
+    .pickers-page .daterangepicker { max-height: 75vh; overflow: auto; }
+    .pickers-page .flatpickr-calendar { max-width: calc(100vw - 12px); }
+    .pickers-page .flatpickr-calendar .flatpickr-rContainer {
+        flex: 1 1 auto; min-width: 0; max-width: 100%;
+    }
+    .pickers-page .flatpickr-calendar :is(.flatpickr-days,.dayContainer) {
+        width: 100%; min-width: 0; max-width: 100%;
+    }
+    .pickers-page .flatpickr-calendar .flatpickr-weekwrapper { flex: 0 0 auto; }
+}
